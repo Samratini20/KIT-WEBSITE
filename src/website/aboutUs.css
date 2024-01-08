@@ -726,7 +726,7 @@
       flex-grow: 2;
       justify-content: center;
       width: 50%;
-      padding: 22px 23px;
+      /* padding: 22px 23px; */
       font: 400 12px/30px Calibri, -apple-system, Roboto, Helvetica,
         sans-serif;
     }

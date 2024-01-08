@@ -264,15 +264,21 @@ function Aboutus(props) {
                   </span> */}
                   <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
-                    <>
+                    <div>
                       <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}>
                         <b>{item.head} </b>
                       <br />
                       <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
                         {item.description}
                       </span>
-                        
-                    </>
+                      <br /> <br /> <br />
+                      <div>
+                      <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}/>
+                      <b>{item.name} </b> <br />
+                      <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
+                        {item.designation}
+                      </div>
+                    </div>
                   ))}
                 </Carousel>
                 </div>
@@ -292,7 +298,7 @@ function Aboutus(props) {
               </div> */}
             </div>
           
-          <div className="adiv-48">
+          {/* <div className="adiv-48">
             <div className="adiv-49">
               <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
                 Prabhakar Rai
@@ -309,7 +315,7 @@ function Aboutus(props) {
                 AGM
               </span>
             </div>
-          </div>
+          </div> */}
           </div>
         </div>
         <div className="diva-6">
