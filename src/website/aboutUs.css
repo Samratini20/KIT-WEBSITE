@@ -473,40 +473,41 @@
       align-self: stretch;
       position: relative;
       display: flex;
-      min-height: 330px;
-      width: 100%;
+      min-height: 35rem;
+      width: 100vw;
       justify-content: center;
       align-items: center;
-      padding: 50px 60px;
+      margin-top: -8rem;;
     }
     @media (max-width: 991px) {
       .adiv-25 {
         max-width: 100%;
-        padding: 0 20px;
+        /* padding: 0 20px; */
       }
     }
     .aimg-10 {
       position: absolute;
       inset: 0;
       height: 100%;
-      width: 100%;
+      width: 100vw;
       object-fit: cover;
       object-position: center;
     }
     .adiv-26 {
       position: relative;
       display: flex;
-      width: 100%;
+      /* width: 100%; */
       max-width: 1122px;
       justify-content: space-between;
-      gap: 20px;
-      margin: 119px 0 33px;
+      gap: 7rem;
+      margin-top: 8rem;
+      /* margin: 119px 0 33px; */
     }
     @media (max-width: 991px) {
       .adiv-26 {
         max-width: 100%;
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin-top: 60px;
       }
     }
     .adiv-27 {
@@ -517,8 +518,16 @@
     .adiv-28 {
       background-color: #f1f2f5;
       display: flex;
-      height: 41px;
       flex-direction: column;
+      height: 4rem;
+      font-size: 3.5rem;
+      align-self: center;
+      color: line;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: -webkit-linear-gradient(#079ef0, #5806b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .adiv-29 {
       color: var(--Text, #292929);
@@ -538,7 +547,7 @@
       display: flex;
       align-items: start;
       justify-content: space-between;
-      gap: 20px;
+      gap: 7rem;
     }
     @media (max-width: 991px) {
       .adiv-30 {
@@ -557,8 +566,16 @@
     .adiv-32 {
       background-color: #f1f2f5;
       display: flex;
-      height: 41px;
       flex-direction: column;
+      height: 4rem;
+      font-size: 3.5rem;
+      align-self: center;
+      color: line;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: -webkit-linear-gradient(#079ef0, #5806b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .adiv-33 {
       color: var(--Text, #292929);
@@ -584,8 +601,16 @@
     .adiv-35 {
       background-color: #f1f2f5;
       display: flex;
-      height: 41px;
       flex-direction: column;
+      height: 4rem;
+      font-size: 3.5rem;
+      align-self: center;
+      color: line;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: -webkit-linear-gradient(#079ef0, #5806b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .adiv-36 {
       color: var(--Text, #292929);
@@ -610,8 +635,16 @@
     .adiv-38 {
       background-color: #f1f2f5;
       display: flex;
-      height: 41px;
       flex-direction: column;
+      height: 4rem;
+      font-size: 3.5rem;
+      align-self: center;
+      color: line;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: -webkit-linear-gradient(#079ef0, #5806b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .adiv-39 {
       color: var(--Text, #292929);

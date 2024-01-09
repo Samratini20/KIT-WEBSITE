@@ -7,8 +7,19 @@ import Header from './website/header';
 import Footer from "./website/footer";
 import Blog from './website/blog';
 import ContactUs from './website/contactUs';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App(){
+    useEffect(() => {
+        AOS.init(
+          {
+            offset:380,
+            duration:500
+          }
+        );
+      }, []);
     return (
         <div>        
             <BrowserRouter>

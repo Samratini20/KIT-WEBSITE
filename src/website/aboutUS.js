@@ -3,7 +3,7 @@ import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
 import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
 //import Carousel from 'framer-motion-carousel'
-import { counter } from "@fortawesome/fontawesome-svg-core";
+// import { counter } from "@fortawesome/fontawesome-svg-core";
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
 // import Carousel from 'react-elastic-carousel'
@@ -50,20 +50,6 @@ function Aboutus(props) {
   return (
     <>
       <div className="adiv">
-        {/* <div className="div-2">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa336cc3b2cc0921c60f3152c335da018b3287d17e708a024e77da5d0e1d94ce?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="img"
-          />
-          <div className="div-3">
-            <div className="div-4">Home</div>
-            <div className="div-5">About Us</div>
-            <div className="div-6">Services</div>
-            <div className="div-7">Blog</div>
-            <div className="div-8">Contact Us</div>
-          </div>
-        </div> */}
         <div className="diva-1">
           <div className="diva-2">
           <img
@@ -186,24 +172,24 @@ function Aboutus(props) {
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="img-10"
+            className="aimg-10"
           />
           <div className="adiv-26">
             <div className="adiv-27">
-              <div className="adiv-28" />
+              <div className="adiv-28" data-aos="fade-up">100</div>
               <div className="adiv-29">Websites Designed</div>
             </div>
             <div className="adiv-30">
               <div className="adiv-31">
-                <div className="adiv-32" />
+                <div className="adiv-32" data-aos="fade-up">100</div>
                 <div className="adiv-33">Apps Developed</div>
               </div>
               <div className="adiv-34">
-                <div className="adiv-35" />
+                <div className="adiv-35" data-aos="fade-up">100</div>
                 <div className="adiv-36">Happy Clients</div>
               </div>
               <div className="adiv-37">
-                <div className="adiv-38" />
+                <div className="adiv-38" data-aos="fade-up">100</div>
                 <div className="adiv-39">Team Members</div>
               </div>
             </div>
@@ -253,15 +239,6 @@ function Aboutus(props) {
             <div className="adiv-45">
               <div className="acolumn-6">
                 <div className="">
-                  {/* <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
-                    &quot;Design Rank Impress&quot;
-                    <br />
-                  </span>
-                  <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
-                    We prioritize your satisfaction and work closely with you to
-                    understand your specific needs, ensuring that our services
-                    are tailored to your requirements.
-                  </span> */}
                   <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div>
@@ -283,39 +260,7 @@ function Aboutus(props) {
                 </Carousel>
                 </div>
               </div>
-              {/* <div className="acolumn-7">
-                <div className="adiv-47">
-                  <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
-                    &quot;Soar with SEO&quot;
-                    <br />
-                  </span>
-                  <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
-                    We prioritize your satisfaction and work closely with you to
-                    understand your specific needs, ensuring that our services
-                    are tailored to your requirements.
-                  </span>
-                </div>
-              </div> */}
             </div>
-          
-          {/* <div className="adiv-48">
-            <div className="adiv-49">
-              <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
-                Prabhakar Rai
-              </span>
-              <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
-                General Manager
-              </span>
-            </div>
-            <div className="adiv-50">
-              <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
-                Shirish Yadav
-              </span>
-              <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
-                AGM
-              </span>
-            </div>
-          </div> */}
           </div>
         </div>
         <div className="diva-6">
@@ -326,13 +271,11 @@ function Aboutus(props) {
                 <div className='hideshow'>
                 <button onClick={toggleVisibility}>
                   {isVisible ? '-' : '+'} 
-                  {/* {isVisible ? 'Hide' : 'Show'} */}
                 </button>
                 <p>What services does your IT company provide?</p>
                 </div>
                 {isVisible && (
                   <div>
-                  {/* Your content goes here */}
                   <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
                         unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
                   </p>
@@ -343,13 +286,11 @@ function Aboutus(props) {
                 <div className='hideshow'>
                   <button onClick={toggleVisibility}>
                     {isVisible ? '-' : '+'} 
-                    {/* {isVisible ? 'Hide' : 'Show'} */}
                   </button>
                   <p>What technologies do you specialize in?</p>
                 </div>
                 {isVisible && (
                   <div>
-                  {/* Your content goes here */}
                     <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
                         unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
                     </p>
@@ -359,14 +300,12 @@ function Aboutus(props) {
               <div className="faqdiv-3">
                 <div className='hideshow'>
                   <button onClick={toggleVisibility}>
-                    {isVisible ? '-' : '+'} 
-                    {/* {isVisible ? 'Hide' : 'Show'} */}
+                    {isVisible ? '-' : '+'}
                   </button>
                   <p>How do you ensure data security and confidentiality?</p>
                 </div>
                 {isVisible && (
                   <div>
-                  {/* Your content goes here */}
                     <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
                         unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
                     </p>
@@ -376,14 +315,12 @@ function Aboutus(props) {
               <div className="faqdiv-4">
                 <div className='hideshow'>
                   <button onClick={toggleVisibility}>
-                    {isVisible ? '-' : '+'} 
-                    {/* {isVisible ? 'Hide' : 'Show'} */}
+                    {isVisible ? '-' : '+'}
                   </button>
                   <p>How can our business benefit from your IT services?</p>
                 </div>
                 {isVisible && (
                   <div>
-                  {/* Your content goes here */}
                     <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
                         unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
                     </p>
@@ -411,50 +348,6 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        {/* <div className="div-51">
-          <div className="div-52">
-            <div className="div-53">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="img-11"
-              />
-              <div className="div-54">
-                <div className="div-55">Quick Links</div>
-                <div className="div-56">Home</div>
-                <div className="div-57">About Us</div>
-                <div className="div-58">Services</div>
-                <div className="div-59">Blog</div>
-                <div className="div-60">Contact Us</div>
-              </div>
-            </div>
-            <div className="div-61">
-              <div className="div-62">Company</div>
-              <div className="div-63">Terms & Conditions</div>
-              <div className="div-64">Privacy Policy</div>
-            </div>
-            <div className="div-65">
-              <div className="div-66">Follow Us On</div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c12524c05b2d7b873287193893b6fe636414e3eec024662c42694378013ecb71?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="img-12"
-              />
-            </div>
-            <div className="div-67">
-              <div className="div-68">Newsletter</div>
-              <div className="div-69">
-                <div className="div-70">Email Address</div>
-                <div className="div-71">Send</div>
-              </div>
-              <div className="div-72">
-                Subscribe to our mailing list and get updates to your email
-                inbox.
-              </div>
-            </div>
-          </div>
-          <div className="div-73">KIT Services © All Rights Reserved</div>
-        </div> */}
       </div>
           </>
   );

@@ -1,15 +1,20 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .div-2 {
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
   align-self: center;
   display: flex;
-  margin-left: 0;
   width: 100%;
   max-width: 100%;
   justify-content: space-between;
-  gap: 20px;
   padding: 10px 5px 15px;
   overflow: auto;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
 }
 @media (max-width: 991px) {
   .div-2 {
@@ -24,6 +29,7 @@
   width: 58px;
   overflow: hidden;
   max-width: 100%;
+  margin-left: 2rem;
 }
 .div-3 {
   align-self: center;
@@ -85,6 +91,7 @@
   align-self: start;
   white-space: nowrap;
   font: 400 18px Calibri, sans-serif;
+  margin-right: 2rem;
 }
 @media (max-width: 991px) {
   .div-8 {

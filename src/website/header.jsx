@@ -2,17 +2,19 @@ import * as React from "react";
 import './header.css'
 //import logo from '../assets/logo.jpg'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import HomePage from "./homePage";
 
 
 function Header() {
     return (
       <div className="div-2">
         <Link to="/" className='home'>
-          <img
+        <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f46a3395a58684b7a7a37d57be145cb33c1b586205f87107c340503679ba4dd?apiKey=9d6521b3bd494d48816871a061465c45&"
             //src={logo}
             className="img" 
+
           />
         </Link>
       <div className="div-3">
