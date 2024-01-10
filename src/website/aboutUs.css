@@ -1,84 +1,9 @@
-    .adiv {
-      /* background-color: #fff; */
+    .about-us-container {
       display: flex;
-      padding-top: 12px;
+      /* padding-top: 6rem; */
       flex-direction: column;
       align-items: center;
     }
-    /* .div-2 {
-      display: flex;
-      width: 100%;
-      max-width: 1259px;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    @media (max-width: 991px) {
-      .div-2 {
-        max-width: 100%;
-        flex-wrap: wrap;
-      }
-    }
-    .img {
-      aspect-ratio: 0.88;
-      object-fit: contain;
-      object-position: center;
-      width: 58px;
-      overflow: hidden;
-      max-width: 100%;
-    }
-    .div-3 {
-      align-self: center;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 20px;
-      margin: auto 0;
-      padding: 0 20px;
-    }
-    @media (max-width: 991px) {
-      .div-3 {
-        max-width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-    .div-4 {
-      color: var(--Text, #292929);
-      align-self: start;
-      white-space: nowrap;
-      font: 400 18px Calibri, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-4 {
-        white-space: initial;
-      }
-    }
-    .div-5 {
-      color: #14b1ff;
-      align-self: start;
-      font: 700 18px Calibri, sans-serif;
-    }
-    .div-6 {
-      color: var(--Text, #292929);
-      align-self: start;
-      font: 400 18px Calibri, sans-serif;
-    }
-    .div-7 {
-      color: var(--Text, #292929);
-      align-self: stretch;
-      font: 400 18px Calibri, sans-serif;
-    }
-    .div-8 {
-      color: var(--Text, #292929);
-      align-self: start;
-      white-space: nowrap;
-      font: 400 18px Calibri, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-8 {
-        white-space: initial;
-      }
-    } */
     .aboutusImg-1{
         max-width: 100%;
     }
@@ -97,6 +22,8 @@
     .aspan-1{
         font: 400 18px Calibri, -apple-system, Roboto, Helvetica, sans-serif;
         margin-bottom: 30px;
+        line-height: 2;
+        word-spacing: 4px;
     }
     .vision{
         width: 100%;
@@ -118,7 +45,8 @@
         width: 100vw;
         max-width: 100vw;
         background-color: #F1F2F5;
-        margin-top: 50px;
+        padding-bottom: 5rem;
+        margin-top: 5rem;
     }
     .diva-7{
         width: 80vw;
@@ -151,19 +79,25 @@
         line-height: 2;
     }
     .aboutdiv-button {
-      position: relative;
-      color: var(--Background, #fff);
-      letter-spacing: 0.36px;
-      white-space: nowrap;
-      border-radius: 19px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       background-color: var(--Section-1, #005e8d);
-      margin-bottom: 209px;
-      justify-content: center;
-      padding: 13px 54px 13px 22px;
-      font: 700 12px/25px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
+      color: white;
+      border: none;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 5rem;
+      width: 10rem;
+      box-shadow: 0px 5px 10px 2px rgb(205, 204, 204);
+      transition: all 0.2s;
+    }
+
+    .aboutdiv-button:hover{
       cursor: pointer;
+      transform: translateY(-2px);
+      transition: all 0.2s;
     }
     .diva-12 button{
       margin-top: 30px;
@@ -519,7 +453,7 @@
       background-color: #f1f2f5;
       display: flex;
       flex-direction: column;
-      height: 4rem;
+      height: 4.5rem;
       font-size: 3.5rem;
       align-self: center;
       color: line;
@@ -567,7 +501,7 @@
       background-color: #f1f2f5;
       display: flex;
       flex-direction: column;
-      height: 4rem;
+      height: 4.5rem;
       font-size: 3.5rem;
       align-self: center;
       color: line;
@@ -602,7 +536,7 @@
       background-color: #f1f2f5;
       display: flex;
       flex-direction: column;
-      height: 4rem;
+      height: 4.5rem;
       font-size: 3.5rem;
       align-self: center;
       color: line;
@@ -636,7 +570,7 @@
       background-color: #f1f2f5;
       display: flex;
       flex-direction: column;
-      height: 4rem;
+      height: 4.5rem;
       font-size: 3.5rem;
       align-self: center;
       color: line;
@@ -755,7 +689,6 @@
       color: var(--Text, #292929);
       letter-spacing: 0.36px;
       border: 0.5px solid rgba(41, 41, 41, 0.04);
-      box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.1);
       flex-grow: 2;
       justify-content: center;
       width: 50%;
@@ -837,314 +770,25 @@
         sans-serif;
         display: flex;
         flex-direction: column;
+    }
 
+    .testimonial-card-container{
+      box-shadow: 0px 0px 5px 5px rgba(208, 207, 207, 0.185);
+      /* margin-top: ; */
+      margin: 1.2rem;
+      padding: 1rem;
+    }
 
+    .testimonial-name-position{
+      margin-left: 2rem;
     }
-    /* .div-51 {
-      background-color: var(--Text, #292929);
-      align-self: stretch;
-      display: flex;
-      margin-top: 146px;
-      width: 100%;
-      flex-direction: column;
-      padding: 41px 80px;
+    .accordion-item{
+      border: none;
+      outline: none;
     }
-    @media (max-width: 991px) {
-      .div-51 {
-        max-width: 100%;
-        margin-top: 40px;
-        padding: 0 20px;
-      }
-    }
-    .div-52 {
-      display: flex;
-      margin-right: 37px;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    @media (max-width: 991px) {
-      .div-52 {
-        max-width: 100%;
-        margin-right: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-    .div-53 {
-      align-self: stretch;
-      display: flex;
-      flex-grow: 1;
-      flex-basis: 0%;
-      flex-direction: column;
-    }
-    .img-11 {
-      aspect-ratio: 2.26;
-      object-fit: contain;
-      object-position: center;
-      width: 100%;
-      border-radius: 58.5px;
-      overflow: hidden;
-    }
-    .div-54 {
-      align-self: end;
-      display: flex;
-      margin-top: 54px;
-      flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .div-54 {
-        margin-top: 40px;
-      }
-    }
-    .div-55 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.48px;
-      white-space: nowrap;
-      font: 700 16px/22px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-55 {
-        white-space: initial;
-      }
-    }
-    .div-56 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 38px;
-      white-space: nowrap;
-      font: 700 14px/20px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-56 {
-        white-space: initial;
-      }
-    }
-    .div-57 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 29px;
-      white-space: nowrap;
-      font: 700 14px/20px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-57 {
-        white-space: initial;
-      }
-    }
-    .div-58 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 30px;
-      white-space: nowrap;
-      font: 700 14px/20px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-58 {
-        white-space: initial;
-      }
-    }
-    .div-59 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 29px;
-      white-space: nowrap;
-      font: 700 14px/20px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-59 {
-        white-space: initial;
-      }
-    }
-    .div-60 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 28px;
-      white-space: nowrap;
-      font: 700 14px/20px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-60 {
-        white-space: initial;
-      }
-    }
-    .div-61 {
-      align-self: center;
-      display: flex;
-      flex-basis: 0%;
-      flex-direction: column;
-      margin: auto 0;
-    }
-    .div-62 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.48px;
-      white-space: nowrap;
-      font: 700 16px/22px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-62 {
-        white-space: initial;
-      }
-    }
-    .div-63 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 37px;
-      white-space: nowrap;
-      font: 600 14px/20px Nunito, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-63 {
-        white-space: initial;
-      }
-    }
-    .div-64 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.28px;
-      margin-top: 29px;
-      white-space: nowrap;
-      font: 600 14px/20px Nunito, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-64 {
-        white-space: initial;
-      }
-    }
-    .div-65 {
-      align-self: center;
-      display: flex;
-      flex-grow: 1;
-      flex-basis: 0%;
-      flex-direction: column;
-      margin: auto 0;
-    }
-    .div-66 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.48px;
-      white-space: nowrap;
-      font: 700 16px/22px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-66 {
-        white-space: initial;
-      }
-    }
-    .img-12 {
-      aspect-ratio: 8.33;
-      object-fit: contain;
-      object-position: center;
-      width: 200px;
-      overflow: hidden;
-      align-self: center;
-      margin-top: 38px;
-    }
-    .div-67 {
-      align-self: center;
-      display: flex;
-      flex-grow: 1;
-      flex-basis: 0%;
-      flex-direction: column;
-      margin: auto 0;
-    }
-    .div-68 {
-      color: #fff;
-      letter-spacing: 0.48px;
-      white-space: nowrap;
-      font: 700 16px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-68 {
-        white-space: initial;
-      }
-    }
-    .div-69 {
-      border-radius: 19.5px;
-      box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1),
-        -1px -2px 2px 0px rgba(0, 0, 0, 0.09),
-        -3px -4px 3px 0px rgba(0, 0, 0, 0.05),
-        -5px -6px 3px 0px rgba(0, 0, 0, 0.01),
-        -7px -10px 3px 0px rgba(0, 0, 0, 0),
-        4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      background-color: #fff;
-      display: flex;
-      margin-top: 29px;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 4px 80px 4px 20px;
-    }
-    @media (max-width: 991px) {
-      .div-69 {
-        padding-right: 20px;
-      }
-    }
-    .div-70 {
-      color: var(--Text, #292929);
-      flex-grow: 1;
-      white-space: nowrap;
-      margin: auto 0;
-      font: 400 12px Calibri, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-70 {
-        white-space: initial;
-      }
-    }
-    .div-71 {
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      letter-spacing: 0.36px;
-      white-space: nowrap;
-      border-radius: 19px;
-      background-color: var(--Section4, #00476b);
-      align-self: stretch;
-      aspect-ratio: 2.75;
-      padding: 8px 21px;
-      font: 700 12px/25px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-71 {
-        white-space: initial;
-        padding-left: 20px;
-      }
-    }
-    .div-72 {
-      color: #fff;
-      letter-spacing: 0.36px;
-      margin-top: 24px;
-      white-space: nowrap;
-      font: 400 12px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-72 {
-        white-space: initial;
-      }
-    }
-    .div-73 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.24px;
-      align-self: center;
-      margin-top: 98px;
-      white-space: nowrap;
-      font: 400 12px Arial, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-73 {
-        margin-top: 40px;
-        white-space: initial;
-      }
+    /* .accordion-button::after {
+      background-color: #14b1ff;
+      color: #079ef0;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      background-image: linear-gradient(blue, purple);
     } */

@@ -1,11 +1,14 @@
+
 .div-39 {
-    background-color: var(--Text, #292929);
+    background-color: var(--Text, #0c0c0c);
     align-self: stretch;
     display: flex;
     margin-top: 127px;
     width: 100%;
     flex-direction: column;
     padding: 41px 10px;
+    transition: all 0.3s ease;
+    
   }
   @media (max-width: 991px) {
     .div-39 {
@@ -15,7 +18,8 @@
     }
   }
   .div-39 a:hover{
-    font: 700 16px Calibri, sans-serif;
+    font: 700 35px Calibri, sans-serif;
+    transition: all 0.3s ease;
   }
   .div-39 a:focus{
     font: 700 18px Calibri, sans-serif;
@@ -191,13 +195,11 @@
     }
   }
   .div-53 {
-    align-self: center;
+    align-self: flex-start;
     display: flex;
     flex-grow: 1;
     flex-basis: 0%;
     flex-direction: column;
-    margin: auto 0;
-    margin-top: 0px;
   }
   .div-54 {
     color: var(--Background, #fff);
@@ -216,9 +218,7 @@
     aspect-ratio: 8.33;
     object-fit: contain;
     object-position: center;
-    width: 200px;
-    overflow: hidden;
-    align-self: center;
+    margin-left: 3.5rem;
     margin-top: 38px;
     color: white;
   }
@@ -302,11 +302,12 @@
     background-color: var(--Section4, #00476b);
     align-self: stretch;
     aspect-ratio: 2.75;
-    padding: 8px 21px;
+    padding: 3px 10px;
     font: 700 12px/25px Calibri, -apple-system, Roboto, Helvetica,
       sans-serif;
-    margin-right: 2px;
+    margin-right: 6px;
     cursor: pointer;
+    width: 5rem;
   }
   @media (max-width: 991px) {
     .div-59 {

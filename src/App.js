@@ -6,7 +6,7 @@ import ServicePage from './website/servicePage';
 import Header from './website/header';
 import Footer from "./website/footer";
 import Blog from './website/blog';
-import ContactUs from './website/contactUs';
+import ContactUs from './website/contactUs-bkp';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

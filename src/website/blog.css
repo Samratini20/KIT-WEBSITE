@@ -123,6 +123,7 @@
       flex-direction: column;
       align-items: start;
       padding: 0 20px;
+      margin-top: 5rem;
     }
     @media (max-width: 991px) {
       .bdiv-11 {
@@ -149,7 +150,14 @@
       display: flex;
       margin-top: 15px;
       gap: 12px;
-      padding: 18px 0;
+      padding: 5px 15px;
+      max-width: max-content;
+    }
+
+    .time_clock{
+      margin-top: 1.65rem;
+      margin-left: 5px;
+      scale: 1.25;
     }
     @media (max-width: 991px) {
       .bdiv-12 {
@@ -157,14 +165,7 @@
         flex-wrap: wrap;
       }
     }
-    .bimg-3 {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 24px;
-      overflow: hidden;
-      max-width: 100%;
-    }
+
     .bdiv-13 {
       color: var(--Section-1, #005e8d);
       letter-spacing: 0.72px;
@@ -215,25 +216,36 @@
       border-radius: 19px;
     
     } */
+
+    .bdiv-17{
+      margin-top: 5rem;
+    }
     .blogdiv-button {
-      position: relative;
-      color: var(--Background, #fff);
-      letter-spacing: 0.36px;
-      white-space: nowrap;
-      border-radius: 19px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       background-color: var(--Section-1, #005e8d);
-      margin-bottom: 209px;
-      margin-top: 30px;
-      justify-content: center;
-      padding: 10px 24px 10px 22px;
-      font: 700 12px/25px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
+      color: white;
+      border: none;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 5rem;
+      width: 10rem;
+      box-shadow: 0px 5px 10px 2px rgb(205, 204, 204);
+      transition: all 0.2s;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+
+    }
+    .blogdiv-button:hover{
       cursor: pointer;
+      transform: translateY(-2px);
+      transition: all 0.2s;
     }
   
 .bcolumn-2{
-  max-width: 25%;
+  max-width: 28%;
 }
 .bdiv-19 {
   border-radius: 25px 25px 25px 5px;
@@ -249,12 +261,16 @@
   border-radius: 50px;
   border: none;
   background-color: #fff;
+  width: 110%;
 }
 .bdiv-21{
   border-radius: 25px 25px 25px 5px;
   background-color: #e7f7ff;
   margin: 15px 0 20px 0;
   padding: 30px 0;
+}
+.bdiv-22, .bdiv-29{
+  color: #005e8d;
 }
 .bdiv-24{
   display: flex;

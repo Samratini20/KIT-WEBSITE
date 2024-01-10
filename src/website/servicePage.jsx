@@ -11,23 +11,6 @@ function ServicePage(props) {
   return (
     <>
       <div className="sdiv">
-        {/* <div className="div-2">
-          <div className="div-3">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f46a3395a58684b7a7a37d57be145cb33c1b586205f87107c340503679ba4dd?apiKey=9d6521b3bd494d48816871a061465c45&"
-              className="img"
-            />
-          </div>
-          <div className="div-4">Services</div>
-          <div className="div-5">
-            <div className="div-6"><a href="/" className='home'>Home</a></div>
-            <div className="div-7"><a href="/about" className='aboutUs'>About Us</a></div>
-            <div className="div-8"><a href="/services" className='services'>Services</a></div>
-            <div className="div-9"><a href="/blog" className='blog'>Blog</a></div>
-            <div className="div-10"><a href="/contact" className='contactUs'>Contact Us</a></div>
-          </div>
-        </div> */}
         <img
             loading="lazy"
             src={Img1}
@@ -36,10 +19,6 @@ function ServicePage(props) {
         <div className="sdiv-11">
           <div className="sdiv-12">
             <div className="sdiv-13">
-              {/* <div className="sdiv-14">
-                <div className="sdiv-15" />
-                <div className="sdiv-16" />
-              </div> */}
               <div className="sdiv-17">Powerful Solution For Your Business</div>
             </div>
             <div className="sdiv-18">
@@ -67,7 +46,6 @@ function ServicePage(props) {
           <img
             loading="lazy"
             src={serviceImg}
-            //srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4a7451af1abba26a27fd362a2e739db91b34d21fdb46ed8677fae2f44e6dc3ce?apiKey=9d6521b3bd494d48816871a061465c45&"
             className="simg-2"
           />
           <img
@@ -75,12 +53,6 @@ function ServicePage(props) {
               src={Img2}
               className="serviceimg-2"
             />
-          {/* <div className="sdiv-32" />
-            <img
-              loading="lazy"
-              src={Img2}
-              className="serviceimg-2"
-            />   */}
         </div>
         <div className="sdiv-33">
           <div className="sdiv-34">
@@ -112,8 +84,8 @@ function ServicePage(props) {
                     Success, Our Priority!&quot;
                   </div>
                   <div className="sdiv-42">
-                    <a href="https://www.facebook.com/learnbuildteach/"
-                        className="chatUs">Chat With Us</a>
+                    <button href="https://www.facebook.com/learnbuildteach/"
+                        className="chatwithusbutton">Chat With Us</button>
                   </div>
                 </div>
               </div>
@@ -121,6 +93,7 @@ function ServicePage(props) {
           </div>
         </div>
         <div className="sdiv-43">What We Provide</div>
+        <div className="service-card-container d-flex flex-column mx-5 px-5">
         <div className="sdiv-44">
           <div className="sdiv-45">
             <div className="scolumn">
@@ -131,16 +104,7 @@ function ServicePage(props) {
                   infrastructure, ensuring optimal performance and minimal
                   downtime..
                 </div>
-                {/* 1 */}
                 <div className="sdiv-49">
-                {/* Chat With Us
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-5"
-                  />
-                  <div className="sdiv-50" /> */}
-
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
                 </div>
@@ -153,16 +117,7 @@ function ServicePage(props) {
                   Custom software development for web and mobile applications,
                   tailored to your unique requirements.
                 </div>
-                {/* 2 */}
-                {/* changing 54 to 49 */}
                 <div className="sdiv-49">
-                  {/* <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-6"
-                  />
-                  <div className="sdiv-55" /> */}
-
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
                 </div>
@@ -179,15 +134,7 @@ function ServicePage(props) {
                   Build and optimize user-friendly websites that drive
                   conversions and enhance user experience.
                 </div>
-                {/* 3 */}
-                {/* changing 61 to 49 */}
                 <div className="sdiv-49">
-                  {/* <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-7"
-                  />
-                  <div className="sdiv-62" /> */}
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
                 </div>
@@ -200,15 +147,7 @@ function ServicePage(props) {
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
                 </div>
-                {/* 4 */}
-                {/* changing 66 to 49 */}
                 <div className="sdiv-49">
-                  {/* <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-8"
-                  />
-                  <div className="sdiv-67" /> */}
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
                 </div>
@@ -225,15 +164,7 @@ function ServicePage(props) {
                   Improve your online visibility and organic search rankings to
                   attract more website traffic.
                 </div>
-                {/* 5 */}
-                {/* changing 73 to 49 */}
                 <div className="sdiv-49">
-                  {/* <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-9"
-                  />
-                  <div className="sdiv-74" /> */}
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
                 </div>
@@ -246,24 +177,14 @@ function ServicePage(props) {
                   Create targeted ad campaigns on search engines and social
                   media platforms for instant visibility.
                 </div>
-                {/* 6 */}
-                {/* changing 78 to 49 */}
                 <div className="sdiv-49">
-
                   <img src={chat} className="schat" />
                   <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
-
-                  {/* <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/485a59bc2ea419144f3efadd7aefa2d6e76696ec0f28329be7e7ccfa56c543fc?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="simg-10"
-                  />
-                  <div className="sdiv-79" /> */}
-                  
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div className="sdiv-80">
           <div className="sdiv-81">
@@ -311,50 +232,6 @@ function ServicePage(props) {
             </div>
           </div>
         </div>
-        {/* <div className="div-91">
-          <div className="div-92">
-            <div className="div-93">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3c74fc2378d040de3dbfe4aebcdb841400b2d8283433cd1c68ea95856c577066?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="simg-14"
-              />
-              <div className="div-94">
-                <div className="div-95">Quick Links</div>
-                <div className="div-96">Home</div>
-                <div className="div-97">About Us</div>
-                <div className="div-98">Services</div>
-                <div className="div-99">Blog</div>
-                <div className="div-100">Contact Us</div>
-              </div>
-            </div>
-            <div className="div-101">
-              <div className="div-102">Company</div>
-              <div className="div-103">Terms & Conditions</div>
-              <div className="div-104">Privacy Policy</div>
-            </div>
-            <div className="div-105">
-              <div className="div-106">Follow Us On</div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81be97afd1ee084eae17e05f83cd06c7c07b1e2d38d4506073a6c3d5c61f549f?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="simg-15"
-              />
-            </div>
-            <div className="div-107">
-              <div className="div-108">Newsletter</div>
-              <div className="div-109">
-                <div className="div-110">Email Address</div>
-                <div className="div-111">Send</div>
-              </div>
-              <div className="div-112">
-                Subscribe to our mailing list and get updates to your email
-                inbox.
-              </div>
-            </div>
-          </div>
-          <div className="div-113">KIT Services © All Rights Reserved</div>
-        </div> */}
       </div>
     </>
   );

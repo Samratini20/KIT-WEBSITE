@@ -49,8 +49,8 @@ function Aboutus(props) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="adiv">
-        <div className="diva-1">
+      <div className="about-us-container">
+        <div className="diva-1" style={{marginTop:"6.8rem"}}>
           <div className="diva-2">
           <img
             loading="lazy"
@@ -58,7 +58,7 @@ function Aboutus(props) {
             className="aboutusImg-1"
           />
           </div>
-          <div className="diva-3">
+          <div className="diva-3" style={{lineHeight:"2rem"}}>
             <div className="aspan-1">
               We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant <br />
               and vivacious, and were founded to break that drab mould you were about to cast us in.
@@ -242,17 +242,18 @@ function Aboutus(props) {
                   <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div>
+                      <div className='testimonial-card-container'>
                       <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}>
                         <b>{item.head} </b>
                       <br />
                       <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
                         {item.description}
                       </span>
-                      <br /> <br /> <br />
-                      <div>
-                      <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}/>
-                      <b>{item.name} </b> <br />
-                      <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
+                      </div>
+                      <div className='testimonial-name-position'>
+                      <div className='mt-2 fw-bold w-25' style={{ fontFamily: 'Calibri, sans-serif',fontSize:'1.2rem'}}>
+                      {item.name} </div>
+                      <div className='mt-3' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
                         {item.designation}
                       </div>
                     </div>
@@ -265,69 +266,61 @@ function Aboutus(props) {
         </div>
         <div className="diva-6">
           <div className="diva-7">
-            <b>FaQ's</b><br />
-            <div className="diva-8">
-              <div className="faqdiv-1">
-                <div className='hideshow'>
-                <button onClick={toggleVisibility}>
-                  {isVisible ? '-' : '+'} 
-                </button>
-                <p>What services does your IT company provide?</p>
-                </div>
-                {isVisible && (
-                  <div>
-                  <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
-                        unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
-                  </p>
-                  </div>
-                )}
-              </div>
-              <div className="faqdiv-2">
-                <div className='hideshow'>
-                  <button onClick={toggleVisibility}>
-                    {isVisible ? '-' : '+'} 
-                  </button>
-                  <p>What technologies do you specialize in?</p>
-                </div>
-                {isVisible && (
-                  <div>
-                    <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
-                        unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
-                    </p>
-                  </div>
-                )}
-              </div>
-              <div className="faqdiv-3">
-                <div className='hideshow'>
-                  <button onClick={toggleVisibility}>
-                    {isVisible ? '-' : '+'}
-                  </button>
-                  <p>How do you ensure data security and confidentiality?</p>
-                </div>
-                {isVisible && (
-                  <div>
-                    <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
-                        unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
-                    </p>
-                  </div>
-                )}
-              </div>
-              <div className="faqdiv-4">
-                <div className='hideshow'>
-                  <button onClick={toggleVisibility}>
-                    {isVisible ? '-' : '+'}
-                  </button>
-                  <p>How can our business benefit from your IT services?</p>
-                </div>
-                {isVisible && (
-                  <div>
-                    <p>Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
-                        unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every projec
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
+            <br /><h3>FAQ's</h3><br />
+  <div class="accordion " id="accordionExample">
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header">
+      <button class="accordion-button bg-tranparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      What services does your IT company provide?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
+      unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      What technologies do you specialize in?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
+      unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      How do you ensure data security and confidentiality?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
+      unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-transparent">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      How can our business benefit from your IT services?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability<br /> 
+      unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
         <div className="diva-9">

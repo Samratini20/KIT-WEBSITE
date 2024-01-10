@@ -41,24 +41,7 @@ function HomePage(props) {
   const navigate = useNavigate();
   return (
     <>
-    {/* <Header/> */}
       <div className="homediv">
-        {/* <div className="div-2">
-          <img
-            loading="lazy"
-            src={logo}
-            //src="https://cdn.builder.io/api/v1/image/assets/TEMP/fc78b94585d1d66f6e013b0a79c60104bd2d3f5caf27cd4a28777d9f50007507?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="img"
-            
-          />
-          <div className="div-3">
-            <div className="div-4"><a href="/" className='home'>Home</a></div>
-            <div className="div-5"><a href="/about" className='aboutUs'>About Us</a></div>
-            <div className="div-6"><a href="/services" className='services'>Services</a></div>
-            <div className="div-7"><a href="/blog" className='blog'>Blog</a></div>
-            <div className="div-8"><a href="/contact" className='contactUs'>Contact Us</a></div>
-          </div>
-        </div> */}
         <div className="homediv-9">
           <div className="homediv-10">
             <div className="homecolumn">
@@ -76,7 +59,7 @@ function HomePage(props) {
                   <div className="homediv-16">
                     Your trusted partner in IT services and solutions. With a
                     passion for technology and a commitment to excellence, we
-                    have been providing cutting-edge IT services to business.
+                    have been providing <br />cutting-edge IT services to business.
                   </div>
                 </div>{" "}
                 <div className="homediv-17">
@@ -85,10 +68,8 @@ function HomePage(props) {
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/1459f01c8e74237bd4d4c6a9a0aa5ee82a63110b4fad46fb2f7f1f33f8137d6b?apiKey=9d6521b3bd494d48816871a061465c45&"
                     className="homeimg-2"
                   />{" "}
-                  {/* <div className="homediv-18"> */}
-                    <button className='homediv-18'color="inherit" onClick={()=> navigate('/services')}>Get Started</button>
-                  {/* </div> */}
-                </div>
+                    <button className='homediv-18' onClick={()=> navigate('/services')}>Get Started</button>
+                </div>  
               </div>
             </div>{" "}
             <div className="homecolumn-2">
@@ -140,7 +121,7 @@ function HomePage(props) {
               <div className="homediv-29">
                 <div className="homediv-30">What Clients Says</div>{" "}
                 <div className="homediv-31">
-                <Carousel renderArrowLeft={()=>null} renderArrowRight={()=>null} renderDots={()=>null}>
+                <Carousel  renderArrowLeft={()=>null} renderArrowRight={()=>null} renderDots={()=>null}>
       {data.map((item, i) => (
         <>
         <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
@@ -152,15 +133,6 @@ function HomePage(props) {
         </>
       ))}
     </Carousel>
-                  {/* <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
-                    &quot;Design Rank Impress&quot;
-                    <br />
-                  </span>
-                  <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
-                    We prioritize your satisfaction and work closely with you to
-                    understand your specific needs, ensuring that our services
-                    are tailored to your requirements.
-                  </span> */}
                 </div>{" "}
                 <div className="homediv-32">
                 <Carousel renderArrowLeft={()=>null} renderArrowRight={()=>null} renderDots={()=>null}>
@@ -197,20 +169,13 @@ function HomePage(props) {
         <div className="homediv-34">
           <div className="homediv-35">
             <div className="homecolumn-7">
-            {/* <img
-            loading="lazy"
-            src={sandeep}
-            className="homeimg-7"
-          /> */}
-              {/* <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/aadc1d509830739e95020b77184df8da17737721df103e1e3040007b920e2f7d?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="img-7"
-                /> */}
             </div>{" "}
             <div className="homecolumn-8">
               <div className="homediv-36">
-                <div className="homediv-37">Sandeep, CEO</div>{" "}
+                <div className="homediv-37">
+                <p class="js-nametag">Sandeep Banvasi, CEO</p>
+                <p class="js-nametag">Aravind Kumar, Founder</p>
+                </div>{" "}
                 <div className="homediv-38">
                   Our team consists of highly skilled professionals with
                   extensive experience in the IT industry. We stay up-to-date
@@ -226,7 +191,6 @@ function HomePage(props) {
             </div>
           </div>
         </div>{" "}
-        
       </div>
       </>
   );

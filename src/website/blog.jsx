@@ -3,14 +3,24 @@ import './blog.css'
 import { useNavigate } from "react-router-dom";
 
 
+
 function Blog(props) {
   const [searchItem, setSearchItem] = useState('');
+
 
   const handleInputChange = (e) => {
     const value = e.target.value;
     setSearchItem(value);
     //onSearch(value);
+    
   };
+
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.toLocaleString('en-us',{month:'short'})
+  const time = date.getHours();
+  const min = date.getMinutes();
+  const fullyear = date.getUTCFullYear();
   const navigate = useNavigate();
   return (
     <>
@@ -25,13 +35,9 @@ function Blog(props) {
                   className="bimg-2"
                 />
                 <div className="bdiv-12">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/5235edf041598786ff23a1fab45d9159ba4658021081cd899d1397068f18097a?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-3"
-                  />
+                <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
-                    Dec 6, 2023 - 23:54 - Latest News
+                   {month} {day}, {fullyear} - {time}:{min} - Latest News 
                   </div>
                 </div>
                 <div className="bdiv-14">
@@ -72,8 +78,9 @@ function Blog(props) {
                     />
                   </div>
                 </div>{" "}
-                <div className="bdiv-21">
-                  <div className="bdiv-22">Recent Post</div>{" "}
+                <div className="bdiv-21 px-4">
+                  <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
+                  <hr />
                   <div className="bdiv-23" />{" "}
                   <div className="bdiv-24">
                     <img
@@ -82,7 +89,7 @@ function Blog(props) {
                       className="bimg-5"
                     />{" "}
                     <div className="bdiv-25">
-                      <div className="bdiv-26">
+                      <div className="bdiv-26 fw-bold">
                         Facebook Messenger Turns End-to-End Encryption on by
                         Default for Individual Chats
                       </div>{" "}
@@ -92,8 +99,9 @@ function Blog(props) {
                     </div>
                   </div>
                 </div>{" "}
-                <div className="bdiv-28">
-                  <div className="bdiv-29">Categories</div>{" "}
+                <div className="bdiv-28 px-4">
+                  <div className="bdiv-29 fw-bold fs-5">Categories</div>{" "}
+                  <hr />
                   <div className="bdiv-30" />{" "}
                   <div className="bdiv-31">
                     <ul>
@@ -126,7 +134,7 @@ function Blog(props) {
                     className="bimg-6"
                   />{" "}
                   <div className="bdiv-38">
-                    <div className="bdiv-39">
+                    <div className="bdiv-39 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}
@@ -144,7 +152,7 @@ function Blog(props) {
                     className="bimg-7"
                   />{" "}
                   <div className="bdiv-42">
-                    <div className="bdiv-43">
+                    <div className="bdiv-43 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}
@@ -162,7 +170,7 @@ function Blog(props) {
                     className="bimg-8"
                   />{" "}
                   <div className="bdiv-46">
-                    <div className="bdiv-47">
+                    <div className="bdiv-47 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}
@@ -184,7 +192,7 @@ function Blog(props) {
                     className="bimg-9"
                   />{" "}
                   <div className="bdiv-52">
-                    <div className="bdiv-53">
+                    <div className="bdiv-53 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}
@@ -202,7 +210,7 @@ function Blog(props) {
                     className="bimg-10"
                   />{" "}
                   <div className="bdiv-56">
-                    <div className="bdiv-57">
+                    <div className="bdiv-57 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}
@@ -220,7 +228,7 @@ function Blog(props) {
                     className="bimg-11"
                   />{" "}
                   <div className="bdiv-60">
-                    <div className="bdiv-61">
+                    <div className="bdiv-61 fw-bold">
                       Facebook Messenger Turns End-to-End Encryption on by
                       Default for Individual Chats
                     </div>{" "}

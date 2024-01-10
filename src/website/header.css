@@ -15,6 +15,7 @@
   position: fixed;
   z-index: 1000;
   background-color: white;
+  overflow-y: hidden;
 }
 @media (max-width: 991px) {
   .div-2 {
@@ -23,13 +24,8 @@
   }
 }
 .img {
-  aspect-ratio: 0.88;
-  object-fit: contain;
-  object-position: center;
-  width: 58px;
-  overflow: hidden;
-  max-width: 100%;
-  margin-left: 2rem;
+  margin-left: 4rem;
+  scale: 2.8;
 }
 .div-3 {
   align-self: center;

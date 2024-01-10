@@ -1,96 +1,7 @@
-  /* .div {
-    background-color: #fff;
-    display: flex;
-    padding-top: 12px;
-    flex-direction: column;
-  } */
-  /* .div-2 {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    align-self: center;
-    display: flex;
-    margin-left: 0;
-    width: 100%;
-    max-width: 1259px;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 10px 5px 15px;
-  }
-  @media (max-width: 991px) {
-    .div-2 {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
-  }
-  .img {
-    aspect-ratio: 0.88;
-    object-fit: contain;
-    object-position: center;
-    width: 58px;
-    overflow: hidden;
-    max-width: 100%;
-  }
-  .div-3 {
-    align-self: center;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    margin: auto 0;
-    padding: 0 20px;
-    
-  }
-  .div-3 a{
-    text-decoration: none;
-    color: black;
-  }
-  @media (max-width: 991px) {
-    .div-3 {
-      max-width: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  .div-4 {
-    color: #14b1ff;
-    align-self: start;
-    white-space: nowrap;
-    font: 700 18px Calibri, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-4 {
-      white-space: initial;
-    }
-  }
-  .div-5 {
-    color: var(--Text, #292929);
-    align-self: start;
-    font: 400 18px Calibri, sans-serif;
-  }
-  .div-6 {
-    color: var(--Text, #292929);
-    align-self: start;
-    font: 400 18px Calibri, sans-serif;
-  }
-  .div-7 {
-    color: var(--Text, #292929);
-    align-self: stretch;
-    font: 400 18px Calibri, sans-serif;
-  }
-  .div-8 {
-    color: var(--Text, #292929);
-    align-self: start;
-    white-space: nowrap;
-    font: 400 18px Calibri, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-8 {
-      white-space: initial;
-    }
-  } */
   .homediv-9 {
     align-self: stretch;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 110px;
   }
   @media (max-width: 991px) {
     .homediv-9 {
@@ -185,7 +96,7 @@
   }
   .homediv-15:first-child{
      animation: anim 5s linear infinite;
-               
+
   }
 
   @keyframes anim {
@@ -281,19 +192,17 @@
  }
 
   .homediv-18 {
-    position: relative;
-    color: var(--Background, #fff);
-    letter-spacing: 0.36px;
-    white-space: nowrap;
-    border-radius: 19px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: var(--Section-1, #005e8d);
-    margin-bottom: 209px;
-    justify-content: center;
-    padding: 13px 54px 13px 22px;
-    font: 700 12px/25px Calibri, -apple-system, Roboto, Helvetica,
-      sans-serif;
-    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 12px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5rem;
+    width: 10rem;
+    box-shadow: 0px 5px 10px 2px rgb(205, 204, 204);
+    transition: all 0.2s;
+    margin-left: -3.5rem;
   }
   @media (max-width: 991px) {
     .homediv-18 {
@@ -301,6 +210,13 @@
       margin-bottom: 40px;
       padding: 0 20px;
     }
+  }
+
+  .homediv-18:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: all 0.2s;
+    background-color: var(--Section-1, #005e8d);
   }
   .homecolumn-2 {
     display: flex;
@@ -315,22 +231,7 @@
       width: 100%;
     }
   }
-  /* .homeimg-3 {
-    aspect-ratio: 1.19;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
-    overflow: hidden;
-    margin: auto 0;
-  }
-  @media (max-width: 991px) {
-    .homeimg-3 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  } */
+
   .homeimg-3 {
     aspect-ratio: 1.19;
     object-fit: contain;
@@ -351,11 +252,7 @@
     44%{transform:translateX(0%);}
     66%{transform:translateX(0%);}
     100%{transform:translateX(-100%);}
-    
-    /* 77%{transform:translateX(-200%);} */
-    /* 100%{transform:translateX(-200%);} */
-
-  }
+    }
  
   
   @media (max-width: 991px) {
@@ -417,7 +314,6 @@
   .homediv-22 {
     display: flex;
     flex-direction: column;
-    /* fill: url(<path-to-image>), lightgray 50% / cover no-repeat; */
     overflow: hidden;
     position: relative;
     display: flex;
@@ -590,7 +486,7 @@
   .homediv-32 {
     color: var(--Text, #292929);
     letter-spacing: 0.36px;
-    margin: 19px 0 0 50px;
+    margin: 1.5rem 0 0 1.5rem;
     font: 400 12px/30px Calibri, -apple-system, Roboto, Helvetica,
       sans-serif;
   }
@@ -695,6 +591,7 @@
       background-image: url(../assets/sandeep.jpg);
       object-position: bottom;
       background-repeat: no-repeat;
+      background-position: center;
     }
   
     75%,100% {
@@ -702,8 +599,8 @@
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
       border-bottom-left-radius: 2%;
-      transform: translateX(2rem);
-      background-image: url(../assets/logo.jpg);
+      transform: translateX(2.5rem);
+      background-image: url(../assets/logo.PNG);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -765,7 +662,7 @@
     color: var(--Text, #292929);
     letter-spacing: 0.36px;
     margin-top: 50px;
-    font: 400 12px/30px Calibri, -apple-system, Roboto, Helvetica,
+    font: 400 16px/30px Calibri, -apple-system, Roboto, Helvetica,
       sans-serif;
   }
   @media (max-width: 991px) {
@@ -774,4 +671,37 @@
       margin-top: 40px;
     }
   }
+  /* SANDEEP, CEO and ARAVIND KUMAR, FOUNDER */
+  div{
+    posititon: relative;
+  }
+  .js-nametag{
+    position: absolute;
+    margin-left: auto;
+    font-size: 3rem;
+    text-shadow: 0px 0px 5px 5px grey;
+  }
+  .js-nametag:nth-child(1){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+  }
   
+  .js-nametag:nth-child(2){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes fade{
+      0%,50% {
+        opacity: 0;
+  }
+      75%,100%{
+        opacity: 1;
+    }
+  }
