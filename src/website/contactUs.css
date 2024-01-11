@@ -49,6 +49,10 @@
   color: #005e8d;
   line-height: 2.1;
 }
-.map-link a{
+a{
   color: #005e8d;
+}
+.contactUsicons{
+  margin-right: 1rem;
+  scale: 1.2;
 }

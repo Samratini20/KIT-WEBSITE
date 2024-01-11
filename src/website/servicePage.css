@@ -622,15 +622,12 @@
     
     }
 
-        /* hover */
-
         .sdiv-49:hover {
           display: inline-block;
           flex-direction: row;
           overflow: hidden;
           position: relative;
           display: flex;
-          /* aspect-ratio: 0.9166666666666666; */
           width: 130px;
           height: 45px;
           max-width: 100%;
@@ -642,13 +639,9 @@
           transition-timing-function: ease-out;
           
         }
-        .schat{
-          height: 25px;
-          width: 25px;
-          margin-left: 10px;
-          display: inline-block;
-          margin-top: 15px;
-          box-sizing: border-box;
+        .chatIcon{
+          margin-left: 1rem;
+          cursor: pointer;
         }
         .chattext{
           margin-left: 5px;

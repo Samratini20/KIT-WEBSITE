@@ -1,9 +1,7 @@
 import * as React from "react";
-// import './servicePage.css';
 import serviceImg from '../assets/serviceImg.jpg'
 import Img1 from '../assets/servicesImg_1.jpg';
 import Img2 from '../assets/servicesImg_2.jpg';
-import chat from '../assets/chatbox.png'
 import './servicePage.css';
 
 const quality = 80;
@@ -84,8 +82,8 @@ function ServicePage(props) {
                     Success, Our Priority!&quot;
                   </div>
                   <div className="sdiv-42">
-                    <button href="https://www.facebook.com/learnbuildteach/"
-                        className="chatwithusbutton">Chat With Us</button>
+                    <a href="tel:919686112338" style={{backgroundColor:'#005e8d'}}
+                        className="chatwithusbutton">Chat With Us</a>
                   </div>
                 </div>
               </div>
@@ -105,8 +103,8 @@ function ServicePage(props) {
                   downtime..
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
@@ -118,8 +116,8 @@ function ServicePage(props) {
                   tailored to your unique requirements.
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
@@ -135,8 +133,8 @@ function ServicePage(props) {
                   conversions and enhance user experience.
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
@@ -148,8 +146,8 @@ function ServicePage(props) {
                   strategic social media campaigns.
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
@@ -165,8 +163,8 @@ function ServicePage(props) {
                   attract more website traffic.
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
@@ -178,8 +176,8 @@ function ServicePage(props) {
                   media platforms for instant visibility.
                 </div>
                 <div className="sdiv-49">
-                  <img src={chat} className="schat" />
-                  <a className="chattext" href="https://www.facebook.com/learnbuildteach/"> Chat With Us</a>
+                  <i class="chatIcon fa-message fa-regular mt-3"></i>
+                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
                 </div>
               </div>
             </div>
