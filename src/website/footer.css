@@ -18,8 +18,9 @@
     }
   }
   .div-39 a:hover{
-    font: 700 35px Calibri, sans-serif;
-    transition: all 0.3s ease;
+    /* font: 700 25px Calibri, sans-serif;
+    transform: translateY(0.2rem);
+    transition: all 0.3s ease; */
   }
   .div-39 a:focus{
     font: 700 18px Calibri, sans-serif;

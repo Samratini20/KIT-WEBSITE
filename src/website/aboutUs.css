@@ -10,6 +10,9 @@
     .aboutusImg-2{
         max-width: 100%;
     }
+    .diva-1{
+      overflow-x: hidden;
+    }
     .diva-3{
         width: 100%;
         margin: 30px 0 0 100px;
@@ -24,6 +27,8 @@
         margin-bottom: 30px;
         line-height: 2;
         word-spacing: 4px;
+        /* width: min-content; */
+        overflow-x: hidden;
     }
     .vision{
         width: 100%;
@@ -426,6 +431,7 @@
       width: 100vw;
       object-fit: cover;
       object-position: center;
+      overflow-x: hidden;
     }
     .adiv-26 {
       position: relative;
@@ -782,13 +788,91 @@
     .testimonial-name-position{
       margin-left: 2rem;
     }
+
+    .rec-arrow-left,.rec-arrow-right{
+      background-color: transparent !important;
+      color: lightgray !important;
+      line-height: 35px !important;
+    }
+    /*Accordion styling here*/
     .accordion-item{
       border: none;
       outline: none;
     }
-    /* .accordion-button::after {
-      background-color: #14b1ff;
-      color: #079ef0;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-      background-image: linear-gradient(blue, purple);
-    } */
+    .accordion button{
+      background-color: transparent;
+    }
+
+    /*Cards animation code here*/
+    .card-container {
+      height: 78vh;
+      width: 60vw;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 0.65fr 1fr;
+      grid-template-rows: 15% 15% 35% 35%;
+      margin-top: 5px;
+      margin-left: 2rem;
+  }
+    
+  .cards {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+  }
+  .card1 {
+      grid-row: 1 / 5;
+      grid-column: 3 / 4;
+      background-image: url(../assets/1.png);
+      transition: all 4s;
+      transform-origin: bottom right;
+  }
+  
+  .card2 {
+      grid-column: 2 / 3;
+      grid-row: 2 / -1;
+      background-image: url(../assets/2.png);
+      transition: all 4s;
+      transform-origin: bottom left;
+  }
+  
+  .card3 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      background-image: url(../assets/3.png);
+      transition: all 4s;
+      transform-origin: top right;
+  }
+  
+  .card4 {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      background-image: url(../assets/4.png);
+      transition: all 4s;
+      transform-origin: top left;
+  }
+  
+  .card1.swap {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      transform: translate(0, 0);
+  }
+  
+  .card2.swap {
+      grid-row: 1 / 5;
+      grid-column: 3 / 4;
+      transform: translate(0, 0);
+  }
+  
+  .card3.swap {
+      grid-column: 2 / 3;
+      grid-row: 2 / -1;
+      transform: translate(0, 0);
+  }
+  
+  .card4.swap {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      transform: translate(0, 0);
+  }

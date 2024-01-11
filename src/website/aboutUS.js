@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
 import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
@@ -42,11 +42,23 @@ const data= [
 ];
 
 function Aboutus(props) {  
-  const [isVisible, setIsVisible] = useState(false);
-  const toggleVisibility = () => {
-      setIsVisible(!isVisible);
-    };
   const navigate = useNavigate();
+
+  const [swap, setSwap] = useState(false);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSwap(prevSwap => !prevSwap);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  if(document.getElementsByClassName('rec-arrow')[0]){
+    document.getElementsByClassName('rec-arrow')[0].innerText = '';
+    document.getElementsByClassName('rec-arrow-right')[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
+    document.getElementsByClassName('rec-arrow-left')[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
+  }
   return (
     <>
       <div className="about-us-container">
@@ -79,37 +91,12 @@ function Aboutus(props) {
         </div>
         <div className="adiv-9">
           <div className="adiv-10">
-            <div className="acolumn">
-              <div className="adiv-11">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba188ee910654ea0119f304669a81eb1653777e56bcb137f84377687af6d00d4?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="aimg-2"
-                />
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4def1bf277fb08a4e6ca75c3b51f7aebc9d371dd2031953407f7d2c67f34a3ff?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="aimg-3"
-                />
-              </div>
-            </div>
-            <div className="acolumn-2">
-              <div className="adiv-12">
-                <div className="adiv-13">
-                  <div className="acolumn-3">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bb8a664f5386614622a386791b86c42674c8c92754f460da6222f6200be5106?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="aimg-4"
-                    />
-                  </div>
-                  <div className="acolumn-4">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8bedf2309a54c1062a11b1cf577ad0a04846a2f0cf8e7dbaf8b60497dd255e2c?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="aimg-5"
-                    />
-                  </div>
+          <div className={`card-container ${swap ? 'swap' : ''}`}>
+        <div className={`cards card1 ${swap ? 'swap' : ''}`}></div>
+        <div className={`cards card2 ${swap ? 'swap' : ''}`}></div>
+        <div className={`cards card3 ${swap ? 'swap' : ''}`}></div>
+        <div className={`cards card4 ${swap ? 'swap' : ''}`}></div>
+      </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
                       <div className="adiv-15">
@@ -162,10 +149,8 @@ function Aboutus(props) {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  </div>              
+  
           </div>
         </div>
         <div className="adiv-25">
@@ -267,10 +252,10 @@ function Aboutus(props) {
         <div className="diva-6">
           <div className="diva-7">
             <br /><h3>FAQ's</h3><br />
-  <div class="accordion " id="accordionExample">
+  <div class="accordion" id="accordionExample">
   <div class="accordion-item bg-transparent">
     <h2 class="accordion-header">
-      <button class="accordion-button bg-tranparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button collapsed bg-tranparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       What services does your IT company provide?
       </button>
     </h2>

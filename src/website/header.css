@@ -41,7 +41,9 @@
   text-decoration: none;
   color: black;
   
+  
 }
+
 /* .div-3 a:hover{
   font: 700 18px Calibri, sans-serif;
 } */
@@ -49,6 +51,15 @@
   font: 700 18px Calibri, sans-serif;
   color: #14B1FF;
 }
+.active{
+  
+  color: #14B1FF;
+}
+.change.active{
+  
+  color: #14B1FF;
+}
+
 @media (max-width: 991px) {
   .div-3 {
     max-width: 100%;
@@ -62,6 +73,7 @@
   white-space: nowrap;
   font: 400 18px Calibri, sans-serif;
 }
+
 @media (max-width: 991px) {
   .div-4 {
     white-space: initial;
