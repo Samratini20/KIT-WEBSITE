@@ -65,10 +65,17 @@ function ContactUs(props) {
                   <span>Contact Details</span>
                   <div className="fs-6 mx-4">
                     <div className="mt-3">
+<<<<<<< HEAD
                     <i class="fa-solid fa-location-dot contactUsicons"></i>
                       Company Address</div>
                     <div className="mt-1 fw-normal">
                       23/1, Serenity Spaces, 1st Main Road, <br />
+=======
+                      <i class="fa-solid fa-location-dot contactUsicons"></i>
+                      Company Address</div>
+                    <div className="mt-1 fw-normal">
+                      23/1, Serenity Spaces, 1st Main Road, <br/>
+>>>>>>> ed1909646047603254dc9d49a41130d75f9fb83f
                       Channama Layout, EPIP, Bangalore - 560048
                     </div>
                     <div className="fw-normal mt-1 map-link">
@@ -77,6 +84,7 @@ function ContactUs(props) {
                   </div>
                   <div className="fs-6 mx-4">
                     <div className="fw-bold mt-4">
+<<<<<<< HEAD
                     <i class="fa-solid fa-phone contactUsicons"></i>
                       Call Us</div>
                     <div className="mt-1 fw-normal text-decoration-underline">
@@ -97,6 +105,26 @@ function ContactUs(props) {
                       Customer Support</div>
                     <div className="mt-1 fw-normal text-decoration-underline">
                        support@kitservices.in
+=======
+                     <i class="fa-solid fa-phone contactUsicons"></i>
+                      Call Us</div>
+                    <div className="mt-1 fw-normal">
+                      <a href="tel:919686112338"> +91- 9686112338</a>
+                    </div>
+                  </div>
+                  <div className="fs-6 mx-4">
+                    <div className="fw-bold mt-4">Email Us</div>
+                    <div className="mt-1 fw-normal">
+                    <i class="fa-regular fa-envelope contactUsicons"></i>
+                    <a href="mailto: hello@kitservices.in"> hello@kitservices.in</a>
+                    </div>
+                  </div>
+                  <div className="fs-6 mx-4">
+                    <div className="fw-bold mt-4">Customer Support</div>
+                    <div className="mt-1 fw-normal">
+                      <i class="fa-solid fa-headset contactUsicons"></i>
+                      <a href="mailto:support@kitservices.in">support@kitservices.in</a>
+>>>>>>> ed1909646047603254dc9d49a41130d75f9fb83f
                     </div>
                   </div>
                 </div>
