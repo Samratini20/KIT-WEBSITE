@@ -236,7 +236,7 @@ function Aboutus(props) {
                       </span>
                       </div>
                       <div className='testimonial-name-position'>
-                      <div className='mt-2 fw-bold w-25' style={{ fontFamily: 'Calibri, sans-serif',fontSize:'1.2rem'}}>
+                      <div className='mt-2 fw-bold' style={{ fontFamily: 'Calibri, sans-serif',fontSize:'1.2rem'}}>
                       {item.name} </div>
                       <div className='mt-3' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
                         {item.designation}

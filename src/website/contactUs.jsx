@@ -1,44 +1,109 @@
-import React from "react";
-import { useForm } from 'react-hook-form';
-import './contactUs.css';
-import ContactUsImg from '../assets/contactUs_img.png';
+import * as React from "react";
+import './contactUs.css'
+import ContactUS_img from '../assets/contactUs_img.png'
+import ContactUS_img_1 from '../assets/contact-circle-1.png'   
+import ContactUS_img_2 from '../assets/contact-circle-2.png'  
+import ContactUS_img_3 from '../assets/contact-circle-3.png'   
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ContactUs = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-
-  const onSubmit = (data) => {
-    // Handle form submission here, e.g., send data to backend or process it
-    console.log(data); // Output form data to console (for testing purposes)
-  };
-
+function ContactUs(props) {
   return (
-    <div className="contact-us-container">
-      <div className="contact-us-content">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" {...register("name", { required: true })} />
-            {errors.name && <span className="error-message">Name is required</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
-            {errors.email && <span className="error-message">Valid email is required</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" {...register("message", { required: true })}></textarea>
-            {errors.message && <span className="error-message">Message is required</span>}
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      <div className="contact-us-image">
-        <img src={ContactUsImg} alt="Contact Us" />
-      </div>
-    </div>
-  );
-};
+      <div className="d-flex col-12">
+          <div className="getIntouch d-flex flex-column col-4">
+            <span className="fw-bold">Get in touch</span>
+            <hr/>
+            <span className="fw-bold fs-2">Contact</span>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 my-4">
+                  <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" id="name" placeholder="Your Name"/>
+                </div>
+                <div class="form-group col-12 my-4">
+                  <span for="emailID" className="fs-5">Email - ID <span class="text-danger ml-2">*</span></span>
+                  <input type="email" class="form-control p-0 pt-4 py-2 underlined-input" id="emailId" placeholder="Your Email"/>
+                </div>
+                <div class="form-group col-12 my-4">
+                  <span for="subject" className="fs-5">Subject <span class="text-danger ml-2">*</span></span>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" id="subject" placeholder="Subject"/>
+                </div>
+                <div class="form-group col-12 my-4">
+                  <span for="websiteURL" className="fs-5">Website URL <span class="text-danger ml-2">*</span></span>
+                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" id="websiteURL" placeholder="Website URL"/>
+                </div>
+                <div class="form-group col-12 my-4">
+                  <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>
+                  <textarea rows={5} cols={10} class="form-control mt-4" id="contact-message" placeholder="Type here ......."/>
+                </div>
+              </div>
 
+                <button type="submit" className="btn rounded-5 py-2 mt-5 send-message fw-bold px-4">Send Message</button>
+            </form>
+          </div>
+          <div className="contact-img mx-5">
+              <img 
+                loading="lazy"
+                src={ContactUS_img_1} 
+                className="contact-img-1 z-n1"
+                />
+                <img 
+                loading="lazy"
+                src={ContactUS_img_3} 
+                className="contact-img-2"
+                />
+                <img 
+                loading="lazy"
+                src={ContactUS_img_2} 
+                className="contact-img-2"
+                />
+              <img 
+                loading="lazy"
+                src={ContactUS_img} 
+                className="img-1"
+                />
+                <div className="contactDetails">
+                  <span>Contact Details</span>
+                  <div className="fs-6 mx-4">
+                    <div className="mt-3">
+                    <i class="fa-solid fa-location-dot contactUsicons"></i>
+                      Company Address</div>
+                    <div className="mt-1 fw-normal">
+                      23/1, Serenity Spaces, 1st Main Road, <br/>
+
+                      Channama Layout, EPIP, Bangalore - 560048
+                    </div>
+                    <div className="fw-normal mt-1 map-link">
+                      <a href=" https://maps.app.goo.gl/UXbpqWW2f7iKGuqC8" target="_blank">View Map</a>
+                    </div>
+                  </div>
+                  <div className="fs-6 mx-4">
+                    <div className="fw-bold mt-4">
+                    <i class="fa-solid fa-phone contactUsicons"></i>
+                      Call Us</div>
+                    <div className="mt-1 fw-normal text-decoration-underline">
+                       +91- 9686112338
+                    </div>
+                  </div>
+                  <div className="fs-6 mx-4">
+                    <div className="fw-bold mt-4">
+                    <i class="fa-regular fa-envelope contactUsicons"></i>
+                      Email Us</div>
+                    <div className="mt-1 fw-normal text-decoration-underline">
+                       hello@kitservices.in
+                    </div>
+                  </div>
+                  <div className="fs-6 mx-4">
+                    <div className="fw-bold mt-4">
+                    <i class="fa-solid fa-headset contactUsicons"></i>
+                      Customer Support</div>
+                    <div className="mt-1 fw-normal text-decoration-underline">
+                       support@kitservices.in</div>
+                    <div className="mt-1 fw-normal">
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+      );
+      }
 export default ContactUs;
