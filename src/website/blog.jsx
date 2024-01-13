@@ -41,43 +41,16 @@ function Blog(props) {
                   </div>
                 </div>
                 <div className="bdiv-14">
-                  Google Launches Advanced AI Model 'Gemini' Globally,
-                  Integrated into Bard and Pixel 8 Pro Smartphones
+                  About Company
                 </div>
                 <div className="bdiv-15">
-                  Unlock the future with Google's revolutionary AI, Gemini!
-                  Integrated into Bard and Pixel 8 Pro, it promises unparalleled
-                  performance. CEO Sundar Pichai's reveal sparks early
-                  excitement in Search experiences. Developers access Gemini
-                  Pro, while Bard Advanced unveils cutting-edge capabilities.
-                  Explore how Gemini redefines language models, surpassing human
-                  benchmarks. The AI revolution has arrived – don't miss
-                  out!&quot;
+                  Details
                 </div>{" "}
                 <button className='blogdiv-button'color="inherit" onClick={()=> navigate('/blog')}>Read More</button>  
-                {/* <div className="bdiv-16">Read More</div> */}
               </div>
             </div>{" "}
             <div className="bcolumn-2">
-              <div className="bdiv-17">
-                <div className="bdiv-18">
-                  <div className="bdiv-19">
-                    <div className="bdiv-20">
-                    <input
-                      type="text"
-                      placeholder="Search . . ."
-                      value={searchItem}
-                      onChange={handleInputChange}
-                      className='searchBlog'
-                    />
-                    </div>{" "}
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/5f43f3ce2c7bd68354f01cdee494ab674a0ec627ebf2b3841b299220c33fb13b?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="bimg-4"
-                    />
-                  </div>
-                </div>{" "}
+              <div className="bdiv-17">              
                 <div className="bdiv-21 px-4">
                   <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
                   <hr />
@@ -98,27 +71,7 @@ function Blog(props) {
                       </div>
                     </div>
                   </div>
-                </div>{" "}
-                <div className="bdiv-28 px-4">
-                  <div className="bdiv-29 fw-bold fs-5">Categories</div>{" "}
-                  <hr />
-                  <div className="bdiv-30" />{" "}
-                  <div className="bdiv-31">
-                    <ul>
-                      <li>Technology Trends</li>
-                    </ul>
-                  </div>{" "}
-                  <div className="bdiv-32">
-                    <ul>
-                      <li>Product Updates and Releases</li>
-                    </ul>
-                  </div>{" "}
-                  <div className="bdiv-33">
-                    <ul>
-                      <li>Industry Insights and Analysis</li>
-                    </ul>
-                  </div>
-                </div>
+                </div>{" "}                
               </div>
             </div>
           </div>

@@ -80,25 +80,20 @@ function ContactUs(props) {
                     <div className="fw-bold mt-4">
                     <i class="fa-solid fa-phone contactUsicons"></i>
                       Call Us</div>
-                    <div className="mt-1 fw-normal text-decoration-underline">
-                       +91- 9686112338
+                    <div className="mt-1 fw-normal">
+                    <a href="tel:919686112338" target="_blank">
+                    +91- 9686112338
+                    </a>
                     </div>
                   </div>
                   <div className="fs-6 mx-4">
                     <div className="fw-bold mt-4">
                     <i class="fa-regular fa-envelope contactUsicons"></i>
                       Email Us</div>
-                    <div className="mt-1 fw-normal text-decoration-underline">
-                       hello@kitservices.in
-                    </div>
-                  </div>
-                  <div className="fs-6 mx-4">
-                    <div className="fw-bold mt-4">
-                    <i class="fa-solid fa-headset contactUsicons"></i>
-                      Customer Support</div>
-                    <div className="mt-1 fw-normal text-decoration-underline">
-                       support@kitservices.in</div>
                     <div className="mt-1 fw-normal">
+                    <a href="mailto:info@kitservices.in" target="_blank">
+                    info@kitservices.in
+                    </a>
                     </div>
                   </div>
                 </div>

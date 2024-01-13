@@ -2,13 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
 import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
-//import Carousel from 'framer-motion-carousel'
-// import { counter } from "@fortawesome/fontawesome-svg-core";
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
-// import Carousel from 'react-elastic-carousel'
-import Carousel from "@itseasy21/react-elastic-carousel";
-
 
 const data= [
   {
@@ -215,40 +210,7 @@ function Aboutus(props) {
             src={aboutusImg_2}
             className="aboutusImg-2"
           />
-        </div>
-        <div className="adiv-40">
-          <div className="adiv-41">Testimonials</div>
-          <div className="adiv-42" />
-          <div className="adiv-43">What Clients Says</div>
-          <div className="adiv-44">
-            <div className="adiv-45">
-              <div className="acolumn-6">
-                <div className="">
-                  <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
-                  {data.map((item, i) => (
-                    <div>
-                      <div className='testimonial-card-container'>
-                      <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}>
-                        <b>{item.head} </b>
-                      <br />
-                      <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
-                        {item.description}
-                      </span>
-                      </div>
-                      <div className='testimonial-name-position'>
-                      <div className='mt-2 fw-bold' style={{ fontFamily: 'Calibri, sans-serif',fontSize:'1.2rem'}}>
-                      {item.name} </div>
-                      <div className='mt-3' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
-                        {item.designation}
-                      </div>
-                    </div>
-                  ))}
-                </Carousel>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>        
         <div className="diva-6">
           <div className="diva-7">
             <br /><h3>FAQ's</h3><br />

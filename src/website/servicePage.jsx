@@ -82,8 +82,8 @@ function ServicePage(props) {
                     Success, Our Priority!&quot;
                   </div>
                   <div className="sdiv-42">
-                    <a href="tel:919686112338" style={{backgroundColor:'#005e8d'}}
-                        className="chatwithusbutton">Chat With Us</a>
+                    <a href="https://wa.me/919686112338" style={{backgroundColor:'#005e8d'}}
+                        className="chatwithusbutton" target='_blank'>Chat With Us</a>
                   </div>
                 </div>
               </div>
@@ -102,10 +102,7 @@ function ServicePage(props) {
                   infrastructure, ensuring optimal performance and minimal
                   downtime..
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
             <div className="scolumn-3">
@@ -115,10 +112,7 @@ function ServicePage(props) {
                   Custom software development for web and mobile applications,
                   tailored to your unique requirements.
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -132,10 +126,7 @@ function ServicePage(props) {
                   Build and optimize user-friendly websites that drive
                   conversions and enhance user experience.
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
             <div className="scolumn-4">
@@ -145,10 +136,7 @@ function ServicePage(props) {
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -162,10 +150,7 @@ function ServicePage(props) {
                   Improve your online visibility and organic search rankings to
                   attract more website traffic.
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
             <div className="scolumn-5">
@@ -175,10 +160,7 @@ function ServicePage(props) {
                   Create targeted ad campaigns on search engines and social
                   media platforms for instant visibility.
                 </div>
-                <div className="sdiv-49">
-                  <i class="chatIcon fa-message fa-regular mt-3"></i>
-                  <a className="chattext" href="tel:919686112338"> Chat With Us</a>
-                </div>
+                
               </div>
             </div>
           </div>

@@ -16,8 +16,6 @@ function Footer() {
   const [email, setEmail] = useState('');
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform actions with form data, e.g., submit to a server
-    //console.log('email submitted:', email);
   };
     return (
       <div className="div-39">
@@ -51,46 +49,27 @@ function Footer() {
         </div>{" "}
         <div className="div-53">
           <div className="div-54">Follow Us On</div>{" "}
-          {/* <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/292716d4cc908304fa794336812059f1563ffdc5d561ce600dd79e89a744d324?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="img-9"
-          /> */}
-          <div className='socialMedia img-9 fs-2'>
+          <div className='socialMedia'>
             <a href="https://www.facebook.com " target='_blank'
-              className="facebook social">
+              className="fs-4">
                   <FontAwesomeIcon icon={faFacebook}/>
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="twitter social">
+            <a href="https://www.twitter.com" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
             <a href="https://www.instagram.com" target='_blank'
-              className="instagram social">
+              className="fs-4">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="linkedin social">
+            <a href="https://www.twitter.com" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="youtube social">
+            <a href="https://www.twitter.com" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
         </div>{" "}
         <div className="div-55">
-          <div className="div-56">Newsletter</div>{" "}
-          <div className="div-57">
-            <div className="div-58">
-              <input
-                type="text"
-                placeholder="Email Address"
-                value={email}
-                //onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>{" "}
-            <div className="div-59">
-              <button type="submit" onClick={handleSubmit}>Send</button>
-            </div>
-          </div>{" "}
           <div className="div-60">
             Subscribe to our mailing list and get updates to your email
             inbox.
