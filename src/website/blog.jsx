@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import './blog.css'
 import { useNavigate } from "react-router-dom";
-
+import KITBanner from '../assets/KIT-Banner.JPG';
+import RecentPost from '../assets/office-reception.JPG';
+import CEOCabin from '../assets/CEO-Cabin.JPG';
+import God from '../assets/God-Pooja.JPG';
+import teamPicture from '../assets/TeamPicture.JPG';
+import cakeCutting from '../assets/CEO-Work.JPG';
 
 
 function Blog(props) {
-  const [searchItem, setSearchItem] = useState('');
-
-
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setSearchItem(value);
-    //onSearch(value);
-    
-  };
-
   const date = new Date();
   const day = date.getDate();
   const month = date.toLocaleString('en-us',{month:'short'})
@@ -29,11 +24,27 @@ function Blog(props) {
           <div className="bdiv-10">
             <div className="bcolumn">
               <div className="bdiv-11">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/dbc0b483443805a8a252341cdbeb552544d501acf680e4d99c87d85dcf6f94ce?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="bimg-2"
-                />
+                  <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src={KITBanner} class="d-block w-100" alt="..."/>
+                          </div>
+                          <div class="carousel-item active" data-bs-interval="2000">
+                            <img src={teamPicture} class="d-block w-100" alt="..." />
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src={CEOCabin} class="d-block w-100" alt="..."/>
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
                 <div className="bdiv-12">
                 <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
@@ -51,23 +62,23 @@ function Blog(props) {
             </div>{" "}
             <div className="bcolumn-2">
               <div className="bdiv-17">              
-                <div className="bdiv-21 px-4">
+                <div className="bdiv-21 mx-2 px-4">
                   <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
                   <hr />
-                  <div className="bdiv-23" />{" "}
-                  <div className="bdiv-24">
+                  <div className="d-flex w-100 flex-column">
                     <img
                       loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8f705648579b058b79787db132a8255576dbd6b3ad2a9668073b8e598ec1ebc7?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="bimg-5"
-                    />{" "}
-                    <div className="bdiv-25">
-                      <div className="bdiv-26 fw-bold">
-                        Facebook Messenger Turns End-to-End Encryption on by
-                        Default for Individual Chats
+                      srcSet={RecentPost}
+                      className="d-flex w-100"
+                    />
+                    <div className="mx-4 my-3">
+                      <div className="bdiv-26 fw-bold mb-2">
+                      Glimse of Office Inaguaration Day
+                        Team Picture 
+                        CEO with the employees
                       </div>{" "}
                       <div className="bdiv-27">
-                        Updated: 7 December 2023 15:35 IST
+                        Updated: 6 January 2023 15:35 IST
                       </div>
                     </div>
                   </div>
@@ -79,42 +90,23 @@ function Blog(props) {
         <div className="bdiv-34">
           <div className="bdiv-35">
             <div className="bdiv-36">
-              <div className="bcolumn-3">
-                <div className="bdiv-37">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63869949bd85042f16d574f9c9dfe7af03573b251574282293265bbe6c72ea9b?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-6"
-                  />{" "}
-                  <div className="bdiv-38">
-                    <div className="bdiv-39 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
-                    </div>{" "}
-                    <div className="bdiv-40">
-                      Updated: 7 December 2023 15:35 IST
-                    </div>
+                <div class="d-flex w-75 flex-column">
+                  <img loading="lazy" srcset={God} class="d-flex rounded-4 w-75"/> 
+                  <div class="mx-4 my-3 w-75"><div class="bdiv-39 fw-bold">
+                    Satya Narayan Pooja conducted 
+                    in office structuring process
+                    by our CEO Sandeep Banavasi and his parents
                   </div>
                 </div>
-              </div>{" "}
-              <div className="bcolumn-4">
-                <div className="bdiv-41">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/caa7e0a11277549fc3dbc64077d69b74cb527f31acc2c48814a0cf8dd00f5725?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-7"
-                  />{" "}
-                  <div className="bdiv-42">
-                    <div className="bdiv-43 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
-                    </div>{" "}
-                    <div className="bdiv-44">
-                      Updated: 7 December 2023 15:35 IST
-                    </div>
-                  </div>
-                </div>
-              </div>{" "}
+            </div>{" "}
+                <div class="d-flex w-100 flex-column">
+                  <img loading="lazy" srcset={cakeCutting} class="d-flex rounded-4" style={{width:'20rem',height:'11.5rem'}}/> 
+                  <div class="mx-4 my-3 fw-bold w-75">
+                     CEO in his office Cabin on 
+                     discussion with Clients 
+                     meetings and Team members
+                  </div>{" "}
+                </div>{" "}
               <div className="bcolumn-5">
                 <div className="bdiv-45">
                   <img

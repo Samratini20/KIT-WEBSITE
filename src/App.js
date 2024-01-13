@@ -7,6 +7,8 @@ import Header from './website/header';
 import Footer from "./website/footer";
 import Blog from './website/blog';
 import ContactUs from './website/contactUs';
+import TermsConditions from './website/termsconditions';
+import PrivacyPolicy from './website/privacypolicy';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,7 +32,9 @@ function App(){
                         <Route path='/services' element={<ServicePage/>} />
                         <Route path='/blog' element={<Blog/>} />
                         <Route path='/contact' element={<ContactUs/>} />
-                                            </Routes> 
+                        <Route path='/termsconditions' element={<TermsConditions/>} />
+                        <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
+                      </Routes> 
                 <Footer/>  
             </BrowserRouter>        
         </div>

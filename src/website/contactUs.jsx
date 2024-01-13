@@ -4,7 +4,6 @@ import ContactUS_img from '../assets/contactUs_img.png'
 import ContactUS_img_1 from '../assets/contact-circle-1.png'   
 import ContactUS_img_2 from '../assets/contact-circle-2.png'  
 import ContactUS_img_3 from '../assets/contact-circle-3.png'   
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactUs(props) {
   return (

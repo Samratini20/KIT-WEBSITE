@@ -1,4 +1,3 @@
-//import * as React from "react";
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './footer.css'
@@ -44,27 +43,27 @@ function Footer() {
           </div>
         <div className="div-49">
           <div className="div-50">Company</div>{" "}
-          <div className="div-51"><Link to="/terms&conditions" className='terms'>Terms & Conditions</Link></div>{" "}
-          <div className="div-52"><Link to="/privacy/policy" className='privacy'>Privacy Policy</Link></div>
+          <div className="div-51"><Link to="/termsconditions" className='terms'>Terms & Conditions</Link></div>{" "}
+          <div className="div-52"><Link to="/privacypolicy" className='privacy'>Privacy Policy</Link></div>
         </div>{" "}
         <div className="div-53">
           <div className="div-54">Follow Us On</div>{" "}
           <div className='socialMedia'>
-            <a href="https://www.facebook.com " target='_blank'
+            <a href=" https://www.facebook.com/profile.php?id=61554749135083" target='_blank'
               className="fs-4">
                   <FontAwesomeIcon icon={faFacebook}/>
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="fs-4">
+            <a href="https://x.com/KITGlobalTech?t=DvfTgvP5tzvgeb1drCT0Rg&s=08" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
-            <a href="https://www.instagram.com" target='_blank'
+            <a href="https://www.instagram.com/kit_globaltechnologies?igsh=MWltM3AyMWd3czJ4" target='_blank'
               className="fs-4">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="fs-4">
+            <a href="https://www.LinkedIn.com" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.twitter.com" target='_blank' className="fs-4">
+            <a href="https://www.Youtube.com" target='_blank' className="fs-4">
               <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
