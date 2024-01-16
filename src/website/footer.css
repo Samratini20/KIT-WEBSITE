@@ -1,12 +1,12 @@
 .footer-container{
   background-color: rgb(0, 0, 0);
   color: aliceblue;
-  height: 60vh;
   width: 100%;
   padding-top: 1.5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 800;
   font-size: medium;
+  padding-bottom: 2rem;
 }
 
 a,
@@ -32,8 +32,8 @@ Link:visited{
 
 h5{
   text-align: center; 
-  margin-top: 6rem;
-  font-size: smaller;
+  margin-top: 3rem;
+  font-size: medium;
 }
 
 @media (max-width: 850px){
@@ -41,8 +41,8 @@ h5{
     height: 5rem;
   }
   .footer-container{
-    height: 40vh;
-    font-size: x-small;
+    font-size: medium;
+    padding-bottom: 2rem;
   }
 
   .icons{
