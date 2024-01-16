@@ -12,31 +12,6 @@ function Header() {
   
     return (
       <div className="div-2">
-        {/* <NavLink to="/" exact className='home' activeClassName="active">
-        <img
-            loading="lazy"
-            src={logo}
-            className="img" 
-          />
-        </NavLink>
-        
-       <div className="div-3">
-        <div className="div-4">          
-          <NavLink to="/" exact id='home ' className='change' activeClassName='active'>Home</NavLink>
-          </div>
-        <div className="div-5">
-          <NavLink to="/about" exact id='aboutUs ' className='change' activeClassName="active">About Us</NavLink>
-          </div>
-        <div className="div-6">
-          <NavLink to="/services" exact id='services ' className='change' activeClassName="active" >Services</NavLink>
-        </div>
-        <div className="div-7">
-          <NavLink to="/blog" exact  id='blog ' className='change' activeClassName="active">Blog</NavLink>
-        </div>
-        <div className="div-8">
-          <NavLink >Contact Us</NavLink>
-        </div>
-      </div>  */}
 
 <nav className="navbar navbar-expand-lg bg-body-tertiary ">
   <div className="container-fluid">
