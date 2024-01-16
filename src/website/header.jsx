@@ -13,7 +13,7 @@ function Header() {
     return (
       <div className="div-2">
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary ">
+<nav className="navbar navbar-expand-lg bg-white">
   <div className="container-fluid">
     <a className="navbar-brand" href="">
       <img className="img" src={logo} alt="logo"/>

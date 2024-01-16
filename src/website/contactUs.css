@@ -49,8 +49,8 @@
   color: #005e8d;
   line-height: 2.1;
 }
-a{
-  color: #005e8d;
+.contactDetails a{
+  color: #005e8d !important;
 }
 .contactUsicons{
   margin-right: 1rem;
