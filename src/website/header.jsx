@@ -30,7 +30,7 @@ function Header() {
           <NavLink to="/services" exact id='services ' className='change' activeClassName="active" >Services</NavLink>
         </div>
         <div className="div-7">
-          <NavLink to="/blog" exact  id='blog ' className='change' activeClassName="active">Blog</NavLink>
+          <NavLink to="/blog" exact  id='blog ' className='change' activeClassName="active">Blogg</NavLink>
         </div>
         <div className="div-8">
           <NavLink to="/contact" exact  id='contactUs ' className='change' activeClassName="active">Contact Us</NavLink>
