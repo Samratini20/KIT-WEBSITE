@@ -1,4 +1,4 @@
-
+/* 
 .div-39 {
     background-color: var(--Text, #0c0c0c);
     align-self: stretch;
@@ -16,11 +16,6 @@
       margin-top: 40px;
       padding: 0 20px;
     }
-  }
-  .div-39 a:hover{
-    /* font: 700 25px Calibri, sans-serif;
-    transform: translateY(0.2rem);
-    transition: all 0.3s ease; */
   }
   .div-39 a:focus{
     font: 700 18px Calibri, sans-serif;
@@ -61,16 +56,9 @@
   .div-42 {
     align-self: end;
     display: flex;
-    /* margin-top: 54px; */
     flex-direction: column;
-    margin: auto 0;
-    margin-top: 0px;
   }
-  @media (max-width: 991px) {
-    .div-42 {
-      margin-top: 40px;
-    }
-  }
+
   .div-43 {
     color: var(--Background, #fff);
     letter-spacing: 0.48px;
@@ -262,8 +250,6 @@
     margin-top: 29px;
     align-items: center;
     justify-content: space-between;
-    /* gap: 20px; */
-    /* padding: 4px 80px 4px 20px; */
   }
   @media (max-width: 991px) {
     .div-57 {
@@ -273,7 +259,6 @@
   .div-58 {
     color: var(--Text, #292929);
     flex-grow: 1;
-    /* white-space: nowrap; */
     margin: auto 0;
     font: 400 12px Calibri, sans-serif;
   }
@@ -345,4 +330,27 @@
   .div-39 a{
     text-decoration: none;
     color: white;
-  }
+  } */
+
+
+.footer{
+  height: 50vh;
+  background-color: rgb(26, 23, 23);
+  color: aliceblue;
+}
+
+a,
+a:visited{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.logo-img{
+  height: 5rem;
+  width: 9rem;
+}
+
+.icons{
+  display: flex;
+  gap: 1rem;
+}
