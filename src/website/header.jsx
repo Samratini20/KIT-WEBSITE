@@ -11,7 +11,7 @@ function Header() {
   
     return (
       <div className="div-2">
-        <NavLink to="/" exact className='home' activeClassName="active">
+        {/* <NavLink to="/" exact className='home' activeClassName="active">
         <img
             loading="lazy"
             src={logo}
@@ -35,7 +35,7 @@ function Header() {
         <div className="div-8">
           <NavLink to="/contact" exact  id='contactUs ' className='change' activeClassName="active">Contact Us</NavLink>
         </div>
-      </div> 
+      </div>  */}
       
       
     </div>
