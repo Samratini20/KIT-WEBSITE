@@ -12,6 +12,7 @@
   .homediv-10 {
     gap: 20px;
     display: flex;
+    background: transparent;
   }
   @media (max-width: 991px) {
     .homediv-10 {

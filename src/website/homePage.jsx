@@ -2,8 +2,6 @@ import * as React from "react";
 import './homePage.css';
 import Carousel from 'framer-motion-carousel'
 import { useNavigate } from "react-router-dom";
-import sandeep from '../assets/sandeep.jpg'
-import Header from "./header";
 import { useEffect } from "react";
 
 
@@ -58,8 +56,7 @@ function HomePage(props) {
                     <div className="container">
                     <div className="homediv-15" style={{color:"black"}}>Creators's </div>
                     <div className="homediv-15">Designer's </div>
-                    <div className="homediv-15" style={{color:"black"}}>Developer's </div>
-                  
+                    <div className="homediv-15" style={{color:"black"}}>Developer's </div>     
                     </div>
                   </div>{" "}
                   <div className="homediv-16">
@@ -85,7 +82,6 @@ function HomePage(props) {
                 
                 className="homeimg-3"
               />
-             
             </div>
           </div>
         </div>{" "}

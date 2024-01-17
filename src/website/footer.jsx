@@ -12,10 +12,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
   
 function Footer() {
-  const [email, setEmail] = useState('');
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
     return (
       <div className='footer-container mt-5'>
       <footer className='footer d-flex justify-content-around w-100 ' >

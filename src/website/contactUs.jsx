@@ -13,7 +13,7 @@ function ContactUs(props) {
     window.scrollTo(0, 0);
   }, []);
   return (
-      <div className="d-flex col-12">
+    <div className="d-flex col-12">
           <div className="getIntouch d-flex flex-column col-4">
             <span className="fw-bold">Get in touch</span>
             <hr/>
