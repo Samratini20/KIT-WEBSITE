@@ -34,7 +34,7 @@ function ContactUs(props) {
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="websiteURL" className="fs-5">Website URL</span>
-                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" name="websiteURL" placeholder="Website URL"/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="websiteURL" placeholder="Website URL"/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>
