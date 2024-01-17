@@ -15,8 +15,6 @@ function Header() {
     navLinks.forEach((l) => {
       l.addEventListener('click', () => { bsCollapse.toggle(); });
     });
-
-    // Cleanup event listeners when the component unmounts
     return () => {
       navLinks.forEach((l) => {
         l.removeEventListener('click', () => { bsCollapse.toggle(); });

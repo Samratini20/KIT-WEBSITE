@@ -5,6 +5,8 @@ import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
 
+
+
 const data= [
   {
     id:'1',
@@ -47,6 +49,11 @@ function Aboutus(props) {
     }, 2000);
 
     return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
   }, []);
 
   if(document.getElementsByClassName('rec-arrow')[0]){

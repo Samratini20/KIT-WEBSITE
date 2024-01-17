@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './blog.css'
 import { useNavigate } from "react-router-dom";
 import KITBanner from '../assets/KIT-Banner.JPG';
@@ -16,6 +16,11 @@ function Blog(props) {
   const date = new Date();
   var dateInfo = date.toLocaleString('en-us',{month:'short', day:'numeric', year:'numeric',hour12:true,hour:'numeric',minute:'numeric'});
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="bdiv">
