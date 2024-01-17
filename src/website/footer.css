@@ -9,10 +9,8 @@
   padding-bottom: 2rem;
 }
 
-a,
-a:visited,
-Link,
-Link:visited{
+.footer-link,
+.footer-link:visited{
   text-decoration: none;
   color: aliceblue;
 }

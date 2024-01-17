@@ -4,8 +4,14 @@ import ContactUS_img from '../assets/contactUs_img.png'
 import ContactUS_img_1 from '../assets/contact-circle-1.png'   
 import ContactUS_img_2 from '../assets/contact-circle-2.png'  
 import ContactUS_img_3 from '../assets/contact-circle-3.png'   
+import { useEffect } from "react";
 
 function ContactUs(props) {
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <div className="d-flex col-12">
           <div className="getIntouch d-flex flex-column col-4">

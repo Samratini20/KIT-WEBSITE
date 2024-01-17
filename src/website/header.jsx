@@ -1,19 +1,32 @@
 import * as React from "react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink} from "react-router-dom";
 import './header.css'
 import logo from '../assets/logo.PNG'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import HomePage from "./homePage";
-import { Nav } from "react-bootstrap";
-
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Header() {
-  
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-item');
+    const menuToggle = document.getElementById('navbarSupportedContent');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle(); });
+    });
+
+    // Cleanup event listeners when the component unmounts
+    return () => {
+      navLinks.forEach((l) => {
+        l.removeEventListener('click', () => { bsCollapse.toggle(); });
+      });
+    };
+  }, []); 
     return (
       <div className="div-2">
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary ">
+<nav className="navbar navbar-expand-lg bg-white">
   <div className="container-fluid">
     <a className="navbar-brand" href="">
       <img className="img" src={logo} alt="logo"/>
@@ -25,7 +38,7 @@ function Header() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-         <NavLink to="/" exact id='home' className='change nav-link active' aria-current="page" activeClassName='active'> Home </NavLink>
+         <NavLink to="/" exact id='home' className='change nav-link active' aria-current="page" activeClassName='active'  > Home </NavLink>
         </li>
         <li className="nav-item">
          <NavLink to="/about" exact id='aboutUs' className='change nav-link active' aria-current="page"  activeClassName="active"> About Us </NavLink>
@@ -49,3 +62,5 @@ function Header() {
 }
 
 export default Header;
+
+

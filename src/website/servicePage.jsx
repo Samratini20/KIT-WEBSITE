@@ -3,9 +3,14 @@ import serviceImg from '../assets/serviceImg.jpg'
 import Img1 from '../assets/servicesImg_1.jpg';
 import Img2 from '../assets/servicesImg_2.jpg';
 import './servicePage.css';
+import { useEffect } from "react";
 
 const quality = 80;
 function ServicePage(props) {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="sdiv">
