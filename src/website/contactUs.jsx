@@ -18,7 +18,7 @@ function ContactUs(props) {
             <span className="fw-bold">Get in touch</span>
             <hr/>
             <span className="fw-bold fs-2">Contact</span>
-            <form action="https://formsubmit.co/samusamratini@gmail.com" method="POST">
+            <form action="https://formsubmit.co/chandanasamritini@kitservices.in" method="POST">
               <div class="form-row">
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
@@ -33,8 +33,8 @@ function ContactUs(props) {
                   <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="subject" placeholder="Subject" required/>
                 </div>
                 <div class="form-group col-12 my-4">
-                  <span for="websiteURL" className="fs-5">Website URL <span class="text-danger ml-2">*</span></span>
-                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" name="websiteURL" placeholder="Website URL" required/>
+                  <span for="websiteURL" className="fs-5">Website URL</span>
+                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" name="websiteURL" placeholder="Website URL"/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>
