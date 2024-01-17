@@ -47,13 +47,13 @@ function Header() {
       <span className="navbar-toggler-icon"></span>
     </button>
     </div>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <div className="mainNav collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-         <NavLink to="/" exact id='home' className='change nav-link active' aria-current="page" activeClassName='active'> Home </NavLink>
+         <NavLink exact to="/"  id='home' className=' change nav-link active' aria-current="page" activeClassName='active'> Home </NavLink>
         </li>
         <li className="nav-item">
-         <NavLink to="/about" exact id='aboutUs' className='change nav-link active' aria-current="page"  activeClassName="active"> About Us </NavLink>
+         <NavLink to="/about"  id='aboutUs' exact className='change nav-link active' aria-current="page"  activeClassName="active"> About Us </NavLink>
         </li>
         <li className="nav-item">
         <NavLink to="/services" exact id='services' className='change nav-link active' aria-current="page" activeClassName="active">Services</NavLink> 

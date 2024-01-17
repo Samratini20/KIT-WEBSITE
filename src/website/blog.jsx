@@ -7,15 +7,14 @@ import CEOCabin from '../assets/CEO-Cabin.JPG';
 import God from '../assets/God-Pooja.JPG';
 import teamPicture from '../assets/TeamPicture.JPG';
 import cakeCutting from '../assets/CEO-Work.JPG';
-
+import rangoli from '../assets/Rangoli.JPG';
+import fam from '../assets/CEO-family.jpg';
+import team from '../assets/Team-Opening.JPG';
+import cake from '../assets/Cake.JPG'
 
 function Blog(props) {
   const date = new Date();
-  const day = date.getDate();
-  const month = date.toLocaleString('en-us',{month:'short'})
-  const time = date.getHours();
-  const min = date.getMinutes();
-  const fullyear = date.getUTCFullYear();
+  var dateInfo = date.toLocaleString('en-us',{month:'short', day:'numeric', year:'numeric',hour12:true,hour:'numeric',minute:'numeric'});
   const navigate = useNavigate();
   return (
     <>
@@ -24,44 +23,52 @@ function Blog(props) {
           <div className="bdiv-10">
             <div className="bcolumn">
               <div className="bdiv-11">
-                  <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img src={KITBanner} class="d-block w-100" alt="..."/>
-                          </div>
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <img src={teamPicture} class="d-block w-100" alt="..." />
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img src={CEOCabin} class="d-block w-100" alt="..."/>
-                          </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
+                <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src={KITBanner} class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                      <img src={teamPicture} class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src={CEOCabin} class="d-block w-100" alt="..." />
+                    </div>
                   </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
                 <div className="bdiv-12">
-                <i class="fa-regular fa-clock time_clock"></i>
+                  <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
-                   {month} {day}, {fullyear} - {time}:{min} - Latest News 
+                  {dateInfo} - Latest News
+
+
                   </div>
                 </div>
                 <div className="bdiv-14">
-                  About Company
+                  Overview
                 </div>
-                <div className="bdiv-15">
-                  Details
+                <div className= "bdiv-15 w-100 mx-4">
+                  At KIT, we are dedicated to providing top-notch IT services tailored to 
+                  meet your unique business needs. With a team of experienced professionals, 
+                  we offer a wide range of technology solutions, from network and infrastructure 
+                  management to cybersecurity and cloud computing. Our mission is to empower your 
+                  organization with the latest in digital innovation, ensuring seamless operations, 
+                  enhanced productivity, and robust data security. Partner with us to unlock 
+                  the full potential of technology for your business.
                 </div>{" "}
-                <button className='blogdiv-button'color="inherit" onClick={()=> navigate('/blog')}>Read More</button>  
+                <button className='blogdiv-button' color="inherit" onClick={() => navigate('/blog')}>Read More</button>
               </div>
             </div>{" "}
             <div className="bcolumn-2">
-              <div className="bdiv-17">              
+              <div className="bdiv-17">
                 <div className="bdiv-21 mx-2 px-4">
                   <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
                   <hr />
@@ -73,8 +80,8 @@ function Blog(props) {
                     />
                     <div className="mx-4 my-3">
                       <div className="bdiv-26 fw-bold mb-2">
-                      Glimse of Office Inaguaration Day
-                        Team Picture 
+                        Glimse of Office Inaguaration Day
+                        Team Picture
                         CEO with the employees
                       </div>{" "}
                       <div className="bdiv-27">
@@ -82,104 +89,87 @@ function Blog(props) {
                       </div>
                     </div>
                   </div>
-                </div>{" "}                
+                </div>{" "}
               </div>
             </div>
           </div>
         </div>{" "}
         <div className="bdiv-34">
           <div className="bdiv-35">
-            <div className="bdiv-36">
-                <div class="d-flex w-75 flex-column">
-                  <img loading="lazy" srcset={God} class="d-flex rounded-4 w-75"/> 
-                  <div class="mx-4 my-3 w-75"><div class="bdiv-39 fw-bold">
-                    Satya Narayan Pooja conducted 
-                    in office structuring process
-                    by our CEO Sandeep Banavasi and his parents
-                  </div>
+            <div className="d-flex justify-content-around">
+              <div class="d-flex w-100 flex-column">
+                <img loading="lazy" srcset={God} class="d-flex rounded-4 w-75" />
+                <div class="mx-4 my-3 fw-bold w-75">
+                  {/* <div class="bdiv-39 fw-bold"> */}
+                  Satya Narayan Pooja conducted
+                  in office structuring process
+                  by our CEO Sandeep Banavasi and his parents
+                {/* </div> */}
                 </div>
-            </div>{" "}
-                <div class="d-flex w-100 flex-column">
-                  <img loading="lazy" srcset={cakeCutting} class="d-flex rounded-4" style={{width:'20rem',height:'11.5rem'}}/> 
-                  <div class="mx-4 my-3 fw-bold w-75">
-                     CEO in his office Cabin on 
-                     discussion with Clients 
-                     meetings and Team members
-                  </div>{" "}
+              </div>{" "}
+              <div class="d-flex w-100 flex-column">
+                <img loading="lazy" srcset={cakeCutting} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />
+                <div class="mx-4 my-3 fw-bold w-75">
+                  CEO in his office Cabin on
+                  discussion with Clients
+                  meetings and Team members
                 </div>{" "}
-              <div className="bcolumn-5">
-                <div className="bdiv-45">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/490394a23cf9446450f9aa5aa71988a2e242dba700e3dd61c8ceff9c99c8883c?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-8"
-                  />{" "}
+              </div>{" "}
+              <div class="d-flex w-100 flex-column">
+                <div class="d-flex w-100 flex-column">
+                  <img loading="lazy" srcSet={rangoli} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />
                   <div className="bdiv-46">
                     <div className="bdiv-47 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
+                      The art of decoration drawn on the floor. <br />
+                      Intended to welcome Lakshmi,
+                      the goddess <br /> of wealth and good luck.
                     </div>{" "}
-                    <div className="bdiv-48">
+                    {/* <div className="bdiv-48">
                       Updated: 7 December 2023 15:35 IST
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>{" "}
           <div className="bdiv-49">
-            <div className="bdiv-50">
+            <div className="d-flex justify-content-around">
               <div className="bcolumn-6">
-                <div className="bdiv-51">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bdef61447afb4e1bd8c6faf809d912a2e9a0e424c48c5dafd02439e97655469?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-9"
-                  />{" "}
+                <div class="d-flex w-75 flex-column">
+                  <img loading="lazy" srcSet={fam} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
                   <div className="bdiv-52">
-                    <div className="bdiv-53 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
+                    <div className="bdiv-47 fw-bold">
+                      CEO Entering the office with family.
                     </div>{" "}
-                    <div className="bdiv-54">
+                    {/* <div className="bdiv-54">
                       Updated: 7 December 2023 15:35 IST
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>{" "}
               <div className="bcolumn-7">
-                <div className="bdiv-55">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d26aedd1c5bdc96f8dc8ce1671c868f0178f948d79beb286a0ae699f17b72005?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-10"
-                  />{" "}
+                <div class="d-flex w-75 flex-column">
+                  <img loading="lazy" srcSet={team} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
                   <div className="bdiv-56">
                     <div className="bdiv-57 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
+                      CEO at office with team members.
                     </div>{" "}
-                    <div className="bdiv-58">
+                    {/* <div className="bdiv-58">
                       Updated: 7 December 2023 15:35 IST
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>{" "}
               <div className="bcolumn-8">
-                <div className="bdiv-59">
-                  <img
-                    loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f8e87391de17e760e3022157e47b62aeae4e91835f1598a340beb95d548beb2a?apiKey=9d6521b3bd494d48816871a061465c45&"
-                    className="bimg-11"
-                  />{" "}
+                <div class="d-flex w-75 flex-column">
+                  <img loading="lazy" srcSet={cake} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
                   <div className="bdiv-60">
                     <div className="bdiv-61 fw-bold">
-                      Facebook Messenger Turns End-to-End Encryption on by
-                      Default for Individual Chats
+                      Cake Cutting ceremony on the day of inauguration.
                     </div>{" "}
-                    <div className="bdiv-62">
+                    {/* <div className="bdiv-62">
                       Updated: 7 December 2023 15:35 IST
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -187,12 +177,12 @@ function Blog(props) {
           </div>
         </div>{" "}
       </div>{" "}
-</>
-      );
+    </>
+  );
 
-      }
-      export default Blog;
-      {/* <style jsx>{`
+}
+export default Blog;
+{/* <style jsx>{`
         .div {
           background-color: #fff;
           display: flex;
@@ -411,4 +401,3 @@ function Blog(props) {
 
         `}</style>{" "} */}
 
-       
