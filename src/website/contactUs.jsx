@@ -6,47 +6,34 @@ import ContactUS_img_2 from '../assets/contact-circle-2.png'
 import ContactUS_img_3 from '../assets/contact-circle-3.png'   
 
 function ContactUs(props) {
-  const handleSubmit = async(e)=>{
-    e.preventDefault();
-    return;
-    const response = await fetch('/send', {
-      method: 'POST',
-      body: JSON.stringify(''),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const result = await response.json();
-    console.log(result);
-    window.location.href = "/";
-  }
+  
   return (
       <div className="d-flex col-12">
           <div className="getIntouch d-flex flex-column col-4">
             <span className="fw-bold">Get in touch</span>
             <hr/>
             <span className="fw-bold fs-2">Contact</span>
-            <form onSubmit={handleSubmit}>
+            <form action="https://formsubmit.co/chandanasamritini@kitservices.in" method="POST">
               <div class="form-row">
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
-                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" id="name" placeholder="Your Name" required/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="name" placeholder="Your Name" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="emailID" className="fs-5">Email - ID <span class="text-danger ml-2">*</span></span>
-                  <input type="email" class="form-control p-0 pt-4 py-2 underlined-input" id="emailId" placeholder="Your Email" required/>
+                  <input type="email" class="form-control p-0 pt-4 py-2 underlined-input" name="emailId" placeholder="Your Email" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="subject" className="fs-5">Subject <span class="text-danger ml-2">*</span></span>
-                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" id="subject" placeholder="Subject" required/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="subject" placeholder="Subject" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="websiteURL" className="fs-5">Website URL <span class="text-danger ml-2">*</span></span>
-                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" id="websiteURL" placeholder="Website URL" required/>
+                  <input type="url" class="form-control p-0 pt-4 py-2 underlined-input" name="websiteURL" placeholder="Website URL" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>
-                  <textarea rows={5} cols={10} class="form-control mt-4" id="contact-message" placeholder="Type here ......." required/>
+                  <textarea rows={5} cols={10} class="form-control mt-4" name="contact-message" placeholder="Type here ......." required/>
                 </div>
               </div>
 
