@@ -28,7 +28,7 @@ function Blog(props) {
           <div className="bdiv-10">
             <div className="bcolumn">
               <div className="bdiv-11">
-                <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="blogCarousel" className="carousel slide mainImg" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item" data-bs-interval="2000">
                       <img src={KITBanner} class="d-block w-100" alt="..." />
@@ -60,7 +60,7 @@ function Blog(props) {
                 <div className="bdiv-14">
                   Overview
                 </div>
-                <div className= "bdiv-15 w-100 mx-4">
+                <div className= "bdiv-15 w-100 mx-1 text">
                   At KIT, we are dedicated to providing top-notch IT services tailored to 
                   meet your unique business needs. With a team of experienced professionals, 
                   we offer a wide range of technology solutions, from network and infrastructure 
@@ -69,27 +69,29 @@ function Blog(props) {
                   enhanced productivity, and robust data security. Partner with us to unlock 
                   the full potential of technology for your business.
                 </div>{" "}
-                <button className='blogdiv-button' color="inherit" onClick={() => navigate('/blog')}>Read More</button>
+                <button className='blogdiv-button btnRead' color="inherit" onClick={() => navigate('/blog')}>Read More</button>
               </div>
             </div>{" "}
             <div className="bcolumn-2">
               <div className="bdiv-17">
-                <div className="bdiv-21 mx-2 px-4">
+              {/* <div className="recent"> */}
+                <div className="bdiv-21 mx-2 px-4 recent1 ">
                   <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
                   <hr />
-                  <div className="d-flex w-100 flex-column">
+                  {/* <div className="d-flex w-100 flex-column"> */}
+                  <div className="recent">
                     <img
                       loading="lazy"
                       srcSet={RecentPost}
-                      className="d-flex w-100"
+                      className="d-flex w-50"
                     />
                     <div className="mx-4 my-3">
-                      <div className="bdiv-26 fw-bold mb-2">
+                      <div className="bdiv-26 fw-bold mb-2 glimpse">
                         Glimse of Office Inaguaration Day
                         Team Picture
                         CEO with the employees
                       </div>{" "}
-                      <div className="bdiv-27">
+                      <div className="bdiv-27 update">
                         Updated: 6 January 2023 15:35 IST
                       </div>
                     </div>
