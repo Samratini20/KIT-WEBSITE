@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
 import logo from "../assets/logo.PNG";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
 
   const handleSelect = () => {
     // Set the state to collapse the navbar when an item is selected
@@ -41,10 +42,9 @@ function Header() {
                 to="/"
                 exact
                 id="home"
-                className="change nav-link active"
-                aria-current="page"
-                activeClassName="active"
+                className="change nav-link"
                 onClick={handleSelect}
+                style={{ color: location.pathname === "/" ? "cyan" : "inherit" }}
               >
                 Home
               </NavLink>
@@ -54,10 +54,9 @@ function Header() {
                 to="/about"
                 id="aboutUs"
                 exact
-                className="change nav-link active"
-                aria-current="page"
-                activeClassName="active"
+                className="change nav-link"
                 onClick={handleSelect}
+                style={{ color: location.pathname === "/about" ? "cyan" : "inherit" }}
               >
                 About Us
               </NavLink>
@@ -67,10 +66,9 @@ function Header() {
                 to="/services"
                 exact
                 id="services"
-                className="change nav-link active"
-                aria-current="page"
-                activeClassName="active"
+                className="change nav-link"
                 onClick={handleSelect}
+                style={{ color: location.pathname === "/services" ? "cyan" : "inherit" }}
               >
                 Services
               </NavLink>
@@ -80,10 +78,9 @@ function Header() {
                 to="/blog"
                 exact
                 id="blog"
-                className="change nav-link active"
-                aria-current="page"
-                activeClassName="active"
+                className="change nav-link"
                 onClick={handleSelect}
+                style={{ color: location.pathname === "/blog" ? "cyan" : "inherit" }}
               >
                 Blog
               </NavLink>
@@ -93,10 +90,9 @@ function Header() {
                 to="/contact"
                 exact
                 id="contactUs"
-                className="change nav-link active"
-                aria-current="page"
-                activeClassName="active"
+                className="change nav-link"
                 onClick={handleSelect}
+                style={{ color: location.pathname === "/contact" ? "cyan" : "inherit" }}
               >
                 Contact Us
               </NavLink>
