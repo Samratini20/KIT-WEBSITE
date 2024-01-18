@@ -101,10 +101,12 @@ function Blog(props) {
         </div>{" "}
         <div className="bdiv-34">
           <div className="bdiv-35">
-            <div className="d-flex justify-content-around">
-              <div class="d-flex w-100 flex-column">
-                <img loading="lazy" srcset={God} class="d-flex rounded-4 w-75" />
-                <div class="mx-4 my-3 fw-bold w-75">
+            <div className="d-flex justify-content-around mainFlex">
+              {/* <div class="d-flex w-100 flex-column divChng flexAlign"> */}
+              <div className='flexAlign'>
+                <img loading="lazy" srcset={God} className='first'/>
+                {/* <div class="mx-4 my-3 fw-bold w-75"> */}
+                <div className='align'>
                   {/* <div class="bdiv-39 fw-bold"> */}
                   Satya Narayan Pooja conducted
                   in office structuring process
@@ -112,19 +114,19 @@ function Blog(props) {
                 {/* </div> */}
                 </div>
               </div>{" "}
-              <div class="d-flex w-100 flex-column">
-                <img loading="lazy" srcset={cakeCutting} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />
-                <div class="mx-4 my-3 fw-bold w-75">
+              <div className='flexAlign'>
+                <img loading="lazy" srcset={cakeCutting} className='first'/>
+                <div className='align'>
                   CEO in his office Cabin on
                   discussion with Clients
                   meetings and Team members
                 </div>{" "}
               </div>{" "}
-              <div class="d-flex w-100 flex-column">
-                <div class="d-flex w-100 flex-column">
-                  <img loading="lazy" srcSet={rangoli} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />
+              {/* <div class="d-flex w-100 flex-column"> */}
+                <div className='flexAlign'>
+                  <img loading="lazy" srcSet={rangoli} className='first' />
                   <div className="bdiv-46">
-                    <div className="bdiv-47 fw-bold">
+                    <div className='align'>
                       The art of decoration drawn on the floor. <br />
                       Intended to welcome Lakshmi,
                       the goddess <br /> of wealth and good luck.
@@ -134,29 +136,31 @@ function Blog(props) {
                     </div> */}
                   </div>
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>{" "}
           <div className="bdiv-49">
-            <div className="d-flex justify-content-around">
+            <div className="d-flex justify-content-around mainFlex">
               <div className="bcolumn-6">
-                <div class="d-flex w-75 flex-column">
-                  <img loading="lazy" srcSet={fam} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
-                  <div className="bdiv-52">
-                    <div className="bdiv-47 fw-bold">
+                {/* <div class="d-flex w-75 flex-column"> */}
+                <div className='flexAlign'>
+                  {/* <img loading="lazy" srcSet={fam} class="d-flex rounded-4" style={{ width: '18rem', height: '11rem' , marginLeft: '1rem'}} />{" "} */}
+                  <img loading="lazy" srcSet={fam} className='first' />{" "}
+                  {/* <div className="bdiv-52"> */}
+                    <div className='align'>
                       CEO Entering the office with family.
                     </div>{" "}
                     {/* <div className="bdiv-54">
                       Updated: 7 December 2023 15:35 IST
                     </div> */}
-                  </div>
+                  {/* </div> */}
                 </div>
               </div>{" "}
               <div className="bcolumn-7">
-                <div class="d-flex w-75 flex-column">
-                  <img loading="lazy" srcSet={team} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
+                <div className='flexAlign'>
+                  <img loading="lazy" srcSet={team} className='first' />{" "}
                   <div className="bdiv-56">
-                    <div className="bdiv-57 fw-bold">
+                    <div className='align'>
                       CEO at office with team members.
                     </div>{" "}
                     {/* <div className="bdiv-58">
@@ -166,10 +170,10 @@ function Blog(props) {
                 </div>
               </div>{" "}
               <div className="bcolumn-8">
-                <div class="d-flex w-75 flex-column">
-                  <img loading="lazy" srcSet={cake} class="d-flex rounded-4" style={{ width: '20rem', height: '11.5rem' }} />{" "}
+                <div className='flexAlign'>
+                  <img loading="lazy" srcSet={cake} className='first'/>{" "}
                   <div className="bdiv-60">
-                    <div className="bdiv-61 fw-bold">
+                    <div className='align'>
                       Cake Cutting ceremony on the day of inauguration.
                     </div>{" "}
                     {/* <div className="bdiv-62">
