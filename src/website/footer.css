@@ -22,6 +22,7 @@
 .icons{
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 
   & i{
     scale: 1.5;
