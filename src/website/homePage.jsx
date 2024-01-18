@@ -54,9 +54,9 @@ function HomePage(props) {
                   <div className="homediv-13">
                     <div className="homediv-14">We Are </div>
                     <div className="container">
-                    <div className="homediv-15" style={{color:"black"}}>Creators's </div>
+                    <div className="homediv-15" style={{color:"#0A161C"}}>Creator's </div>
                     <div className="homediv-15">Designer's </div>
-                    <div className="homediv-15" style={{color:"black"}}>Developer's </div>     
+                    <div className="homediv-15" style={{color:"#042636"}}>Developer's </div>     
                     </div>
                   </div>{" "}
                   <div className="homediv-16">
