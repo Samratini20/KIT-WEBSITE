@@ -13,12 +13,12 @@
 }
 
 .img{
-  scale: 2.5;
+  scale: 2;
 }
 
 @media (max-width: 991px) {
   .img{
-    scale: 1;
+    scale: 2;
   }
 }
 

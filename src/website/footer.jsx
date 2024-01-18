@@ -15,9 +15,9 @@ function Footer() {
     return (
       <div className='footer-container mt-5'>
       <footer className='footer d-flex justify-content-around w-100 ' >
-        <div className='footer-logo-container'>
+        <a className='footer-logo-container' href='/'>
           <img className='logo-img' loading='lazy' src={logo} alt="logo" />
-        </div>
+        </a>
         <div className='footer-quicklinks-container d-flex flex-column'>
           <h4 className='mt-3'>Quick links</h4>
           <Link className='mt-4 footer-link' to="/">Home</Link> 

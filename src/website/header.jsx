@@ -16,7 +16,7 @@ function Header() {
     <div className="div-2">
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-fluid">
-          <a className="navbar-brand" href="">
+          <a className="navbar-brand " href="/">
             <img className="img" src={logo} alt="logo" />
           </a>
           <button
@@ -44,7 +44,7 @@ function Header() {
                 id="home"
                 className="change nav-link"
                 onClick={handleSelect}
-                style={{ color: location.pathname === "/" ? "cyan" : "inherit" }}
+                style={{ color: location.pathname === "/" ? "#14B1FF" : "inherit" }}
               >
                 Home
               </NavLink>
@@ -56,7 +56,7 @@ function Header() {
                 exact
                 className="change nav-link"
                 onClick={handleSelect}
-                style={{ color: location.pathname === "/about" ? "cyan" : "inherit" }}
+                style={{ color: location.pathname === "/about" ? "#14B1FF" : "inherit" }}
               >
                 About Us
               </NavLink>
@@ -68,7 +68,7 @@ function Header() {
                 id="services"
                 className="change nav-link"
                 onClick={handleSelect}
-                style={{ color: location.pathname === "/services" ? "cyan" : "inherit" }}
+                style={{ color: location.pathname === "/services" ? "#14B1FF" : "inherit" }}
               >
                 Services
               </NavLink>
@@ -80,7 +80,7 @@ function Header() {
                 id="blog"
                 className="change nav-link"
                 onClick={handleSelect}
-                style={{ color: location.pathname === "/blog" ? "cyan" : "inherit" }}
+                style={{ color: location.pathname === "/blog" ? "#14B1FF" : "inherit" }}
               >
                 Blog
               </NavLink>
@@ -92,7 +92,7 @@ function Header() {
                 id="contactUs"
                 className="change nav-link"
                 onClick={handleSelect}
-                style={{ color: location.pathname === "/contact" ? "cyan" : "inherit" }}
+                style={{ color: location.pathname === "/contact" ? "#14B1FF" : "inherit" }}
               >
                 Contact Us
               </NavLink>
