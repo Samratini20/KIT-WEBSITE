@@ -80,8 +80,13 @@
     position: relative;
     white-space: nowrap;
     display: inline-block;
-    width: 148px;
+    width: 9.5rem;
     overflow: hidden;
+    font-family: Calibri;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 66.667% */
     
   }
  .homediv-15 {
@@ -91,7 +96,8 @@
       sans-serif;
       display: inline-block;
        margin:  0px 20px 0px 20px ;
-       /* position: relative; */
+
+     height: 2rem;
        
      
   }
@@ -322,6 +328,11 @@
     flex-grow: 1;
     align-items: end;
     padding: 50px 0 13px 60px;
+      width: 39.84375rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+height: 22.6875rem;
+flex-shrink: 0;
   }
   @media (max-width: 991px) {
     .homediv-22 {
@@ -368,6 +379,7 @@
     display: flex;
     margin-top: 27px;
     flex-direction: column;
+    width: 20rem;
   }
   @media (max-width: 991px) {
     .homediv-24 {
@@ -394,6 +406,13 @@
     margin-top: 49px;
     font: 400 12px/30px Calibri, -apple-system, Roboto, Helvetica,
       sans-serif;
+      font-family: Calibri;
+      width: 22rem;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.875rem; /* 250% */
+letter-spacing: 0.0225rem;
   }
   @media (max-width: 991px) {
     .homediv-26 {
@@ -539,7 +558,7 @@
     aspect-ratio: 1.05;
     object-fit: contain;
     object-position: center;
-    width: 379px;
+    
     fill: #b1b2c2;
     filter: blur(5px);
     overflow: hidden;

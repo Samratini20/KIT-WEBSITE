@@ -3,24 +3,24 @@ import { useState, useEffect } from "react";
 import { NavLink} from "react-router-dom";
 import './header.css'
 import logo from '../assets/logo.PNG'
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Header() {
 
-  useEffect(() => {
-    const navLinks = document.querySelectorAll('.nav-item');
-    const menuToggle = document.getElementById('navbarSupportedContent');
-    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+  // useEffect(() => {
+  //   const navLinks = document.querySelectorAll('.nav-item');
+  //   const menuToggle = document.getElementById('navbarSupportedContent');
+  //   const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
 
-    navLinks.forEach((l) => {
-      l.addEventListener('click', () => { bsCollapse.toggle(); });
-    });
-    return () => {
-      navLinks.forEach((l) => {
-        l.removeEventListener('click', () => { bsCollapse.toggle(); });
-      });
-    };
-  }, []); 
+  //   navLinks.forEach((l) => {
+  //     l.addEventListener('click', () => { bsCollapse.toggle(); });
+  //   });
+  //   return () => {
+  //     navLinks.forEach((l) => {
+  //       l.removeEventListener('click', () => { bsCollapse.toggle(); });
+  //     });
+  //   };
+  // }, []); 
     return (
       <div className="div-2">
 
