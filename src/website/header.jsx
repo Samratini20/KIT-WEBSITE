@@ -42,7 +42,7 @@ function Header() {
                 to="/"
                 exact
                 id="home"
-                className="change nav-link"
+                className="change nav-link mx-4"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/" ? "#14B1FF" : "inherit" }}
               >
@@ -54,7 +54,7 @@ function Header() {
                 to="/about"
                 id="aboutUs"
                 exact
-                className="change nav-link"
+                className="change nav-link mx-4"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/about" ? "#14B1FF" : "inherit" }}
               >
@@ -66,7 +66,7 @@ function Header() {
                 to="/services"
                 exact
                 id="services"
-                className="change nav-link"
+                className="change nav-link mx-4"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/services" ? "#14B1FF" : "inherit" }}
               >
@@ -78,7 +78,7 @@ function Header() {
                 to="/blog"
                 exact
                 id="blog"
-                className="change nav-link"
+                className="change nav-link mx-4"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/blog" ? "#14B1FF" : "inherit" }}
               >
@@ -90,7 +90,7 @@ function Header() {
                 to="/contact"
                 exact
                 id="contactUs"
-                className="change nav-link"
+                className="change nav-link contactus-link"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/contact" ? "#14B1FF" : "inherit" }}
               >
