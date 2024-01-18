@@ -38,11 +38,11 @@ function ContactUs(props) {
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>
-                  <textarea rows={5} cols={10} class="form-control mt-4" name="contact-message" placeholder="Type here ......." required/>
+                  <textarea rows={5} cols={10} class="form-control mt-4 bg-transparent" name="contact-message" placeholder="Type here ......." required/>
                 </div>
               </div>
 
-                <button type="submit" className="btn rounded-5 py-2 mt-5 send-message fw-bold px-4">Send Message</button>
+                <button type="submit" className="btn rounded-5 py-2 w-50 send-message fw-bold px-4">Send Message</button>
             </form>
           </div>
           <div className="contact-img mx-5">

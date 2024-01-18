@@ -13,13 +13,13 @@ function ServicePage(props) {
   }, []);
   return (
     <>
-      <div className="sdiv">
+      <div className="bg-white overflow-hidden sdiv">
         <img
             loading="lazy"
             src={Img1}
             className="serviceimg-1"
           />
-        <div className="sdiv-11">
+        <div className="sdiv-11 overflow-y-hidden">
           <div className="sdiv-12">
             <div className="sdiv-13">
               <div className="sdiv-17">Powerful Solution For Your Business</div>
@@ -96,13 +96,13 @@ function ServicePage(props) {
           </div>
         </div>
         <div className="sdiv-43">What We Provide</div>
-        <div className="service-card-container d-flex flex-column mx-5 px-5">
+        <div className="service-card-container d-flex flex-column mx-2 px-5">
         <div className="sdiv-44">
           <div className="sdiv-45">
             <div className="scolumn">
               <div className="sdiv-46">
                 <div className="sdiv-47">IT Services</div>
-                <div className="sdiv-48">
+                <div className="mb-5 sdiv-48">
                   Proactive monitoring, maintenance, and support for your IT
                   infrastructure, ensuring optimal performance and minimal
                   downtime..
@@ -127,7 +127,7 @@ function ServicePage(props) {
             <div className="scolumn">
               <div className="sdiv-58">
                 <div className="sdiv-59">Web design and development</div>
-                <div className="sdiv-60">
+                <div className="sdiv-60 mb-5">
                   Build and optimize user-friendly websites that drive
                   conversions and enhance user experience.
                 </div>
@@ -137,7 +137,7 @@ function ServicePage(props) {
             <div className="scolumn-4">
               <div className="sdiv-63">
                 <div className="sdiv-64">Social Media Marketting</div>
-                <div className="sdiv-65">
+                <div className="sdiv-65 mb-5">
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
                 </div>
@@ -151,7 +151,7 @@ function ServicePage(props) {
             <div className="scolumn">
               <div className="sdiv-70">
                 <div className="sdiv-71">Search Engine Optimization</div>
-                <div className="sdiv-72">
+                <div className="sdiv-72 mb-5">
                   Improve your online visibility and organic search rankings to
                   attract more website traffic.
                 </div>
@@ -161,7 +161,7 @@ function ServicePage(props) {
             <div className="scolumn-5">
               <div className="sdiv-75">
                 <div className="sdiv-76">Pay-Per-Click Advertising</div>
-                <div className="sdiv-77">
+                <div className="sdiv-77 mb-5">
                   Create targeted ad campaigns on search engines and social
                   media platforms for instant visibility.
                 </div>
