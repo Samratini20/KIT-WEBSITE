@@ -21,19 +21,3 @@
     scale: 1;
   }
 }
-.mainNav a:focus 
-{
-font: 700 18px calibri,sans-serif;
-color: #14B1FF;
-
-}
-
-.active
-{
-  color: #14B1FF;
-}
-
-.change .active{
-  color: #14B1FF;
-  
-}
