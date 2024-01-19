@@ -48,7 +48,43 @@ function HomePage(props) {
     <div className="sections-container">
       {/*#############--------------  section 1 --------------#################*/}
         <section className="landing-animation-section">
-
+        <div className="homediv-10">
+            <div className="homecolumn">
+              <div className="homediv-11">
+                <div className="homediv-12">
+                  <div className="homediv-13">
+                    <div className="homediv-14">We Are </div>
+                    <div className="container">
+                    <div className="homediv-15" style={{color:"#0A161C"}}>Creator's </div>
+                    <div className="homediv-15">Designer's </div>
+                    <div className="homediv-15" style={{color:"#042636"}}>Developer's </div>     
+                    </div>
+                  </div>{" "}
+                  <div className="homediv-16">
+                    Your trusted partner in IT services and solutions. With a
+                    passion for technology and a commitment to excellence, we
+                    have been providing <br />cutting-edge IT services to business.
+                  </div>
+                </div>{" "}
+                <div className="homediv-17">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1459f01c8e74237bd4d4c6a9a0aa5ee82a63110b4fad46fb2f7f1f33f8137d6b?apiKey=9d6521b3bd494d48816871a061465c45&"
+                    className="homeimg-2"
+                  />{" "}
+                    <button className='homediv-18' onClick={()=> navigate('/services')}>Get Started</button>
+                </div>  
+              </div>
+            </div>{" "}
+            <div className="homecolumn-2">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/996e9de6b0b2ce32c7b1c4c12b95dee85cffd76d8e747562f95ef9de41998041?apiKey=9d6521b3bd494d48816871a061465c45&"
+                
+                className="homeimg-3"
+              />
+            </div>
+          </div>
         </section>
 
         {/*#############--------------  section 2 --------------#################*/}
@@ -121,10 +157,10 @@ function HomePage(props) {
                 <div className="ceo-founder-animation"></div>
           </div>
           <div className="ceo-founder-text">
-                    <div className="ceo-founder-names">
+                <div className="ceo-founder-names">
                    <p class="js-nametag">Sandeep Banvasi, CEO</p>
                    <p class="js-nametag">Aravind Kumar, Founder</p>
-                   </div>
+                </div>
                 <div className="ceo-founder-testimonial">
                    Our team consists of highly skilled professionals with
                    extensive experience in the IT industry. We stay up-to-date
