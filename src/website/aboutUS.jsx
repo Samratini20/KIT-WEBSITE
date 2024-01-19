@@ -276,7 +276,7 @@ function Aboutus(props) {
 </div>
           </div>
         </div>
-        <div className="diva-9 flex-column my-4">
+        <div className="diva-9 my-4">
           <div className="diva-10">
           <img
             loading="lazy"

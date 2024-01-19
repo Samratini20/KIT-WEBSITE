@@ -90,7 +90,7 @@ function Header() {
                 to="/contact"
                 exact
                 id="contactUs"
-                className="change nav-link contactus-link"
+                className="change nav-link contactus-link mx-4"
                 onClick={handleSelect}
                 style={{ color: location.pathname === "/contact" ? "#14B1FF" : "inherit" }}
               >
