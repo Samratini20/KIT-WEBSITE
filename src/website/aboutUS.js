@@ -6,7 +6,6 @@ import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
 
 
-
 const data= [
   {
     id:'1',
@@ -63,7 +62,7 @@ function Aboutus(props) {
   }
   return (
     <>
-      <div className="about-us-container">
+      <div className="about-us-container bg-white">
         <div className="diva-1" style={{marginTop:"6.8rem"}}>
           <div className="diva-2">
           <img
@@ -101,7 +100,7 @@ function Aboutus(props) {
       </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
-                      <div className="adiv-15">
+                      <div className="adiv-15 w-auto">
                         <div className="adiv-16">
                           <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
                             We have 25+ years of experience Team.
@@ -114,7 +113,7 @@ function Aboutus(props) {
                             <br />
                           </span>
                         </div>
-                        <div className="adiv-17">
+                        <div className="adiv-17 w-auto">
                           <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/b43fe2462f3f8d4433eb85ee52f5135db524dc29e4e1d84ef4e202094a715f33?apiKey=9d6521b3bd494d48816871a061465c45&"
@@ -184,29 +183,30 @@ function Aboutus(props) {
         </div>
         <div className="vision">
           <div className="diva-3">
-            <div className="aspan-1">
+            <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
-              <br />
             </div>
-            <div className="aspan-1">
-              Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability unparalleled <br/>
-              experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and reliability <br/>
-              unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and<br/>
-              reliability unparalleled experience to every project, ensuring excellence and reliability. <br />
+            <div className="aspan-1 mb-2">
+            To be the leading force in shaping the future of information and technology, K.I.T Global Technologies 
+            Pvt Ltd envisions a world where seamless connectivity, advanced analytics, and intelligent automation 
+            redefine possibilities. We aspire to be at the forefront of technological innovation, creating solutions
+             that not only address current challenges but also anticipate and shape the evolving needs of our clients.
+              Through our commitment to sustainability, inclusivity, and excellence, we aim to be a catalyst for 
+              positive transformations in the global digital ecosystem.
             </div>
           </div>
         </div>
         <div className="mission">
           <div className="diva-3">
-            <div className="aspan-1">
-              <b>Our Mission</b>
-              <br />
+            <div className="aspan-1 fw-bold mb-2">
+              Our Mission
             </div>
-            <div className="aspan-1">
-              Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability unparalleled <br/>
-              experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and reliability <br/>
-              unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and<br/>
-              reliability unparalleled experience to every project, ensuring excellence and reliability. <br />
+            <div className="aspan-1 mb-2">
+            At K.I.T Global Technologies Pvt Ltd, our mission is to empower individuals and organisations
+             through innovative information and technology solutions. We are committed to delivering cutting-edge products
+              and services that enhance efficiency, foster growth, and drive positive change in the digital landscape. 
+              With a focus on integrity, collaboration, and continuous improvement, we strive to be a trusted partner in
+               our clients' success.
             </div>
           </div>
         </div>
