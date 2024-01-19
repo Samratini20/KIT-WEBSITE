@@ -42,7 +42,7 @@ function ContactUs(props) {
                 </div>
               </div>
 
-                <button type="submit" className="btn rounded-5 py-2 w-50 send-message fw-bold px-4">Send Message</button>
+                <button type="submit" className="btn rounded-5 py-2 w-50 send-message fw-bold px-4 mb-4">Send Message</button>
             </form>
           </div>
           <div className="contact-img mx-5">
