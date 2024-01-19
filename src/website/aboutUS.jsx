@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
-import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
+import aboutusImg_2 from '../assets/aboutusImg_2.png';
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
-
 
 
 const data= [
@@ -63,8 +62,8 @@ function Aboutus(props) {
   }
   return (
     <>
-      <div className="about-us-container">
-        <div className="diva-1" style={{marginTop:"6.8rem"}}>
+      <div className="about-us-container bg-white">
+        <div className="d-flex diva-1 flex-column" style={{marginTop:"6.8rem"}}>
           <div className="diva-2">
           <img
             loading="lazy"
@@ -72,7 +71,7 @@ function Aboutus(props) {
             className="aboutusImg-1"
           />
           </div>
-          <div className="diva-3" style={{lineHeight:"2rem"}}>
+          <div className="diva-3 mx-4 my-3 px-2 w-100" style={{lineHeight:"2rem"}}>
             <div className="aspan-1">
               We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant <br />
               and vivacious, and were founded to break that drab mould you were about to cast us in.
@@ -101,7 +100,7 @@ function Aboutus(props) {
       </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
-                      <div className="adiv-15">
+                      <div className="adiv-15 w-auto">
                         <div className="adiv-16">
                           <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
                             We have 25+ years of experience Team.
@@ -114,7 +113,7 @@ function Aboutus(props) {
                             <br />
                           </span>
                         </div>
-                        <div className="adiv-17">
+                        <div className="adiv-17 w-auto">
                           <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/b43fe2462f3f8d4433eb85ee52f5135db524dc29e4e1d84ef4e202094a715f33?apiKey=9d6521b3bd494d48816871a061465c45&"
@@ -182,41 +181,41 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="vision">
-          <div className="diva-3">
-            <div className="aspan-1">
+        <div className="vision d-flex">
+          <div className="diva-3 mx-4 my-3 px-2 w-100">
+            <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
-              <br />
             </div>
-            <div className="aspan-1">
-              Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability unparalleled <br/>
-              experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and reliability <br/>
-              unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and<br/>
-              reliability unparalleled experience to every project, ensuring excellence and reliability. <br />
+            <div className="aspan-1 mb-2">
+            To be the leading force in shaping the future of information and technology, K.I.T Global Technologies 
+            Pvt Ltd envisions a world where seamless connectivity, advanced analytics, and intelligent automation 
+            redefine possibilities. We aspire to be at the forefront of technological innovation, creating solutions
+             that not only address current challenges but also anticipate and shape the evolving needs of our clients.
+              Through our commitment to sustainability, inclusivity, and excellence, we aim to be a catalyst for 
+              positive transformations in the global digital ecosystem.
             </div>
-          </div>
-        </div>
-        <div className="mission">
-          <div className="diva-3">
-            <div className="aspan-1">
-              <b>Our Mission</b>
-              <br />
-            </div>
-            <div className="aspan-1">
-              Over 25 Years of Expertise: Our seasoned team brings unparalleled experience to every project, ensuring excellence and reliability unparalleled <br/>
-              experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and reliability <br/>
-              unparalleled experience to every project, ensuring excellence and reliability unparalleled experience to every project, ensuring excellence and<br/>
-              reliability unparalleled experience to every project, ensuring excellence and reliability. <br />
-            </div>
-          </div>
-        </div>
-        <div className="diva-4">
-          <div className="diva-5"/>
-          <img
+            <div className="d-flex diva-4 float-end">
+            <img
             loading="lazy"
             src={aboutusImg_2}
-            className="aboutusImg-2"
+            className="w-100"
           />
+            </div>            
+          </div>
+        </div>
+        <div className="mission d-flex">
+          <div className="diva-3 mx-4 my-3 px-2 w-100 flex-column">
+            <div className="aspan-1 fw-bold mb-2">
+              Our Mission
+            </div>
+            <div className="aspan-1 mb-2">
+            At K.I.T Global Technologies Pvt Ltd, our mission is to empower individuals and organisations
+             through innovative information and technology solutions. We are committed to delivering cutting-edge products
+              and services that enhance efficiency, foster growth, and drive positive change in the digital landscape. 
+              With a focus on integrity, collaboration, and continuous improvement, we strive to be a trusted partner in
+               our clients' success.
+            </div>
+          </div>
         </div>        
         <div className="diva-6">
           <div className="diva-7">
@@ -277,7 +276,7 @@ function Aboutus(props) {
 </div>
           </div>
         </div>
-        <div className="diva-9">
+        <div className="diva-9 my-4">
           <div className="diva-10">
           <img
             loading="lazy"
