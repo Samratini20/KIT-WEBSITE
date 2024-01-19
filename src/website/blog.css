@@ -244,9 +244,6 @@
       transition: all 0.2s;
     }
   
-.bcolumn-2{
-  max-width: 28%;
-}
 .bdiv-19 {
   border-radius: 25px 25px 25px 5px;
   background-color: #e7f7ff;
@@ -376,11 +373,8 @@ letter-spacing: 0.015rem;
 }
 .bdiv-34{
   background-color: #e7f7ff;
-  margin-left: 0.2rem;
   padding: 2rem;
   margin-top: 0rem;
-  width: 85rem;
-  height: 44rem;
   flex-shrink: 0;
   border-radius: 0.3125rem;
   background: #E7F7FF;

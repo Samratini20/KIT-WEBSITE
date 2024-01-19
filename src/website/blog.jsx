@@ -10,7 +10,9 @@ import cakeCutting from '../assets/CEO-Work.JPG';
 import rangoli from '../assets/Rangoli.JPG';
 import fam from '../assets/CEO-family.jpg';
 import team from '../assets/Team-Opening.JPG';
-import cake from '../assets/Cake.JPG'
+import cake from '../assets/Cake.JPG';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 function Blog(props) {
   const date = new Date();
@@ -24,36 +26,33 @@ function Blog(props) {
     <>
       <div className="bdiv">
         <div className="bdiv-9">
-          <div className="bdiv-10">
-            <div className="bcolumn">
+          <div className="bdiv-10 col-10 d-flex">
+            <div className="bcolumn col-8">
               <div className="bdiv-11">
-                <div id="blogCarousel" className="carousel slide mainImg" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img src={KITBanner} class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item active" data-bs-interval="2000">
-                      <img src={teamPicture} class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img src={CEOCabin} class="d-block w-100" alt="..." />
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+              <Carousel interval={3000}>
+                  <Carousel.Item>
+                      <img
+                          className="d-block w-100"
+                          src={KITBanner}
+                      />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                      <img
+                          className="d-block w-100"
+                          src={teamPicture}
+                      />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                      <img
+                          className="d-block w-100"
+                          src={CEOCabin}
+                      />
+                  </Carousel.Item>
+              </Carousel>
                 <div className="bdiv-12">
                   <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
                   {dateInfo} - Latest News
-
-
                   </div>
                 </div>
                 <div className="bdiv-14">

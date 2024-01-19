@@ -60,7 +60,7 @@ function HomePage(props) {
                     <div className="homediv-15" style={{color:"#042636"}}>Developer's </div>     
                     </div>
                   </div>{" "}
-                  <div className="homediv-16">
+                  <div className="homediv-16 mb-2">
                     Your trusted partner in IT services and solutions. With a
                     passion for technology and a commitment to excellence, we
                     have been providing <br />cutting-edge IT services to business.
