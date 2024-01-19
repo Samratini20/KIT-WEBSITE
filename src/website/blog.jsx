@@ -18,8 +18,7 @@ function Blog(props) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
+   window.scrollTo(0, 0);
   }, []);
   return (
     <>
@@ -60,7 +59,8 @@ function Blog(props) {
                 <div className="bdiv-14">
                   Overview
                 </div>
-                <div className= "bdiv-15 w-100 mx-1 text">
+             </div>
+              <div className= "bdiv-15 mx-4 text width">
                   At KIT, we are dedicated to providing top-notch IT services tailored to 
                   meet your unique business needs. With a team of experienced professionals, 
                   we offer a wide range of technology solutions, from network and infrastructure 
@@ -69,21 +69,18 @@ function Blog(props) {
                   enhanced productivity, and robust data security. Partner with us to unlock 
                   the full potential of technology for your business.
                 </div>{" "}
-                <button className='blogdiv-button btnRead' color="inherit" onClick={() => navigate('/blog')}>Read More</button>
-              </div>
+                <button className='blogdiv-button btnRead mx-4' color="inherit" onClick={() => navigate('/blog')}>Read More</button>
             </div>{" "}
             <div className="bcolumn-2">
               <div className="bdiv-17">
-              {/* <div className="recent"> */}
-                <div className="bdiv-21 mx-2 px-4 recent1 ">
-                  <div className="bdiv-22 fw-bold fs-5">Recent Post</div>{" "}
-                  <hr />
-                  {/* <div className="d-flex w-100 flex-column"> */}
-                  <div className="recent">
-                    <img
+              <div className="bdiv-21 mx-2 px-4 recent1 ">
+                  <div className="bdiv-22 fw-bold fs-5 mt-3">Recent Post</div>{" "}
+                  <hr className='mt-3 mb-4'/>
+                  <div className="d-flex w-100 flex-column">
+                 <img
                       loading="lazy"
                       srcSet={RecentPost}
-                      className="d-flex w-50"
+                      className="d-flex w-95 mb-2 height"
                     />
                     <div className="mx-4 my-3">
                       <div className="bdiv-26 fw-bold mb-2 glimpse">
@@ -104,84 +101,62 @@ function Blog(props) {
         <div className="bdiv-34">
           <div className="bdiv-35">
             <div className="d-flex justify-content-around mainFlex">
-              {/* <div class="d-flex w-100 flex-column divChng flexAlign"> */}
-              <div className='flexAlign'>
+             <div className='flexAlign'>
                 <img loading="lazy" srcset={God} className='first'/>
-                {/* <div class="mx-4 my-3 fw-bold w-75"> */}
-                <div className='align'>
-                  {/* <div class="bdiv-39 fw-bold"> */}
-                  Satya Narayan Pooja conducted
+               <div className='align mt-4'>
+                 Satya Narayan Pooja conducted
                   in office structuring process
                   by our CEO Sandeep Banavasi and his parents
-                {/* </div> */}
-                </div>
+               </div>
               </div>{" "}
               <div className='flexAlign'>
                 <img loading="lazy" srcset={cakeCutting} className='first'/>
-                <div className='align'>
+                <div className='align mt-4'>
                   CEO in his office Cabin on
                   discussion with Clients
                   meetings and Team members
                 </div>{" "}
               </div>{" "}
-              {/* <div class="d-flex w-100 flex-column"> */}
-                <div className='flexAlign'>
+              <div className='flexAlign'>
                   <img loading="lazy" srcSet={rangoli} className='first' />
                   <div className="bdiv-46">
-                    <div className='align'>
-                      The art of decoration drawn on the floor. <br />
+                    <div className='align mt-4'>
+                      The art of decoration drawn on the floor. 
                       Intended to welcome Lakshmi,
-                      the goddess <br /> of wealth and good luck.
+                      the goddess of wealth and good luck.
                     </div>{" "}
-                    {/* <div className="bdiv-48">
-                      Updated: 7 December 2023 15:35 IST
-                    </div> */}
-                  </div>
+               </div>
                 </div>
-              {/* </div> */}
-            </div>
+           </div>
           </div>{" "}
           <div className="bdiv-49">
             <div className="d-flex justify-content-around mainFlex">
               <div className="bcolumn-6">
-                {/* <div class="d-flex w-75 flex-column"> */}
-                <div className='flexAlign'>
-                  {/* <img loading="lazy" srcSet={fam} class="d-flex rounded-4" style={{ width: '18rem', height: '11rem' , marginLeft: '1rem'}} />{" "} */}
-                  <img loading="lazy" srcSet={fam} className='first' />{" "}
-                  {/* <div className="bdiv-52"> */}
-                    <div className='align'>
+              <div className='flexAlign'>
+                <img loading="lazy" srcSet={fam} className='first' />{" "}
+                  <div className='align mt-4'>
                       CEO Entering the office with family.
                     </div>{" "}
-                    {/* <div className="bdiv-54">
-                      Updated: 7 December 2023 15:35 IST
-                    </div> */}
-                  {/* </div> */}
-                </div>
+            </div>
               </div>{" "}
               <div className="bcolumn-7">
                 <div className='flexAlign'>
                   <img loading="lazy" srcSet={team} className='first' />{" "}
                   <div className="bdiv-56">
-                    <div className='align'>
+                    <div className='align mt-4'>
                       CEO at office with team members.
                     </div>{" "}
-                    {/* <div className="bdiv-58">
-                      Updated: 7 December 2023 15:35 IST
-                    </div> */}
-                  </div>
+                </div>
                 </div>
               </div>{" "}
               <div className="bcolumn-8">
                 <div className='flexAlign'>
                   <img loading="lazy" srcSet={cake} className='first'/>{" "}
                   <div className="bdiv-60">
-                    <div className='align'>
+                    <div className='align mt-4'>
                       Cake Cutting ceremony on the day of inauguration.
                     </div>{" "}
-                    {/* <div className="bdiv-62">
-                      Updated: 7 December 2023 15:35 IST
-                    </div> */}
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -193,222 +168,3 @@ function Blog(props) {
 
 }
 export default Blog;
-{/* <style jsx>{`
-        .div {
-          background-color: #fff;
-          display: flex;
-          flex-direction: column;
-        }
-        .bdiv-2 {
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          background-color: #fff;
-          align-self: stretch;
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          gap: 20px;
-          padding: 4px 80px;
-        }
-        @media (max-width: 991px) {
-          .bdiv-2 {
-            max-width: 100%;
-            flex-wrap: wrap;
-            padding: 0 20px;
-          }
-        }
-        .img {
-          aspect-ratio: 0.76;
-          object-fit: contain;
-          object-position: center;
-          width: 58px;
-          overflow: hidden;
-          max-width: 100%;
-        }
-        .bdiv-3 {
-          align-self: center;
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 20px;
-          margin: auto 0;
-        }
-        @media (max-width: 991px) {
-          .bdiv-3 {
-            max-width: 100%;
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-        }
-        .bdiv-4 {
-          color: var(--Text, #292929);
-          align-self: start;
-          white-space: nowrap;
-          font: 400 18px Calibri, sans-serif;
-        }
-        @media (max-width: 991px) {
-          .bdiv-4 {
-            white-space: initial;
-          }
-        }
-        .bdiv-5 {
-          color: var(--Text, #292929);
-          align-self: start;
-          font: 400 18px Calibri, sans-serif;
-        }
-        .bdiv-6 {
-          color: var(--Text, #292929);
-          align-self: start;
-          font: 400 18px Calibri, sans-serif;
-        }
-        .bdiv-7 {
-          color: #14b1ff;
-          align-self: stretch;
-          font: 700 18px Calibri, sans-serif;
-        }
-        .bdiv-8 {
-          color: var(--Text, #292929);
-          align-self: start;
-          white-space: nowrap;
-          font: 400 18px Calibri, sans-serif;
-        }
-        @media (max-width: 991px) {
-          .bdiv-8 {
-            white-space: initial;
-          }
-        }
-        .bdiv-9 {
-          align-self: center;
-          margin-top: 49px;
-          width: 100%;
-          max-width: 1261px;
-        }
-        @media (max-width: 991px) {
-          .bdiv-9 {
-            max-width: 100%;
-            margin-top: 40px;
-          }
-        }
-        .bdiv-10 {
-          gap: 20px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .bdiv-10 {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0px;
-          }
-        }
-        .column {
-          display: flex;
-          flex-direction: column;
-          line-height: normal;
-          width: 75%;
-          margin-left: 0px;
-        }
-        @media (max-width: 991px) {
-          .column {
-            width: 100%;
-          }
-        }
-        .bdiv-11 {
-          display: flex;
-          flex-grow: 1;
-          flex-direction: column;
-          align-items: start;
-          padding: 0 20px;
-        }
-        @media (max-width: 991px) {
-          .bdiv-11 {
-            max-width: 100%;
-            margin-top: 40px;
-          }
-        }
-        .img-2 {
-          aspect-ratio: 2.06;
-          object-fit: contain;
-          object-position: center;
-          width: 100%;
-          overflow: hidden;
-          align-self: stretch;
-        }
-        @media (max-width: 991px) {
-          .img-2 {
-            max-width: 100%;
-          }
-        }
-        .bdiv-12 {
-          border-radius: 5px 25px 25px 5px;
-          background-color: #e7f7ff;
-          display: flex;
-          margin-top: 15px;
-          gap: 12px;
-          padding: 18px 0;
-        }
-        @media (max-width: 991px) {
-          .bdiv-12 {
-            max-width: 100%;
-            flex-wrap: wrap;
-          }
-        }
-        .img-3 {
-          aspect-ratio: 1;
-          object-fit: contain;
-          object-position: center;
-          width: 24px;
-          overflow: hidden;
-          max-width: 100%;
-        }
-        .bdiv-13 {
-          color: var(--Section-1, #005e8d);
-          letter-spacing: 0.72px;
-          align-self: center;
-          margin: auto 0;
-          font: 700 18px/60px Calibri, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        @media (max-width: 991px) {
-          .bdiv-13 {
-            max-width: 100%;
-          }
-        }
-        .bdiv-14 {
-          color: var(--Text, #292929);
-          letter-spacing: 1.2px;
-          align-self: stretch;
-          margin-top: 26px;
-          font: 700 30px/60px Calibri, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        @media (max-width: 991px) {
-          .bdiv-14 {
-            max-width: 100%;
-          }
-        }
-        .bdiv-15 {
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 3;
-          overflow: hidden;
-          color: var(--Text, #292929);
-          text-overflow: ellipsis;
-          letter-spacing: 0.72px;
-          align-self: stretch;
-          margin-top: 40px;
-          font: 400 18px/35px Calibri, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        @media (max-width: 991px) {
-          .bdiv-15 {
-            max-width: 100%;
-          }
-        }
-        .bdiv-16 {
-          color: var(--Background, #fff);
-          letter-spacing: 0.36px;
-          white-space: nowrap;
-          border-radius: 19px;
-          box
-        }
-
-        `}</style>{" "} */}
-
