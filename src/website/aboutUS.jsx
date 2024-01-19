@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
-import aboutusImg_2 from '../assets/aboutusImg_22.JPG';
+import aboutusImg_2 from '../assets/aboutusImg_2.png';
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
 
@@ -63,7 +63,7 @@ function Aboutus(props) {
   return (
     <>
       <div className="about-us-container bg-white">
-        <div className="diva-1" style={{marginTop:"6.8rem"}}>
+        <div className="d-flex diva-1 flex-column" style={{marginTop:"6.8rem"}}>
           <div className="diva-2">
           <img
             loading="lazy"
@@ -71,7 +71,7 @@ function Aboutus(props) {
             className="aboutusImg-1"
           />
           </div>
-          <div className="diva-3" style={{lineHeight:"2rem"}}>
+          <div className="diva-3 mx-4 my-3 px-2 w-100" style={{lineHeight:"2rem"}}>
             <div className="aspan-1">
               We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant <br />
               and vivacious, and were founded to break that drab mould you were about to cast us in.
@@ -181,8 +181,8 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="vision">
-          <div className="diva-3">
+        <div className="vision d-flex">
+          <div className="diva-3 mx-4 my-3 px-2 w-100">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
             </div>
@@ -194,10 +194,17 @@ function Aboutus(props) {
               Through our commitment to sustainability, inclusivity, and excellence, we aim to be a catalyst for 
               positive transformations in the global digital ecosystem.
             </div>
+            <div className="d-flex diva-4 float-end">
+            <img
+            loading="lazy"
+            src={aboutusImg_2}
+            className="w-100"
+          />
+            </div>            
           </div>
         </div>
-        <div className="mission">
-          <div className="diva-3">
+        <div className="mission d-flex">
+          <div className="diva-3 mx-4 my-3 px-2 w-100 flex-column">
             <div className="aspan-1 fw-bold mb-2">
               Our Mission
             </div>
@@ -209,14 +216,6 @@ function Aboutus(props) {
                our clients' success.
             </div>
           </div>
-        </div>
-        <div className="diva-4">
-          <div className="diva-5"/>
-          <img
-            loading="lazy"
-            src={aboutusImg_2}
-            className="aboutusImg-2"
-          />
         </div>        
         <div className="diva-6">
           <div className="diva-7">
@@ -277,7 +276,7 @@ function Aboutus(props) {
 </div>
           </div>
         </div>
-        <div className="diva-9">
+        <div className="diva-9 flex-column my-4">
           <div className="diva-10">
           <img
             loading="lazy"

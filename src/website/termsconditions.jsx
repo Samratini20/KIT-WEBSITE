@@ -8,7 +8,7 @@ function TermsConditions(props) {
   }, []);
   return (
     <div className="d-flex flex-column">
-        <h1 style={{marginTop:'7rem',marginLeft:'28rem'}}>Terms & Conditions</h1>
+        <div className="d-grid fa-2x fw-bold justify-content-center" style={{marginTop:'7.5rem'}}>Terms & Conditions</div>
         <div className="align-content-center d-flex flex-column mx-1 px-5 py-3" style={{lineHeight: 2}}>
           <span className="mb-2">
           The usage and access of any product, service or feature (the “Material/s”) available through the internet websites accessible at <b className="bg-danger">KIT Website(the “Website”)</b> by any user of the Website (“you” or “your”) shall be governed by the following Terms of Use:
