@@ -68,7 +68,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+@media (max-width: 900px) {
+  .homediv-13 {
   margin-left: 2rem;
+
+  }
 }
 .homediv-14 {
   color: var(--Text, #292929);
