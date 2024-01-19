@@ -49,7 +49,7 @@ function Blog(props) {
                       />
                   </Carousel.Item>
               </Carousel>
-                <div className="bdiv-12">
+                <div className="bdiv-12 mt-4">
                   <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
                   {dateInfo} - Latest News
