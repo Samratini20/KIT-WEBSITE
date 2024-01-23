@@ -127,8 +127,8 @@ function HomePage(props) {
                    <div className="what-client-says-carousal-text">
                    <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
                      {item.head}
-                   </span><br />
-                   <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
+                   </span><br /> <br />
+                   <span className="what-client-says-text-para" style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
                      {item.description} 
                    </span>
                    </div>
@@ -161,7 +161,7 @@ function HomePage(props) {
                    <p class="js-nametag">Sandeep Banvasi, CEO</p>
                    <p class="js-nametag">Aravind Kumar, Founder</p>
                 </div>
-                <div className="ceo-founder-testimonial">
+                <div className="ceo-founder-testimonial mt-5 pt-5">
                    Our team consists of highly skilled professionals with
                    extensive experience in the IT industry. We stay up-to-date
                    with the latest trends and technologies to provide <br /> you with

@@ -12,13 +12,18 @@
   width: max-content;
 }
 
+.navbar-brand{
+  object-fit: cover;
+  height: auto;
+}
+
 .img{
-  scale: 2;
+  transform: scale(2);
 }
 
 @media (max-width: 991px) {
   .img{
-    scale: 2;
+    transform: scale(2);
   }
 }
 .contactus-link{
