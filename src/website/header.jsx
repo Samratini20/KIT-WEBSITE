@@ -16,7 +16,7 @@ function Header() {
     <div className="div-2">
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-fluid">
-          <a className="navbar-brand " href="/">
+          <a className="navbar-brand" href="/">
             <img className="img" src={logo} alt="logo" />
           </a>
           <button

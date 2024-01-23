@@ -5,38 +5,6 @@ import aboutusImg_2 from '../assets/aboutusImg_2.png';
 import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
 import { useNavigate } from "react-router-dom";
 
-
-const data= [
-  {
-    id:'1',
-    head:'"Design Rank Impress"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Prabhakar Rai",
-    designation:"General Manager"
-  },
-  {
-    id:'2',
-    head:'"Soar with SEO"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Shirish Yadav",
-    designation:"AGM"
-  },
-  {
-    id:'3',
-    head:'"Outdated to Outstanding"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Yash Singh",
-    designation:"General Manager"
-  },
-  {
-    id:'4',
-    head:'"Engage,Boost,Succeed"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Ankit Shah",
-    designation:"Head, Marketing and Sales"
-  }
-];
-
 function Aboutus(props) {  
   const navigate = useNavigate();
 
@@ -64,27 +32,27 @@ function Aboutus(props) {
     <>
       <div className="about-us-container bg-white">
         <div className="d-flex diva-1 flex-column" style={{marginTop:"6.8rem"}}>
-          <div className="diva-2">
+          <div className="diva-2 mx-auto">
           <img
             loading="lazy"
             src={aboutusImg_1}
-            className="aboutusImg-1"
+            className="aboutusImg-1 "
           />
           </div>
           <div className="diva-3 mx-4 my-3 px-2 w-100" style={{lineHeight:"2rem"}}>
-            <div className="aspan-1">
-              We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant <br />
+            <div className="aspan-1 px-4">
+              We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant
               and vivacious, and were founded to break that drab mould you were about to cast us in.
               <br />
             </div>
-            <div className="aspan-1">
-              We started in 2016 as India’s first digital insurer, and are currently the fastest growing insurance company in the country. In a span of three years we have<br /> 
-              revved up insurance with technology and given it a snazzy makeover—we’ve taken it online, wiped out much of the paperwork associated with it, created<br /> 
+            <div className="aspan-1 px-4">
+              We started in 2016 as India’s first digital insurer, and are currently the fastest growing insurance company in the country. In a span of three years we have
+              revved up insurance with technology and given it a snazzy makeover—we’ve taken it online, wiped out much of the paperwork associated with it, created
               products that are a cut above the ho-hum, and sold them to over 50 million unique customers.<br />
             </div>
-            <div className="aspan-1">
-              All this jazzing up has been brought about by our team that is obsessed with making insurance effortless. This team has grown from a small huddle of 6 <br />
-              when we started, to a clan of more than 400 now. And this eclectic clan—comprising everyone from coders who double up as comics to finance whizzes <br />
+            <div className="aspan-1 px-4">
+              All this jazzing up has been brought about by our team that is obsessed with making insurance effortless. This team has grown from a small huddle of 6
+              when we started, to a clan of more than 400 now. And this eclectic clan—comprising everyone from coders who double up as comics to finance whizzes
               who slay at karaokes—is responsible for other great feats too.
               <br />
             </div>
