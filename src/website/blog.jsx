@@ -11,8 +11,8 @@ import rangoli from '../assets/Rangoli.JPG';
 import fam from '../assets/CEO-family.jpg';
 import team from '../assets/Team-Opening.JPG';
 import cake from '../assets/Cake.JPG';
-import Carousel from 'react-bootstrap/Carousel';
-
+import doorOpening from '../assets/Door-Opening.JPG';
+import Carousel from "@itseasy21/react-elastic-carousel";
 
 function Blog(props) {
   const date = new Date();
@@ -29,26 +29,29 @@ function Blog(props) {
           <div className="bdiv-10 col-10 d-flex">
             <div className="bcolumn col-8">
               <div className="bdiv-11">
-              <Carousel interval={3000}>
-                  <Carousel.Item>
-                      <img
-                          className="d-block w-100"
-                          src={KITBanner}
-                      />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                      <img
-                          className="d-block w-100"
-                          src={teamPicture}
-                      />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                      <img
-                          className="d-block w-100"
-                          src={CEOCabin}
-                      />
-                  </Carousel.Item>
-              </Carousel>
+              <Carousel  itemsToShow={1} showArrows={true} pagination={false} >  
+                  <div>
+                    <img className="d-block w-100"
+                      src={KITBanner}
+                    />
+                  </div>
+                  <div>
+                    <img className="d-block w-100"
+                    src={CEOCabin}
+                    />
+                  </div>
+                  <div>
+                    <img className="d-block w-100"
+                      src={teamPicture}
+                    />
+                  </div>
+                  <div>
+                    <img className="d-block w-100"
+                      src={doorOpening}
+                    />
+                  </div>
+                  
+                </Carousel>
                 <div className="bdiv-12 mt-4">
                   <i class="fa-regular fa-clock time_clock"></i>
                   <div className="bdiv-13">
