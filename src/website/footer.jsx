@@ -21,7 +21,7 @@ function Footer() {
         <div className='footer-quicklinks-container d-flex flex-column'>
           <h4 className='mt-3'>Quick links</h4>
           <Link className='mt-4 footer-link' to="/">Home</Link> 
-          <Link className='mt-2 footer-link' to="/about">about Us</Link>
+          <Link className='mt-2 footer-link' to="/about">About Us</Link>
           <Link className='mt-2 footer-link' to="/services">Services</Link>
           <Link className='mt-2 footer-link' to="/blog">Blog</Link>
           <Link className='mt-2 footer-link' to="/contact">Contact Us</Link>
