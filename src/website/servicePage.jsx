@@ -136,7 +136,7 @@ function ServicePage(props) {
             </div>
             <div className="scolumn-4">
               <div className="sdiv-63">
-                <div className="sdiv-64">Social Media Marketting</div>
+                <div className="sdiv-64">Social Media Marketing</div>
                 <div className="sdiv-65 mb-5">
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
