@@ -1,6 +1,5 @@
     .about-us-container {
       display: flex;
-      /* padding-top: 6rem; */
       flex-direction: column;
       align-items: center;
     }
@@ -15,7 +14,7 @@
     }
     .diva-3{
         width: 100%;
-        padding-bottom: 2rem;
+        margin: 1rem 0 0 3rem;
     }
     .diva-4{
     position: absolute;
@@ -27,7 +26,6 @@
         margin-bottom: 30px;
         line-height: 2;
         word-spacing: 4px;
-        /* width: min-content; */
         overflow-x: hidden;
     }
 
