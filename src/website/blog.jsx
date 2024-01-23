@@ -81,8 +81,8 @@ function Blog(props) {
                       srcSet={RecentPost}
                       className="d-flex w-95 mb-2 height"
                     />
-                    <div className="mx-4 my-3">
-                      <div className="bdiv-26 fw-bold mb-2 glimpse">
+                    <div className="mx-1 my-3">
+                      <div className="bdiv-26 fw-bold mb-2">
                         Glimse of Office Inaguaration Day
                         Team Picture
                         CEO with the employees
