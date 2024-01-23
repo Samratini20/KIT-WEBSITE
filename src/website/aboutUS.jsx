@@ -60,28 +60,28 @@ function Aboutus(props) {
         </div>
         <div className="adiv-9">
           <div className="adiv-10">
-          <div className={`card-container ${swap ? 'swap' : ''}`}>
-        <div className={`cards card1 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card2 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card3 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card4 ${swap ? 'swap' : ''}`}></div>
-      </div>
+            <div className={`card-container ${swap ? 'swap' : ''}`}>
+            <div className={`cards card1 ${swap ? 'swap' : ''}`}></div>
+            <div className={`cards card2 ${swap ? 'swap' : ''}`}></div>
+            <div className={`cards card3 ${swap ? 'swap' : ''}`}></div>
+            <div className={`cards card4 ${swap ? 'swap' : ''}`}></div>
+          </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
-                      <div className="adiv-15 w-auto">
-                        <div className="adiv-16">
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
+                      <div className="m-5 p-5">
+                        <div className="d-flex flex-column justify-content-between">
+                          <span className="mb-4" style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700,fontSize:'1.5rem'}}>
                             We have 25+ years of experience Team.
                             <br />
                           </span>
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
+                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400,lineHeight:2}}>
                             Over 25 Years of Expertise: Our seasoned team brings
                             unparalleled experience to every project, ensuring
                             excellence and reliability
                             <br />
                           </span>
                         </div>
-                        <div className="adiv-17 w-auto">
+                        <div className="adiv-17 align-items-center d-flex mt-5">
                           <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/b43fe2462f3f8d4433eb85ee52f5135db524dc29e4e1d84ef4e202094a715f33?apiKey=9d6521b3bd494d48816871a061465c45&"
@@ -98,7 +98,7 @@ function Aboutus(props) {
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5b15a45b8fafda85d0363576d3b4fe36e0cf07d868707a55cdef3a9dfd9d2bf?apiKey=9d6521b3bd494d48816871a061465c45&"
                             className="aimg-7"
                           />
-                          <div className="adiv-20">Industry Insights</div>
+                          <div className="adiv-18">Industry Insights</div>
                         </div>
                         <div className="adiv-21">
                           <img
@@ -106,7 +106,7 @@ function Aboutus(props) {
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/b0fa82cd5b25aa478837e5bba1bb1d672cc0bdc45fd2913063f1c8326a650889?apiKey=9d6521b3bd494d48816871a061465c45&"
                             className="aimg-8"
                           />
-                          <div className="adiv-22">Time-Tested Solutions</div>
+                          <div className="adiv-18">Time-Tested Solutions</div>
                         </div>
                         <div className="adiv-23">
                           <img
@@ -114,40 +114,40 @@ function Aboutus(props) {
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/93294b95e6de4f19689ea42f60182fd895f42d77be139098ef9845648324f395?apiKey=9d6521b3bd494d48816871a061465c45&"
                             className="aimg-9"
                           />
-                          <div className="adiv-24">Reliable Partner</div>
+                          <div className="adiv-18">Reliable Partner</div>
                         </div>
                       </div>
                     </div>
                   </div>              
   
           </div>
-        </div>
-        <div className="adiv-25">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="aimg-10"
-          />
-          <div className="adiv-26">
-            <div className="adiv-27">
-              <div className="adiv-28" data-aos="fade-up">100</div>
-              <div className="adiv-29">Websites Designed</div>
+            <div className="adiv-25">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
+                className="aimg-10"
+              />
+              <div className="adiv-26">
+                <div className="adiv-27">
+                  <div className="adiv-28" data-aos="fade-up">100</div>
+                  <div className="adiv-29">Websites Designed</div>
+                </div>
+                <div className="adiv-30">
+                  <div className="adiv-31">
+                    <div className="adiv-32" data-aos="fade-up">100</div>
+                    <div className="adiv-33">Apps Developed</div>
+                  </div>
+                  <div className="adiv-34">
+                    <div className="adiv-35" data-aos="fade-up">100</div>
+                    <div className="adiv-36">Happy Clients</div>
+                  </div>
+                  <div className="adiv-37">
+                    <div className="adiv-38" data-aos="fade-up">100</div>
+                    <div className="adiv-39">Team Members</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="adiv-30">
-              <div className="adiv-31">
-                <div className="adiv-32" data-aos="fade-up">100</div>
-                <div className="adiv-33">Apps Developed</div>
-              </div>
-              <div className="adiv-34">
-                <div className="adiv-35" data-aos="fade-up">100</div>
-                <div className="adiv-36">Happy Clients</div>
-              </div>
-              <div className="adiv-37">
-                <div className="adiv-38" data-aos="fade-up">100</div>
-                <div className="adiv-39">Team Members</div>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="vision d-flex">
           <div className="diva-3 mt-3 px-2 w-100">

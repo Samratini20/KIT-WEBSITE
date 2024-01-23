@@ -22,19 +22,19 @@ function ContactUs(props) {
               <div class="form-row">
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
-                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input inputs" name="name" placeholder="Your Name" required/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input  " name="name" placeholder="Your Name" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="emailID" className="fs-5">Email - ID <span class="text-danger ml-2">*</span></span>
-                  <input type="email" class="form-control p-0 pt-4 py-2 underlined-input inputs" name="emailId" placeholder="Your Email" required/>
+                  <input type="email" class="form-control p-0 pt-4 py-2 underlined-input  " name="emailId" placeholder="Your Email" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="subject" className="fs-5">Subject <span class="text-danger ml-2">*</span></span>
-                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input inputs" name="subject" placeholder="Subject" required/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input  " name="subject" placeholder="Subject" required/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="websiteURL" className="fs-5">Website URL</span>
-                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input inputs" name="websiteURL" placeholder="Website URL"/>
+                  <input type="text" class="form-control p-0 pt-4 py-2 underlined-input  " name="websiteURL" placeholder="Website URL"/>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="textArea" className="fs-5">Type your Message here <span class="text-danger ml-2">*</span></span>

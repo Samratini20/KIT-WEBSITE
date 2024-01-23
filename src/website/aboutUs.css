@@ -261,23 +261,11 @@
       justify-content: center;
       align-items: end;
       width: 100%;
-      padding: 50px 60px;
     }
     @media (max-width: 991px) {
       .adiv-14 {
         max-width: 100%;
         padding: 0 20px;
-      }
-    }
-    .adiv-15 {
-      display: flex;
-      max-width: 100%;
-      flex-direction: column;
-      margin: 117px 45px 37px 0;
-    }
-    @media (max-width: 991px) {
-      .adiv-15 {
-        margin: 40px 10px 0 0;
       }
     }
     .adiv-16 {
@@ -317,7 +305,6 @@
     .adiv-18 {
       color: var(--Text, #292929);
       letter-spacing: 0.48px;
-      margin-top: 8px;
       font: 400 16px/30px Calibri, -apple-system, Roboto, Helvetica,
         sans-serif;
     }
@@ -335,13 +322,6 @@
       overflow: hidden;
       max-width: 100%;
     }
-    .adiv-20 {
-      color: var(--Text, #292929);
-      letter-spacing: 0.48px;
-      margin-top: 7px;
-      font: 400 16px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
     .adiv-21 {
       align-self: start;
       display: flex;
@@ -356,21 +336,6 @@
       overflow: hidden;
       max-width: 100%;
     }
-    .adiv-22 {
-      color: var(--Text, #292929);
-      letter-spacing: 0.48px;
-      align-self: center;
-      flex-grow: 1;
-      white-space: nowrap;
-      margin: auto 0;
-      font: 400 16px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .adiv-22 {
-        white-space: initial;
-      }
-    }
     .adiv-23 {
       align-self: start;
       display: flex;
@@ -384,13 +349,6 @@
       width: 24px;
       overflow: hidden;
       max-width: 100%;
-    }
-    .adiv-24 {
-      color: var(--Text, #292929);
-      letter-spacing: 0.48px;
-      margin: auto 0;
-      font: 400 16px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
     }
     .adiv-25 {
       display: flex;
@@ -408,10 +366,11 @@
     .aimg-10 {
       position: absolute;
       inset: 0;
-      height: 100%;
+      height: 85%;
       object-fit: cover;
       object-position: center;
       overflow-x: hidden;
+      z-index: -1;
     }
     .adiv-26 {
       position: relative;
@@ -754,23 +713,6 @@
         sans-serif;
         display: flex;
         flex-direction: column;
-    }
-
-    .testimonial-card-container{
-      box-shadow: 0px 0px 5px 5px rgba(208, 207, 207, 0.185);
-      /* margin-top: ; */
-      margin: 1.2rem;
-      padding: 1rem;
-    }
-
-    .testimonial-name-position{
-      margin-left: 2rem;
-    }
-
-    .rec-arrow-left,.rec-arrow-right{
-      background-color: transparent !important;
-      color: lightgray !important;
-      line-height: 35px !important;
     }
     /*Accordion styling here*/
     .accordion-item{
