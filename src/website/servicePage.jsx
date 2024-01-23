@@ -86,7 +86,7 @@ function ServicePage(props) {
                     &quot;Elevate Your Experience with Our Services – Your
                     Success, Our Priority!&quot;
                   </div>
-                  <div className="sdiv-42">
+                  <div className="mt-5 sdiv-42">
                     <a href="https://wa.me/919686112338" style={{backgroundColor:'#005e8d'}}
                         className="chatwithusbutton" target='_blank'>Chat With Us</a>
                   </div>
@@ -96,8 +96,8 @@ function ServicePage(props) {
           </div>
         </div>
         <div className="sdiv-43">What We Provide</div>
-        <div className="service-card-container d-flex flex-column mx-2 px-5">
-        <div className="sdiv-44">
+        <div className="d-flex flex-column">
+        <div className="d-flex justify-content-center mx-auto sdiv-44">
           <div className="sdiv-45">
             <div className="scolumn">
               <div className="sdiv-46">
@@ -122,7 +122,7 @@ function ServicePage(props) {
             </div>
           </div>
         </div>
-        <div className="sdiv-56">
+        <div className="d-flex justify-content-center mx-auto  sdiv-56">
           <div className="sdiv-57">
             <div className="scolumn">
               <div className="sdiv-58">
@@ -136,7 +136,7 @@ function ServicePage(props) {
             </div>
             <div className="scolumn-4">
               <div className="sdiv-63">
-                <div className="sdiv-64">Social Media Marketting</div>
+                <div className="sdiv-64">Social Media Marketing</div>
                 <div className="sdiv-65 mb-5">
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
@@ -146,7 +146,7 @@ function ServicePage(props) {
             </div>
           </div>
         </div>
-        <div className="sdiv-68">
+        <div className="d-flex justify-content-center mx-auto sdiv-68">
           <div className="sdiv-69">
             <div className="scolumn">
               <div className="sdiv-70">

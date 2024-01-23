@@ -1,6 +1,5 @@
 
     .bdiv {
-      /* background-color: #fff; */
       display: flex;
       flex-direction: column;
     }
@@ -148,7 +147,6 @@
       border-radius: 5px 25px 25px 5px;
       background-color: #e7f7ff;
       display: flex;
-      margin-top: 11rem;
       gap: 12px;
       padding: 5px 15px;
       max-width: max-content;
@@ -195,6 +193,10 @@
     .btnRead{
       margin-top: 2rem;
     }
+    .width
+    {
+      width: 76rem;
+    }
     .bdiv-15 {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
@@ -213,14 +215,7 @@
         max-width: 100%;
       }
     }
-    /* .bdiv-16 {
-      color: var(--Background, #fff);
-      letter-spacing: 0.36px;
-      white-space: nowrap;
-      border-radius: 19px;
     
-    } */
-
     .bdiv-17{
       margin-top: 5rem;
     }
@@ -248,9 +243,6 @@
       transition: all 0.2s;
     }
   
-.bcolumn-2{
-  max-width: 28%;
-}
 .bdiv-19 {
   border-radius: 25px 25px 25px 5px;
   background-color: #e7f7ff;
@@ -287,29 +279,29 @@
   padding: 30px 0;
 }
 .first{
-  width: 7.75rem;
-  height: 7.125rem;
+  width: 19.75rem;
+  height: 13.125rem;
   flex-shrink: 0;
   border-radius: 0.625rem;
-/* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 }
+    
 .mainFlex{
-  column-gap: 8rem;
-  margin-bottom: 2rem;
-  margin-top: 3rem;
+  column-gap: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
 
   
 }
 .text{
   overflow: hidden;
 color: var(--Text, #292929);
-
+text-align: justify;
 text-overflow: ellipsis;
 font-family: Calibri;
 font-size: 1.125rem;
 font-style: normal;
 font-weight: 400;
-line-height: 2.1875rem; /* 194.444% */
+line-height: 2.1875rem; 
 letter-spacing: 0.045rem;
 }
 .glimpse
@@ -317,10 +309,11 @@ letter-spacing: 0.045rem;
   color: var(--Text, #292929);
 
 font-family: Calibri;
-font-size: 0.75rem;
+width: 18rem;
+font-size: 0.9rem;
 font-style: normal;
 font-weight: 700;
-line-height: 1.25rem; /* 166.667% */
+line-height: 1.25rem; 
 letter-spacing: 0.015rem;
 }
 .recent{
@@ -329,13 +322,19 @@ letter-spacing: 0.015rem;
 height: 13.5625rem;
 flex-shrink: 0;
 display: flex;
+flex-direction: column;
 border-radius: 1.875rem 1.875rem 1.875rem 0rem;
 background: #E7F7FF;
 
 }
+.height
+{
+  height: 16rem;
+}
 .recent1
 {
   box-shadow: 0px 4px 4px 0px rgba(41, 41, 41, 0.10);
+  height: 31rem;
 
 }
 .mainImg{
@@ -348,39 +347,36 @@ border-radius: 0.3125rem;
   color: var(--Text, #292929);
 
 font-family: Calibri;
-font-size: 0.75rem;
+font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
-line-height: 1.25rem; /* 166.667% */
+line-height: 1.25rem; 
 letter-spacing: 0.015rem;
 }
 .flexAlign{
   display: flex;
+  flex-direction: column;
   column-gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .align
 {
   color: var(--Text, #292929);
-  width: 11rem;
-
-font-family: Calibri;
-font-size: 0.75rem;
-font-style: normal;
-font-weight: 700;
-line-height: 1.5625rem; /* 208.333% */
-letter-spacing: 0.015rem;
+  width: 20rem;
+  font-family: Calibri;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.015rem;
 }
 .bdiv-34{
   background-color: #e7f7ff;
-  margin-left: 0rem;
   padding: 2rem;
-  margin-top: 0.5rem;
-  width: 85rem;
-height: 36rem;
-flex-shrink: 0;
-border-radius: 0.3125rem;
-background: #E7F7FF;
+  margin-top: 0rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #E7F7FF;
 }
 .divChng{
   margin-left: 2.5rem;

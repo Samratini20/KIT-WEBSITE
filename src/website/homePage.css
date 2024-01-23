@@ -145,8 +145,9 @@
   letter-spacing: 0.36px;
   align-self: stretch;
   margin-top: 33px;
-  font: 400 12px/25px Calibri, -apple-system, Roboto, Helvetica,
+  font: 400 16px/25px Calibri, -apple-system, Roboto, Helvetica,
     sans-serif;
+    line-height: 2;
 }
 @media (max-width: 900px) {
   .homediv-16 {

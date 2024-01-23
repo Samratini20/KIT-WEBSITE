@@ -150,7 +150,7 @@ function Aboutus(props) {
           </div>
         </div>
         <div className="vision d-flex">
-          <div className="diva-3 mx-4 my-3 px-2 w-100">
+          <div className="diva-3 mt-3 px-2 w-100">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
             </div>
@@ -161,18 +161,18 @@ function Aboutus(props) {
              that not only address current challenges but also anticipate and shape the evolving needs of our clients.
               Through our commitment to sustainability, inclusivity, and excellence, we aim to be a catalyst for 
               positive transformations in the global digital ecosystem.
-            </div>
-            <div className="d-flex diva-4 float-end">
+            </div>           
+          </div>
+          <div className="d-flex float-end">
             <img
             loading="lazy"
             src={aboutusImg_2}
             className="w-100"
           />
-            </div>            
-          </div>
+            </div> 
         </div>
         <div className="mission d-flex">
-          <div className="diva-3 mx-4 my-3 px-2 w-100 flex-column">
+          <div className="diva-3 my-3 px-2 w-100 flex-column">
             <div className="aspan-1 fw-bold mb-2">
               Our Mission
             </div>
@@ -185,9 +185,9 @@ function Aboutus(props) {
             </div>
           </div>
         </div>        
-        <div className="diva-6">
+        <div className="d-flex diva-6 w-100">
           <div className="diva-7">
-            <br /><h3>FAQ's</h3><br />
+            <h3 className='fa-2x fw-bold my-3'>FAQ's</h3>
   <div class="accordion" id="accordionExample">
   <div class="accordion-item bg-transparent">
     <h2 class="accordion-header">
