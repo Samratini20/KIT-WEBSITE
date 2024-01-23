@@ -186,7 +186,7 @@ function Aboutus(props) {
           </div>
         </div>        
         <div className="d-flex diva-6 w-100">
-          <div className="diva-7">
+          <div className="diva-7  w-75">
             <h3 className='fa-2x fw-bold my-3'>FAQ's</h3>
   <div class="accordion" id="accordionExample">
   <div class="accordion-item bg-transparent">
