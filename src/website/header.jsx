@@ -87,6 +87,18 @@ function Header() {
             </li>
             <li className="nav-item">
               <NavLink
+                to="/careers"
+                exact
+                id="careers"
+                className="change nav-link careers-link mx-4"
+                onClick={handleSelect}
+                style={{ color: location.pathname === "/careers" ? "#14B1FF" : "inherit" }}
+              >
+                Careers
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to="/contact"
                 exact
                 id="contactUs"
