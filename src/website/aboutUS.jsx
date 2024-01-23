@@ -50,7 +50,7 @@ function Aboutus(props) {
               revved up insurance with technology and given it a snazzy makeover—we’ve taken it online, wiped out much of the paperwork associated with it, created
               products that are a cut above the ho-hum, and sold them to over 50 million unique customers.<br />
             </div>
-            <div className="aspan-1 px-4">
+            <div className="aspan-1 about-us-text">
               All this jazzing up has been brought about by our team that is obsessed with making insurance effortless. This team has grown from a small huddle of 6
               when we started, to a clan of more than 400 now. And this eclectic clan—comprising everyone from coders who double up as comics to finance whizzes
               who slay at karaokes—is responsible for other great feats too.
@@ -70,11 +70,11 @@ function Aboutus(props) {
                     <div className="adiv-14">
                       <div className="adiv-15 w-auto">
                         <div className="adiv-16">
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700}}>
+                          <span style={{ fontFamily: 'Calibri, sans-serif',fontSize:"x-large" ,fontWeight: 700}}>
                             We have 25+ years of experience Team.
                             <br />
                           </span>
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}>
+                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400,fontSize:"large" }}>
                             Over 25 Years of Expertise: Our seasoned team brings
                             unparalleled experience to every project, ensuring
                             excellence and reliability
