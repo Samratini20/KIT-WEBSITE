@@ -1,11 +1,10 @@
 import * as React from "react";
-import serviceImg from '../assets/serviceImg.jpg'
+import serviceImg from '../assets/serviceImg.png'
 import Img1 from '../assets/servicesImg_1.jpg';
 import Img2 from '../assets/servicesImg_2.jpg';
 import './servicePage.css';
 import { useEffect } from "react";
 
-const quality = 80;
 function ServicePage(props) {
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -13,13 +12,13 @@ function ServicePage(props) {
   }, []);
   return (
     <>
-      <div className="bg-white overflow-hidden sdiv">
+      <div className="bg-white d-flex flex-column justify-content-between overflow-hidden sdiv">
         <img
             loading="lazy"
             src={Img1}
             className="serviceimg-1"
           />
-        <div className="sdiv-11 overflow-y-hidden">
+        <div className="sdiv-11 mb-5">
           <div className="sdiv-12">
             <div className="sdiv-13">
               <div className="sdiv-17">Powerful Solution For Your Business</div>
@@ -31,16 +30,16 @@ function ServicePage(props) {
               </div>
               <div className="sdiv-20">
                 <div className="sdiv-21">Quality Services</div>
-                <div className="sdiv-22">{quality}%</div>
+                <div className="sdiv-22">80%</div>
               </div>
               <div className="sdiv-23" />
               <div className="sdiv-24">
-                <div className="sdiv-25">Experienced technicians</div>
+                <div className="sdiv-21">Experienced technicians</div>
                 <div className="sdiv-26">95%</div>
               </div>
               <div className="sdiv-27" />
               <div className="sdiv-28">
-                <div className="sdiv-29">Long term warranty</div>
+                <div className="sdiv-21">Long term warranty</div>
                 <div className="sdiv-30">75%</div>
               </div>
               <div className="sdiv-31" />
@@ -49,7 +48,7 @@ function ServicePage(props) {
           <img
             loading="lazy"
             src={serviceImg}
-            className="simg-2"
+            style={{marginLeft:'2.5rem'}}
           />
           <img
               loading="lazy"
@@ -134,7 +133,7 @@ function ServicePage(props) {
                 
               </div>
             </div>
-            <div className="scolumn-4">
+            <div className="scolumn-3">
               <div className="sdiv-63">
                 <div className="sdiv-64">Social Media Marketing</div>
                 <div className="sdiv-65 mb-5">
@@ -158,8 +157,8 @@ function ServicePage(props) {
                 
               </div>
             </div>
-            <div className="scolumn-5">
-              <div className="sdiv-75">
+            <div className="scolumn-3">
+              <div className="sdiv-63">
                 <div className="sdiv-76">Pay-Per-Click Advertising</div>
                 <div className="sdiv-77 mb-5">
                   Create targeted ad campaigns on search engines and social

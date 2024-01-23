@@ -178,8 +178,6 @@
 .homeimg-2 {
   position: absolute;
   left: -400px;
-  /* inset: 0; */
-  /* height: 100%; */
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -436,7 +434,7 @@
 .what-client-says-img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: inherit;
 }
 
 .what-client-says-carousal{
@@ -565,11 +563,12 @@ margin-top: 5rem;
 .js-nametag{
   position: absolute;
   margin-left: auto;
-  font-size: 3rem;
-  text-shadow: 0px 0px 5px 5px grey;
+  font-size: 2rem;
+  text-shadow: 0px 5px 5px grey;
 }
 .js-nametag:nth-child(1){
   animation-name: fade;
+  text-shadow: 2px 2px 4px #9fa0a5;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 4s;
@@ -578,6 +577,7 @@ margin-top: 5rem;
 
 .js-nametag:nth-child(2){
   animation-name: fade;
+  text-shadow: 2px 2px 4px #9fa0a5;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 4s;

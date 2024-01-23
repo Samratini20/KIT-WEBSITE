@@ -76,12 +76,21 @@ function HomePage(props) {
                 </div>  
               </div>
             </div>{" "}
-            <div className="homecolumn-2">
+            <div className="homecolumn-2 flex-row">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/996e9de6b0b2ce32c7b1c4c12b95dee85cffd76d8e747562f95ef9de41998041?apiKey=9d6521b3bd494d48816871a061465c45&"
-                
                 className="homeimg-3"
+              />
+              <img
+                loading="lazy"
+                src=""
+                className="homeimg-4"
+              />
+              <img
+                loading="lazy"
+                src=""
+                className="homeimg-5"
               />
             </div>
           </div>
@@ -158,8 +167,8 @@ function HomePage(props) {
           </div>
           <div className="ceo-founder-text">
                 <div className="ceo-founder-names">
-                   <p class="js-nametag">Sandeep Banvasi, CEO</p>
-                   <p class="js-nametag">Aravind Kumar, Founder</p>
+                   <p class="js-nametag fw-bold">Sandeep Banvasi, CEO</p>
+                   <p class="js-nametag fw-bold">Aravind Kumar, Founder</p>
                 </div>
                 <div className="ceo-founder-testimonial mt-5 pt-5">
                    Our team consists of highly skilled professionals with
