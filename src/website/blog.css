@@ -150,6 +150,7 @@
       gap: 12px;
       padding: 5px 15px;
       max-width: max-content;
+      margin-left: 3.8rem;
     }
 
     .time_clock{
@@ -190,10 +191,7 @@
         max-width: 100%;
       }
     }
-    .width
-    {
-      width: 76rem;
-    }
+    
     .bdiv-15 {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
@@ -203,7 +201,7 @@
       letter-spacing: 0.72px;
       align-self: stretch;
       margin-top: 1rem;
-      margin-right: 1rem;
+      margin-left: 4rem;
       font: 400 18px/35px Calibri, -apple-system, Roboto, Helvetica,
         sans-serif;
     }
@@ -216,7 +214,7 @@
     .bdiv-17{
       margin-top: 5rem;
     }
-    .blogdiv-button {
+    .btnRead {
       background-color: var(--Section-1, #005e8d);
       color: white;
       border: none;
@@ -231,9 +229,9 @@
       transition: all 0.2s;
       margin-bottom: 5rem;
       margin-top: 1rem;
-
+      margin-left: 5rem;
     }
-    .blogdiv-button:hover{
+    .btnRead:hover{
       cursor: pointer;
       transform: translateY(-2px);
       transition: all 0.2s;
@@ -288,7 +286,7 @@
 
   
 }
-.text{
+/* .text{
   overflow: hidden;
 color: var(--Text, #292929);
 text-align: justify;
@@ -299,7 +297,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 2.1875rem; 
 letter-spacing: 0.045rem;
-}
+} */
 .glimpse
 {
   color: var(--Text, #292929);

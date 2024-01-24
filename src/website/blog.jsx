@@ -42,7 +42,7 @@ function Blog(props) {
           <div className="bdiv-10 col-10 d-flex">
             <div className="bcolumn col-8">
               <div className="bdiv-11">
-              <Carousel  itemsToShow={1} showArrows={true} pagination={false} >  
+               <Carousel  itemsToShow={1} showArrows={true} pagination={false} >  
                   <div>
                     <img className="d-block w-100"
                       src={KITBanner}
@@ -63,7 +63,6 @@ function Blog(props) {
                       src={doorOpening}
                     />
                   </div>
-                  
                 </Carousel>
                 <div className="bdiv-12 mt-4">
                   <i class="fa-regular fa-clock time_clock"></i>
@@ -71,12 +70,9 @@ function Blog(props) {
                   {dateInfo} - Latest News
                   </div>
                 </div>
-                <div className="bdiv-14">
-                  Overview
-                </div>
-             </div>
-              <div className= "bdiv-15 mx-4 text width">
-                  <p>
+                <div className="bdiv-15">
+                  <span className='fw-bold fa-2x my-2'>Overview</span>
+                  <p className='mt-3'>
                     At KIT, we are dedicated to providing top-notch IT services tailored to 
                     meet your unique business needs. With a team of experienced professionals, 
                     we offer a wide range of technology solutions, from network and infrastructure 
@@ -94,8 +90,9 @@ function Blog(props) {
                       positive transformations in the global digital ecosystem.
                     </div>
                   </p>
-                </div> 
-                <button className='blogdiv-button btnRead mx-4' id="readMoreBtn" color="inherit" onClick={readMore}>Read More</button>
+                </div>
+             </div>
+                <button className='blogdiv-button btnRead' id="readMoreBtn" color="inherit" onClick={readMore}>Read More</button>
             </div> 
             <div className="bcolumn-2">
               <div className="bdiv-17">

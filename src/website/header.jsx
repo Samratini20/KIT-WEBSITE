@@ -73,7 +73,7 @@ function Header() {
                 Services
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 to="/blog"
                 exact
@@ -84,7 +84,7 @@ function Header() {
               >
                 Blog
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 to="/careers"

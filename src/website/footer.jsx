@@ -23,7 +23,7 @@ function Footer() {
           <Link className='mt-4 footer-link' to="/">Home</Link> 
           <Link className='mt-2 footer-link' to="/about">About Us</Link>
           <Link className='mt-2 footer-link' to="/services">Services</Link>
-          <Link className='mt-2 footer-link' to="/blog">Blog</Link>
+          {/* <Link className='mt-2 footer-link' to="/blog">Blog</Link> */}
           <Link className='mt-2 footer-link' to="/careers">Careers</Link>
           <Link className='mt-2 footer-link' to="/contact">Contact Us</Link>
         </div>

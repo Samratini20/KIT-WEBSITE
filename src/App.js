@@ -31,7 +31,7 @@ function App(){
                         <Route path='/' element={<HomePage/>} />
                         <Route path='/about' element={<AboutUs/>} />
                         <Route path='/services' element={<ServicePage/>} />
-                        <Route path='/blog' element={<Blog/>} />
+                        {/* <Route path='/blog' element={<Blog/>} /> */}
                         <Route path='/contact' element={<ContactUs/>} />
                         <Route path='/termsconditions' element={<TermsConditions/>} />
                         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />

@@ -181,8 +181,8 @@ function ServicePage(props) {
                 />
                 <div className="sdiv-83">1. Planning & Research</div>
                 <div className="sdiv-84">
-                  We meticulously chart the course for your IT success, ensuring
-                  strategic precision every step of the way.
+                We meticulously chart the course for your IT success, ensuring strategic
+                 precision every step of the way.
                 </div>
               </div>
             </div>
@@ -195,8 +195,7 @@ function ServicePage(props) {
                 />
                 <div className="sdiv-86">2. Optimizing</div>
                 <div className="sdiv-87">
-                  We meticulously chart the course for your IT success, ensuring
-                  strategic precision every step of the way.
+                Optimization for managing spend on software, contracts, account usage and compliance.
                 </div>
               </div>
             </div>
@@ -209,8 +208,8 @@ function ServicePage(props) {
                 />
                 <div className="sdiv-89">3. Result</div>
                 <div className="sdiv-90">
-                  We meticulously chart the course for your IT success, ensuring
-                  strategic precision every step of the way.
+                With dedication and commitment to our aspirations, we have a clear sense of 
+                direction which realigns us to our long-term goals.
                 </div>
               </div>
             </div>
