@@ -58,14 +58,14 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="adiv-9">
+        <div className="adiv-9 mt-5">
           <div className="adiv-10">
-          <div className={`card-container ${swap ? 'swap' : ''}`}>
-        <div className={`cards card1 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card2 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card3 ${swap ? 'swap' : ''}`}></div>
-        <div className={`cards card4 ${swap ? 'swap' : ''}`}></div>
-      </div>
+          <div className='card-container'>
+              <div className='cards card1'></div>
+              <div className='cards card2'></div>
+              <div className='cards card3'></div>
+              <div className='cards card4 '></div>
+          </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
                       <div className="adiv-15 w-auto">
@@ -118,8 +118,7 @@ function Aboutus(props) {
                         </div>
                       </div>
                     </div>
-                  </div>              
-  
+                  </div>
           </div>
         </div>
         <div className="adiv-25">
@@ -149,7 +148,7 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="vision d-flex">
+        <div className="vision d-flex my-2">
           <div className="diva-3 mt-3 px-2 w-100">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
@@ -167,7 +166,7 @@ function Aboutus(props) {
             <img
             loading="lazy"
             src={aboutusImg_2}
-            className="w-100"
+            className="w-100 our-mission-img"
           />
             </div> 
         </div>
