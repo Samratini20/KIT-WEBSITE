@@ -4,7 +4,9 @@ import Carousel from "@itseasy21/react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import whychooseus from '../assets/whyChoseUs.png';
-import landingimg from '../assets/Frame 11.png'
+import landingimg from '../assets/what-client-says.jpg'
+import landingimg2 from '../assets/Vector.png'
+
 
 const data= [
   {
@@ -33,17 +35,14 @@ const data= [
     description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances, overseeing the work of other executives and the management of the company’s employees, and focusing on the company’s growth and development."
   }
 ];
-const data1=["1", "2", "3", "4"];
 function HomePage(props) {
   const navigate = useNavigate();
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
-
-  
   if(document.getElementsByClassName('rec-arrow')[0]){
     document.getElementsByClassName('rec-arrow')[0].innerText = '';
     document.getElementsByClassName('rec-arrow-right')[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
@@ -69,10 +68,12 @@ function HomePage(props) {
                       passion for technology and a commitment to excellence, we
                       have been providing cutting-edge IT services to business.
               </div>
+              <div>
                   <button className='get-started-button mt-5' onClick={()=> navigate('/services')}>Get Started</button>
-                  <svg className="landing-page-svg" xmlns="http://www.w3.org/2000/svg" width="700" height="350" viewBox="0 0 648 351" fill="none">
-                    <path d="M645.037 313.312C609.618 194.299 421.877 198.554 317.45 165.798C172.142 113.114 39.761 -11.1163 -122.892 1.82229C-432.179 26.43 -433.167 379.522 -303.247 502.826C-80.2943 714.425 254.198 644.833 514.662 521.675C655.612 455.024 652.822 358.252 645.037 313.312Z" fill="#005E8D"/>
-                  </svg>
+              </div>
+              <div>
+                  <img className="landing-page-img2" src={landingimg2} alt="" />
+              </div>
             </div>
           </div>
           <div className="landing-page-img-container">
@@ -105,8 +106,8 @@ function HomePage(props) {
           </div>
         </section>
         {/*#############-------------- section 3 --------------#################*/}
-        <section className="what-client-says-section my-2">
-          <div className="what-client-says-animation my-4">
+        <section className="what-client-says-section my-5">
+          <div className="what-client-says-animation">
               <h2 className="d-flex fw-bold fs-4 justify-content-center my-5">What Client Says</h2>
               <div className="d-flex mx-3">
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
@@ -128,9 +129,9 @@ function HomePage(props) {
           </div>
         </section>
         {/*#############--------------  section 4 --------------#################*/}
-        <section className="ceo-founder-animation-section">
-          <div className="ceo-founder-animation-container">
-                <div className="ceo-founder-animation"></div>
+        <section className="ceo-founder-animation-section my-4">
+          <div className="ceo-founder-animation-container px-5">
+                <div className="ceo-founder-animation mx-2"></div>
           </div>
           <div className="ceo-founder-text">
                 <p class="js-nametag mx-4 px-2">Sandeep Banvasi, CEO</p>
@@ -138,7 +139,7 @@ function HomePage(props) {
                     <ul>
                     My team aim to build a strong and profitable made service by delivering to our 
                     customers a professional services that are always fair, efficient, helpful and responsive.
-                      <li className="mt-2">
+                    <li className="mt-2">
                       We are committed to building loyalty to our customers and ensuring that the satisfaction of their needs is central to everything we do.
                       </li>
                       <li>
