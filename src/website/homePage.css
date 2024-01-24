@@ -279,16 +279,7 @@ padding-left: 5px;
 
 .what-client-says-animation{
   width: 100%;
-  padding: 5% 12rem;
-  background: #F1F2F5;
-}
-
-.what-client-says-animation h2{
-  font-weight: 500;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-  margin-left: 6rem;
+  height: 100%;
 }
 
 .what-client-says-carousal{
@@ -317,10 +308,19 @@ padding-left: 5px;
 line-height: 2;
 margin-top: 5rem;
 }
+.testimonial-card-container{
+border: 0.5px solid rgba(41, 41, 41, 0.04);
+box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.10);
+background-color: white;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+margin: 2%;
+}
 
 @media (max-width:900px) {
   .what-client-says-section{
-    background-color: rgb(239, 236, 236);
     display: flex;
     flex-direction: column-reverse;
     padding-top: 2rem;
@@ -373,17 +373,19 @@ margin-top: 5rem;
 .ceo-founder-animation {
   height: 60%;
   width: 30rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
   box-shadow: 0px 0px 25px 15px rgba(42, 92, 110, 0.327);
   animation: logo 4s infinite ease-in-out alternate;
   background-image: url(../assets/sandeep.jpg);
-  object-position: bottom;
+  object-position: center;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
+  background-color: transparent;
+  margin: 6%;
   border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -427,10 +429,9 @@ margin-top: 5rem;
 }
 
 .js-nametag{
-  position: absolute;
-  margin-left: auto;
-  font-size: 2rem;
-  text-shadow: 0px 5px 5px grey;
+  font-size: 2.5rem;
+  text-shadow: 2px 5px 5px grey;
+  font-weight: 700;
 }
 
 
@@ -452,12 +453,7 @@ margin-top: 5rem;
   }
 
   .ceo-founder-animation {
-    height: 85%;
-    width: 60%;
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    display: flex;
     box-shadow: 0px 0px 25px 15px rgba(42, 92, 110, 0.327);
     animation: logo 4s infinite ease-in-out alternate;
   }
@@ -473,6 +469,7 @@ margin-top: 5rem;
     flex-direction: column;
     gap: 0.2rem;
     justify-content: center;
+    height: auto;
   }
 
   .ceo-founder-testimonial{

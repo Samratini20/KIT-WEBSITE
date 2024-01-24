@@ -39,21 +39,22 @@ function Aboutus(props) {
             className="aboutusImg-1 "
           />
           </div>
-          <div className="diva-3 mx-4 my-3 px-2 w-100" style={{lineHeight:"2rem"}}>
-            <div className="aspan-1 px-4">
-              We are a general insurance company. Now, before those words conjure images of beige walls and bleak souls in your head, let us tell you we are vibrant
-              and vivacious, and were founded to break that drab mould you were about to cast us in.
+          <div className="diva-3 mx-4 my-3 px-2 w-100 fs-5">
+            <div className="my-2 py-2 px-4">
+            Welcome to K.I.T Global Technologies Pvt Ltd, where innovation meets efficiency. 
+            We're a dynamic software company dedicated to crafting cutting-edge solutions that empower businesses to thrive in the digital era.
               <br />
             </div>
-            <div className="aspan-1 px-4">
-              We started in 2016 as India’s first digital insurer, and are currently the fastest growing insurance company in the country. In a span of three years we have
-              revved up insurance with technology and given it a snazzy makeover—we’ve taken it online, wiped out much of the paperwork associated with it, created
-              products that are a cut above the ho-hum, and sold them to over 50 million unique customers.<br />
+            <div className="my-2 py-2 px-4">
+            Our team of experts combines passion with expertise to deliver software that not only meets 
+            but exceeds your expectations.Explore the future of technology with K.I.T Global Technologies Pvt Ltd.<br />
             </div>
-            <div className="aspan-1 about-us-text">
-              All this jazzing up has been brought about by our team that is obsessed with making insurance effortless. This team has grown from a small huddle of 6
-              when we started, to a clan of more than 400 now. And this eclectic clan—comprising everyone from coders who double up as comics to finance whizzes
-              who slay at karaokes—is responsible for other great feats too.
+            <div className="my-2 py-2 about-us-text">
+            At K.I.T Global Technologies Pvt Ltd, we simplify complexity and elevate user experiences. 
+            With a relentless commitment to quality, we specialise in creating bespoke software solutions tailored 
+            to your unique needs. Whether you're aiming to streamline operations, enhance productivity, or stay 
+            ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
+             innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-4'><em>"Your vision, our technology – let's build the future together".</em></b>
               <br />
             </div>
           </div>
@@ -68,20 +69,18 @@ function Aboutus(props) {
           </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
-                      <div className="adiv-15 w-auto">
-                        <div className="adiv-16">
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontSize:"x-large" ,fontWeight: 700}}>
-                            We have 25+ years of experience Team.
+                      <div className="d-flex flex-column m-5 w-75">
+                          <span className='fs-3 fw-bold mb-3'>
+                            We have teams with years of Experience.
                             <br />
                           </span>
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400,fontSize:"large" }}>
-                            Over 25 Years of Expertise: Our seasoned team brings
+                          <span className='fs-5 mb-2'>
+                            Over the Years of Expertise: Our seasoned team brings
                             unparalleled experience to every project, ensuring
                             excellence and reliability
                             <br />
                           </span>
-                        </div>
-                        <div className="adiv-17 align-items-center d-flex mt-5">
+                        <div className="adiv-17 align-items-center d-flex mt-3">
                           <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/b43fe2462f3f8d4433eb85ee52f5135db524dc29e4e1d84ef4e202094a715f33?apiKey=9d6521b3bd494d48816871a061465c45&"
@@ -184,7 +183,7 @@ function Aboutus(props) {
             </div>
           </div>
         </div>        
-        <div className="d-flex diva-6 w-100">
+        <div className="d-flex diva-6 w-100 d-none">
           <div className="diva-7  w-75">
             <h3 className='fa-2x fw-bold my-3'>FAQ's</h3>
   <div class="accordion" id="accordionExample">
@@ -253,11 +252,11 @@ function Aboutus(props) {
           </div>
           <div className="diva-11">
             <div className="diva-12">
-             <b>Discover What's New: Our Recent <br />News and Updates</b><br />
-              Dive into the latest buzz surrounding KIT Services as we share <br />
+             <b className='mb-1 d-flex fw-bold fs-4'>Discover What's New: Our Recent <br />News and Updates</b>
+              Dive into the latest buzz surrounding KIT global technologies as we share <br />
               noteworthy news and updates that showcase our ongoing<br />
               commitment to innovation and excellence.<br />
-              <button className='aboutdiv-button'color="inherit" onClick={()=> navigate('/blog')}>Learn More</button>  
+              <button className='aboutdiv-button d-none'color="inherit" onClick={()=> navigate('/blog')}>Learn More</button>  
             </div>
           </div>
         </div>

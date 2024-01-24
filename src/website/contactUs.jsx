@@ -18,7 +18,7 @@ function ContactUs(props) {
             <span className="fw-bold">Get in touch</span>
             <hr/>
             <span className="fw-bold fs-2">Contact</span>
-            <form action="https://formsubmit.co/chandanasamritini@kitservices.in" method="POST">
+            <form action="https://formsubmit.co/info@kitservices.in" method="POST">
               <div class="form-row">
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>

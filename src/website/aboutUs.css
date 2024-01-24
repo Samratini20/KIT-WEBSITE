@@ -15,6 +15,7 @@
     .diva-3{
         width: 100%;
         margin: 1rem 0 0 3rem;
+        line-height: 2;
     }
     .diva-4{
     position: absolute;
@@ -278,6 +279,7 @@
       justify-content: center;
       align-items: end;
       width: 100%;
+      line-height: 1.8;
     }
     @media (max-width: 991px) {
       .adiv-14 {
@@ -781,7 +783,7 @@
   
   .card2 {
       grid-column: 2 / 3;
-      grid-row: 2 / -1;
+      grid-row: 1 / -1;
       background-image: url(../assets/2.png);
       transition: all 4s;
       transform-origin: bottom left;
@@ -789,15 +791,15 @@
   
   .card3 {
       grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      background-image: url(../assets/3.png);
+      grid-row: 1 / 5;
       transition: all 4s;
+      background-image: url(../assets/3.png);
       transform-origin: top right;
   }
   
   .card4 {
       grid-column: 1 / 2;
-      grid-row: 4 / 5;
+      grid-row: 3 / 5;
       background-image: url(../assets/4.png);
       transition: all 4s;
       transform-origin: top left;

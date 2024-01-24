@@ -10,30 +10,27 @@ const data= [
   {
     id:'1',
     head:'"Design Rank Impress"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Prabhakar Rai",
-    designation:"General Manager"
+    description:"KIT exhibits a great combination of professionalism and down-to-earth qualities. We are so thrilled with the work, and enjoyed working with KIT so much.",
   },
   {
     id:'2',
     head:'"Soar with SEO"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Shirish Yadav",
-    designation:"AGM"
+    description:"We are so pleased to be working with KIT. For our redesigned website their skills, professionalism, and responsiveness are truly outstanding.",
   },
   {
     id:'3',
     head:'"Outdated to Outstanding"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Yash Singh",
-    designation:"General Manager"
+    description:"We recently completed a redesign of our existing website. The cost was reasonable and we now have a clean and sleek website that we anticipate will drive business to our company.",
   },
   {
     id:'4',
     head:'"Engage, Boost, Succeed"',
-    description:"We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.",
-    name:"Ankit Shah",
-    designation:"Head, Marketing and Sales"
+    description:"From the first telephone conversation, we were convinced that they knew what we were looking for. We are extremely pleased with the work done by KIT in turning our ideas into a much better version of themselves. With a few simple questions, some content, and an understanding of what we were trying to develop, they pulled together a website in a very short time at a very reasonable cost!",
+  },
+  {
+    id:'5',
+    head: '"Co-ordination at the best"',
+    description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances, overseeing the work of other executives and the management of the company’s employees, and focusing on the company’s growth and development."
   }
 ];
 const data1=["1", "2", "3", "4"];
@@ -42,7 +39,7 @@ function HomePage(props) {
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
 
@@ -108,26 +105,21 @@ function HomePage(props) {
           </div>
         </section>
         {/*#############-------------- section 3 --------------#################*/}
-        <section className="what-client-says-section">
-          <div className="what-client-says-animation">
-              <h2>What Client Says</h2>
-              <div>
+        <section className="what-client-says-section my-2">
+          <div className="what-client-says-animation my-4">
+              <h2 className="d-flex fw-bold fs-4 justify-content-center my-5">What Client Says</h2>
+              <div className="d-flex mx-3">
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
-                    <div>
+                    <div className="d-flex">
                       <div className='testimonial-card-container'>
-                      <span className='adiv-46' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400, width:45}}>
-                        <b>{item.head} </b>
+                      <div className='d-flex flex-column fw-bold mt-4 mx-3'>
+                        {item.head}
                       <br />
-                      <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
+                      </div>
+                      <span className="m-3">
                         {item.description}
                       </span>
-                      </div>
-                      <div className='testimonial-name-position'>
-                      <div className='mt-2 fw-bold' style={{ fontFamily: 'Calibri, sans-serif',fontSize:'1.2rem'}}>
-                      {item.name} </div>
-                      <div className='mt-3' style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400}}/>
-                        {item.designation}
                       </div>
                     </div>
                   ))}
@@ -141,19 +133,21 @@ function HomePage(props) {
                 <div className="ceo-founder-animation"></div>
           </div>
           <div className="ceo-founder-text">
-                <div className="ceo-founder-names">
-                   <p class="js-nametag">Sandeep Banvasi, CEO</p>
-                </div>
-                <div className="ceo-founder-testimonial mt-5 pt-5">
-                   Our team consists of highly skilled professionals with
-                   extensive experience in the IT industry. We stay up-to-date
-                   with the latest trends and technologies to provide <br /> you with
-                   the best solutions.
-                   <br />
-                   <br />
-                   We prioritize your satisfaction and work closely with you to
-                   understand your specific needs, ensuring that our services are
-                   tailored to your requirements.
+                <p class="js-nametag mx-4 px-2">Sandeep Banvasi, CEO</p>
+                <div className="ceo-founder-testimonial pb-3">
+                    <ul>
+                    My team aim to build a strong and profitable made service by delivering to our 
+                    customers a professional services that are always fair, efficient, helpful and responsive.
+                      <li className="mt-2">
+                      We are committed to building loyalty to our customers and ensuring that the satisfaction of their needs is central to everything we do.
+                      </li>
+                      <li>
+                      We are committed to creating an environment where we can take pride in ourselves, our colleagues and our company.
+                      </li>
+                      <li>
+                      Our team consists of highly skilled professionals with extensive experience in the IT industry. We stay up to date with the latest trends and technologies to provide you with the best solutions.
+                      </li>
+                    </ul>
                  </div>
           </div>
         </section>
