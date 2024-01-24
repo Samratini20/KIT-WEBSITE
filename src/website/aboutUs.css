@@ -1,6 +1,5 @@
     .about-us-container {
       display: flex;
-      /* padding-top: 6rem; */
       flex-direction: column;
       align-items: center;
     }
@@ -17,15 +16,31 @@
         width: 100%;
         margin: 1rem 0 0 3rem;
     }
+    .diva-4{
+    position: absolute;
+    margin-left: 63rem;
+    margin-top: -5rem;
+    }
     .aspan-1{
         font: 400 18px Calibri, -apple-system, Roboto, Helvetica, sans-serif;
         margin-bottom: 30px;
         line-height: 2;
         word-spacing: 4px;
+        overflow-x: hidden;
     }
+
+    .about-us-text{
+      padding-left: 1.5rem;
+      padding-right: 4rem;
+    }
+
     .vision{
         width: 100%;
         overflow: hidden;
+    }
+
+    .our-mission-img{
+      float: right;
     }
     .aboutusImg-2{
         width: 100%;
@@ -109,6 +124,8 @@
     .adiv-10 {
       gap: 20px;
       display: flex;
+      align-items: flex-start;
+      height: 85vh;
     }
     @media (max-width: 991px) {
       .adiv-10 {
@@ -266,6 +283,19 @@
       .adiv-14 {
         max-width: 100%;
         padding: 0 20px;
+      }
+    }
+    .adiv-15 {
+      height: 85vh;
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
+    }
+    @media (max-width: 991px) {
+      .adiv-15 {
+        margin: 40px 10px 0 0;
       }
     }
     .adiv-16 {
@@ -723,15 +753,15 @@
       background-color: transparent;
     }
 
-    /*Cards animation code here*/
+    /*################################## Cards animation code here##########################################*/
     .card-container {
-      height: 78vh;
+      height: 100%;
       width: 60vw;
       display: grid;
       gap: 20px;
       grid-template-columns: 1fr 0.65fr 1fr;
-      grid-template-rows: 15% 15% 35% 35%;
-      margin-top: 5px;
+      grid-template-rows: 1fr 1fr 2.2fr 2.2fr;
+      /* margin-top: 5px; */
       margin-left: 2rem;
   }
     
@@ -773,26 +803,4 @@
       transform-origin: top left;
   }
   
-  .card1.swap {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      transform: translate(0, 0);
-  }
-  
-  .card2.swap {
-      grid-row: 1 / 5;
-      grid-column: 3 / 4;
-      transform: translate(0, 0);
-  }
-  
-  .card3.swap {
-      grid-column: 2 / 3;
-      grid-row: 2 / -1;
-      transform: translate(0, 0);
-  }
-  
-  .card4.swap {
-      grid-column: 1 / 2;
-      grid-row: 4 / 5;
-      transform: translate(0, 0);
-  }
+

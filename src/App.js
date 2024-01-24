@@ -18,8 +18,8 @@ function App(){
     useEffect(() => {
         AOS.init(
           {
-            offset:380,
-            duration:500
+            offset:250,
+            duration:400
           }
         );
       }, []);

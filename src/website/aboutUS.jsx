@@ -50,7 +50,7 @@ function Aboutus(props) {
               revved up insurance with technology and given it a snazzy makeover—we’ve taken it online, wiped out much of the paperwork associated with it, created
               products that are a cut above the ho-hum, and sold them to over 50 million unique customers.<br />
             </div>
-            <div className="aspan-1 px-4">
+            <div className="aspan-1 about-us-text">
               All this jazzing up has been brought about by our team that is obsessed with making insurance effortless. This team has grown from a small huddle of 6
               when we started, to a clan of more than 400 now. And this eclectic clan—comprising everyone from coders who double up as comics to finance whizzes
               who slay at karaokes—is responsible for other great feats too.
@@ -58,23 +58,23 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="adiv-9">
+        <div className="adiv-9 mt-5">
           <div className="adiv-10">
-            <div className={`card-container ${swap ? 'swap' : ''}`}>
-            <div className={`cards card1 ${swap ? 'swap' : ''}`}></div>
-            <div className={`cards card2 ${swap ? 'swap' : ''}`}></div>
-            <div className={`cards card3 ${swap ? 'swap' : ''}`}></div>
-            <div className={`cards card4 ${swap ? 'swap' : ''}`}></div>
+          <div className='card-container'>
+              <div className='cards card1'></div>
+              <div className='cards card2'></div>
+              <div className='cards card3'></div>
+              <div className='cards card4 '></div>
           </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
-                      <div className="m-5 p-5">
-                        <div className="d-flex flex-column justify-content-between">
-                          <span className="mb-4" style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 700,fontSize:'1.5rem'}}>
+                      <div className="adiv-15 w-auto">
+                        <div className="adiv-16">
+                          <span style={{ fontFamily: 'Calibri, sans-serif',fontSize:"x-large" ,fontWeight: 700}}>
                             We have 25+ years of experience Team.
                             <br />
                           </span>
-                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400,lineHeight:2}}>
+                          <span style={{ fontFamily: 'Calibri, sans-serif',fontWeight: 400,fontSize:"large" }}>
                             Over 25 Years of Expertise: Our seasoned team brings
                             unparalleled experience to every project, ensuring
                             excellence and reliability
@@ -118,38 +118,37 @@ function Aboutus(props) {
                         </div>
                       </div>
                     </div>
-                  </div>              
-  
+                  </div>
           </div>
-            <div className="adiv-25">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
-                className="aimg-10"
-              />
-              <div className="adiv-26">
-                <div className="adiv-27">
-                  <div className="adiv-28" data-aos="fade-up">100</div>
-                  <div className="adiv-29">Websites Designed</div>
-                </div>
-                <div className="adiv-30">
-                  <div className="adiv-31">
-                    <div className="adiv-32" data-aos="fade-up">100</div>
-                    <div className="adiv-33">Apps Developed</div>
-                  </div>
-                  <div className="adiv-34">
-                    <div className="adiv-35" data-aos="fade-up">100</div>
-                    <div className="adiv-36">Happy Clients</div>
-                  </div>
-                  <div className="adiv-37">
-                    <div className="adiv-38" data-aos="fade-up">100</div>
-                    <div className="adiv-39">Team Members</div>
-                  </div>
-                </div>
+        </div>
+        <div className="adiv-25">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
+            className="aimg-10"
+          />
+          <div className="adiv-26">
+            <div className="adiv-27">
+              <div className="adiv-28" data-aos="fade-up">100</div>
+              <div className="adiv-29">Websites Designed</div>
+            </div>
+            <div className="adiv-30">
+              <div className="adiv-31">
+                <div className="adiv-32" data-aos="fade-up">100</div>
+                <div className="adiv-33">Apps Developed</div>
+              </div>
+              <div className="adiv-34">
+                <div className="adiv-35" data-aos="fade-up">100</div>
+                <div className="adiv-36">Happy Clients</div>
+              </div>
+              <div className="adiv-37">
+                <div className="adiv-38" data-aos="fade-up">100</div>
+                <div className="adiv-39">Team Members</div>
               </div>
             </div>
+          </div>
         </div>
-        <div className="vision d-flex">
+        <div className="vision d-flex my-2">
           <div className="diva-3 mt-3 px-2 w-100">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
@@ -167,7 +166,7 @@ function Aboutus(props) {
             <img
             loading="lazy"
             src={aboutusImg_2}
-            className="w-100"
+            className="w-100 our-mission-img"
           />
             </div> 
         </div>
