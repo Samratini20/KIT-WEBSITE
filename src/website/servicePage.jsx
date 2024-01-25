@@ -158,28 +158,28 @@ function ServicePage(props) {
         </div>
         </div>
         <div className="mt-5 p-4 sdiv-80">
-          <div className="col-12 d-flex gap-3 my-4">
-            <div className="col-4">
+          <div className="d-flex gap-2 my-4 text-align">
+            <div className="d-flex flex-column">
                 <i class="d-flex fa-2x fa-business-time fa-solid justify-content-center" style={{color :"#006394"}}></i>
                 <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
-                <div className="fs-5 justify-content-center mt-3  mx-1 px-2">
-                We meticulously chart the course for your 
-                IT success, ensuring strategic
-                 precision every step of the way.
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                We meticulously chart the course for your IT success, ensuring 
+                strategic precision and seamless execution every step of the way.
                 </div>
             </div>
-            <div className="col-4"> 
-                <i class="d-flex fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Optimizing</div>
-                <div className="fs-5 justify-content-center mt-3  mx-1 px-2">
-                Optimization for managing spend on software, contracts,
-                 account usage and compliance.
+            <div className="d-flex flex-column"> 
+                <i class="fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Efficient Streamlining</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                Optimization for effectively managing spend on software 
+                and ensuring compliance is essential for organizational 
+                success.
                 </div>
              </div>
-            <div className="col-4">
-                <i class=" d-flex fa-2x fa-solid fa-square-check justify-content-center" style={{color :"#006394"}}></i>
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Result</div>
-                <div className="fs-5 justify-content-center mt-3 mx-1 px-2">
+            <div className="d-flex flex-column">
+                <i class="fa-2x fa-solid fa-square-check justify-content-center" style={{color :"#006394"}}></i>
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Decisive Outcome</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
                 With dedication and commitment to our aspirations, we have a clear sense of 
                 direction which realigns us to our long-term goals.
                 </div>

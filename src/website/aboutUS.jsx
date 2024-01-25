@@ -46,16 +46,18 @@ function Aboutus(props) {
               <br />
             </div>
             <div className="my-2 py-2 px-4">
-            Our team of experts combines passion with expertise to deliver software that not only meets 
-            but exceeds your expectations.Explore the future of technology with K.I.T Global Technologies Pvt Ltd.<br />
+            Our dedicated team of experts passionately merges creativity and expertise to craft software solutions that not only meet but consistently exceed your expectations. Embark on a journey into the future of technology with K.I.T Global Technologies Pvt Ltd.<br />
             </div>
             <div className="my-2 py-2 about-us-text">
             At K.I.T Global Technologies Pvt Ltd, we simplify complexity and elevate user experiences. 
             With a relentless commitment to quality, we specialise in creating bespoke software solutions tailored 
-            to your unique needs. Whether you're aiming to streamline operations, enhance productivity, or stay 
-            ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
-             innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5'><em>"Your vision, our technology – let's build the future together".</em></b>
-              <br />
+            to your unique needs.
+            <div className="my-2 py-2">
+                  Whether you're aiming to streamline operations, enhance productivity, or stay 
+                  ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
+                  innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5'><em>"Your vision, our technology – let's build the future together".</em></b>
+                    <br />
+              </div>
             </div>
           </div>
         </div>
