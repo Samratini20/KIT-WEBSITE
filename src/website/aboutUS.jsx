@@ -145,8 +145,8 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="vision d-flex my-2">
-          <div className="diva-3 fs-5 mx-3 px-3">
+        <div className="vision d-flex my-3 px-4">
+          <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
             </div>
@@ -160,7 +160,7 @@ function Aboutus(props) {
             </div>           
           </div>
         </div>
-        <div className="mission d-flex">
+        <div className="mission d-flex my-3 px-4 py-4">
           <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 fw-bold mb-2">
               Our Mission
