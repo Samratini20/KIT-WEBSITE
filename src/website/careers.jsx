@@ -55,7 +55,7 @@ function Careers(props) {
                 <div className="d-flex career-container-form col-8">
                     <div class="card justify-content-center my-5 w-75 m-auto">
                       <div class="card-body px-5">
-                            <form action="https://formsubmit.co/info@kitservices.in" method="POST" encType="multipart/form-data">
+                            <form action="https://formsubmit.co/careers@kitservices.in" method="POST" encType="multipart/form-data">
                                   <div class="form-row">
                                     <div class="form-group col-12 my-4">
                                       <span for="Name" className="fs-6 fw-bold">Name <span class="text-danger ml-2">*</span></span>

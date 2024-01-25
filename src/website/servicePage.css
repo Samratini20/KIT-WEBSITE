@@ -524,8 +524,6 @@
       letter-spacing: 0.56px;
       align-self: stretch;
       margin-top: 35px;
-      font: 400 14px/30px Calibri, -apple-system, Roboto, Helvetica,
-        sans-serif;
     }
     @media (max-width: 991px) {
       .sdiv-48 {

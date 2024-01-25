@@ -4,7 +4,7 @@ import Carousel from "@itseasy21/react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import whychooseus from '../assets/whyChoseUs.png';
-import landingimg from '../assets/what-client-says.jpg'
+import landingimg from '../assets/what-client-says.png'
 import landingimg2 from '../assets/Vector.png'
 
 
@@ -50,9 +50,9 @@ function HomePage(props) {
   }
 
   return (
-    <div className="sections-container">
+    <div className="d-flex flex-column sections-container">
       {/*#############--------------  section 1 --------------#################*/}
-        <section className="landing-animation-section mb-4">
+        <section className="d-flex mb-4 mt-5 pt-5">
           <div className="designers-developers-animation-container">
             <div className="animation-svg-container">
               <div className="homediv-13">
@@ -76,7 +76,8 @@ function HomePage(props) {
               </div>
             </div>
           </div>
-          <div className="landing-page-img-container">
+          
+          <div className="landing-page-img-container mt-5">
             <img className="landingimg" src={landingimg} alt="" />
           </div>
         </section>

@@ -59,7 +59,7 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="adiv-9 mt-5">
+        <div className="adiv-9">
           <div className="adiv-10">
           <div className='card-container'>
               <div className='cards card1'></div>
@@ -253,9 +253,10 @@ function Aboutus(props) {
           <div className="diva-11">
             <div className="diva-12">
              <b className='mb-1 d-flex fw-bold fs-4'>Discover What's New: Our Recent <br />News and Updates</b>
-              Dive into the latest buzz surrounding KIT global technologies as we share <br />
+              <span className='fs-4'>Dive into the latest buzz surrounding KIT global technologies as we share <br />
               noteworthy news and updates that showcase our ongoing<br />
               commitment to innovation and excellence.<br />
+              </span>
               <button className='aboutdiv-button d-none'color="inherit" onClick={()=> navigate('/blog')}>Learn More</button>  
             </div>
           </div>

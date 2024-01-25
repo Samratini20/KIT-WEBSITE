@@ -23,7 +23,7 @@
     margin-top: -5rem;
     }
     .aspan-1{
-        font: 400 18px Calibri, -apple-system, Roboto, Helvetica, sans-serif;
+        font-size: calc(1.275rem + .3vw)!important;
         margin-bottom: 30px;
         line-height: 2;
         word-spacing: 4px;

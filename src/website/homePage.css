@@ -113,7 +113,6 @@ padding-left: 5px;
 .landingimg{
   height: 100%;
   width: 100%;
-  margin-left: 1.5rem;
   object-fit: cover;
   object-position: left;
 }
