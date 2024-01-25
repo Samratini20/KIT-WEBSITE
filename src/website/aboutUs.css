@@ -392,7 +392,6 @@
       align-items: center;
     }
     .aimg-10 {
-      position: absolute;
       inset: 0;
       height: 85%;
       object-fit: cover;
