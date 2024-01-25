@@ -55,7 +55,7 @@ function Careers(props) {
                 <div className="d-flex career-container-form col-8">
                     <div class="card justify-content-center my-5 w-75 m-auto">
                       <div class="card-body px-5">
-                            <form action="https://formsubmit.co/info@kitservices.in" method="POST" encType="multipart/form-data">
+                            <form action="https://formsubmit.co/careers@kitservices.in" method="POST" encType="multipart/form-data">
                                   <div class="form-row">
                                     <div class="form-group col-12 my-4">
                                       <span for="Name" className="fs-6 fw-bold">Name <span class="text-danger ml-2">*</span></span>
@@ -85,8 +85,7 @@ function Careers(props) {
                                         <div class="icon">
                                           <i class="fa-solid fa-cloud-arrow-up"></i>
                                         </div>
-                                        <span className="header-drag">Drag or Drop to Upload</span>
-                                        <span className="header text-decoration-underline">or <span class="resumeAttachment" onClick={attachFiles}>browse</span></span>
+                                        <span className="header text-decoration-underline"><span class="resumeAttachment" onClick={attachFiles}>Upload</span></span>
                                         <span className="header mt-2">PDF files only</span>
                                         <input type="file" name="attachments" id="file-input" accept=".pdf,application/pdf" hidden onChange={handleFileSelection}/>
                                       </div>

@@ -2,6 +2,7 @@ import * as React from "react";
 import serviceImg from '../assets/serviceImg.png'
 import Img1 from '../assets/servicesImg_1.jpg';
 import Img2 from '../assets/servicesImg_2.jpg';
+import service_section_2 from '../assets/service_section_2.png'
 import './servicePage.css';
 import { useEffect } from "react";
 
@@ -24,22 +25,22 @@ function ServicePage(props) {
               <div className="sdiv-17">Powerful Solution For Your Business</div>
             </div>
             <div className="sdiv-18">
-              <div className="sdiv-19">
+              <div className="fs-5 sdiv-19">
                 Unlock Success with Our Powerful Business Solutions – Elevate
                 Your Performance Today!
               </div>
               <div className="sdiv-20">
-                <div className="sdiv-21">Quality Services</div>
+                <div className="sdiv-21 fs-6 ">Quality Services</div>
                 <div className="sdiv-22">80%</div>
               </div>
               <div className="sdiv-23" />
               <div className="sdiv-24">
-                <div className="sdiv-21">Experienced technicians</div>
+                <div className="sdiv-21 fs-6 ">Experienced technicians</div>
                 <div className="sdiv-26">95%</div>
               </div>
               <div className="sdiv-27" />
               <div className="sdiv-28">
-                <div className="sdiv-21">Long term warranty</div>
+                <div className="sdiv-21 fs-6 ">Long term warranty</div>
                 <div className="sdiv-30">75%</div>
               </div>
               <div className="sdiv-31" />
@@ -56,34 +57,22 @@ function ServicePage(props) {
               className="serviceimg-2"
             />
         </div>
-        <div className="sdiv-33">
-          <div className="sdiv-34">
-            <div className="sdiv-35">
-              <div className="scolumn">
-                <div className="sdiv-36">
-                  <div className="sdiv-37">
+        <div className="justify-content-between sdiv-33 w-100">
+                  <div className="d-flex my-5 mx-5 w-50">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/f398ca9cf3ee0e20a18e2851910ae265c7498518bdc9f918aa61cec1f5d66a65?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="simg-3"
+                      src={service_section_2}
+                      className="h-100 w-100"
                     />
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e391911dd819b3c01eb6f8f0e6f48b07f6151987ceb8af18497c4bffdbe73123?apiKey=9d6521b3bd494d48816871a061465c45&"
-                      className="simg-4"
-                    />
-                  </div>
-                  <div className="sdiv-38" />
-                </div>
-              </div>
-              <div className="scolumn-2">
+                 </div>
+              <div className="mx-2 my-5 col-5">
                 <div className="sdiv-39">
-                  <div className="sdiv-40">
+                  <div className="fs-3 fw-bold sdiv-40">
                     We Provide Awesome Services For You
                   </div>
-                  <div className="sdiv-41">
-                    &quot;Elevate Your Experience with Our Services – Your
-                    Success, Our Priority!&quot;
+                  <div className="fs-5 mt-4 sdiv-41">
+                    <q>Elevate Your Experience with Our Services – Your
+                    Success, Our Priority!</q>
                   </div>
                   <div className="mt-5 sdiv-42">
                     <a href="https://wa.me/919686112338" style={{backgroundColor:'#005e8d'}}
@@ -91,8 +80,6 @@ function ServicePage(props) {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
         <div className="sdiv-43">What We Provide</div>
         <div className="d-flex flex-column">
@@ -101,7 +88,7 @@ function ServicePage(props) {
             <div className="scolumn">
               <div className="sdiv-46">
                 <div className="sdiv-47">IT Services</div>
-                <div className="mb-5 sdiv-48">
+                <div className="fa-1x mb-5 sdiv-48">
                   Proactive monitoring, maintenance, and support for your IT
                   infrastructure, ensuring optimal performance and minimal
                   downtime..
@@ -112,7 +99,7 @@ function ServicePage(props) {
             <div className="scolumn-3">
               <div className="sdiv-51">
                 <div className="sdiv-52">Software Development</div>
-                <div className="sdiv-53">
+                <div className="fa-1x mb-5 sdiv-48">
                   Custom software development for web and mobile applications,
                   tailored to your unique requirements.
                 </div>
@@ -126,7 +113,7 @@ function ServicePage(props) {
             <div className="scolumn">
               <div className="sdiv-58">
                 <div className="sdiv-59">Web design and development</div>
-                <div className="sdiv-60 mb-5">
+                <div className="fa-1x mb-5 sdiv-48">
                   Build and optimize user-friendly websites that drive
                   conversions and enhance user experience.
                 </div>
@@ -136,7 +123,7 @@ function ServicePage(props) {
             <div className="scolumn-3">
               <div className="sdiv-63">
                 <div className="sdiv-64">Social Media Marketing</div>
-                <div className="sdiv-65 mb-5">
+                <div className="fa-1x mb-5 sdiv-48">
                   Engage your audience and build brand awareness through
                   strategic social media campaigns.
                 </div>
@@ -150,7 +137,7 @@ function ServicePage(props) {
             <div className="scolumn">
               <div className="sdiv-70">
                 <div className="sdiv-71">Search Engine Optimization</div>
-                <div className="sdiv-72 mb-5">
+                <div className="fa-1x mb-5 sdiv-48">
                   Improve your online visibility and organic search rankings to
                   attract more website traffic.
                 </div>
@@ -160,7 +147,7 @@ function ServicePage(props) {
             <div className="scolumn-3">
               <div className="sdiv-63">
                 <div className="sdiv-76">Pay-Per-Click Advertising</div>
-                <div className="sdiv-77 mb-5">
+                <div className="fa-1x mb-5 sdiv-48">
                   Create targeted ad campaigns on search engines and social
                   media platforms for instant visibility.
                 </div>
@@ -170,48 +157,30 @@ function ServicePage(props) {
           </div>
         </div>
         </div>
-        <div className="sdiv-80">
-          <div className="sdiv-81">
-            <div className="scolumn-6">
-              <div className="sdiv-82">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/65f574d02031eb918a6f9899e2bf1af1a8c57fd2ce4c930e378b1d4a97bea0eb?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="simg-11"
-                />
-                <div className="sdiv-83">1. Planning & Research</div>
-                <div className="sdiv-84">
+        <div className="mt-5 p-4 sdiv-80">
+          <div className="col-12 d-flex gap-3 my-4">
+            <div className="col-4">
+                <i class="d-flex fa-2x fa-business-time fa-solid justify-content-center" style={{color :"#006394"}}></i>
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
+                <div className="fs-5 justify-content-center mt-3 px-2">
                 We meticulously chart the course for your IT success, ensuring strategic
                  precision every step of the way.
                 </div>
-              </div>
             </div>
-            <div className="scolumn-7">
-              <div className="sdiv-85">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8420412c2456f4783139b209f0434cc18d36b1812f4583c252e9b4b12dec7b5f?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="simg-12"
-                />
-                <div className="sdiv-86">2. Optimizing</div>
-                <div className="sdiv-87">
+            <div className="col-4"> 
+                <i class="d-flex fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Optimizing</div>
+                <div className="fs-5 justify-content-center mt-3">
                 Optimization for managing spend on software, contracts, account usage and compliance.
                 </div>
-              </div>
-            </div>
-            <div className="scolumn-8">
-              <div className="sdiv-88">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/b28d2daa6dcd9b587194788ad49fc2e2ba85979ce4d535479615b09b3d6df616?apiKey=9d6521b3bd494d48816871a061465c45&"
-                  className="simg-13"
-                />
-                <div className="sdiv-89">3. Result</div>
-                <div className="sdiv-90">
+             </div>
+            <div className="col-4">
+                
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Result</div>
+                <div className="fs-5 justify-content-center mt-3">
                 With dedication and commitment to our aspirations, we have a clear sense of 
                 direction which realigns us to our long-term goals.
                 </div>
-              </div>
             </div>
           </div>
         </div>

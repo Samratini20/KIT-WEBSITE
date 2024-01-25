@@ -4,34 +4,34 @@ import Carousel from "@itseasy21/react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import whychooseus from '../assets/whyChoseUs.png';
-import landingimg from '../assets/what-client-says.jpg'
+import landingimg from '../assets/what-client-says.png'
 import landingimg2 from '../assets/Vector.png'
 
 
 const data= [
   {
     id:'1',
-    head:'"Design Rank Impress"',
+    head:'Design Rank Impress',
     description:"KIT exhibits a great combination of professionalism and down-to-earth qualities. We are so thrilled with the work, and enjoyed working with KIT so much.",
   },
   {
     id:'2',
-    head:'"Soar with SEO"',
+    head:'Soar with SEO',
     description:"We are so pleased to be working with KIT. For our redesigned website their skills, professionalism, and responsiveness are truly outstanding.",
   },
   {
     id:'3',
-    head:'"Outdated to Outstanding"',
+    head:'Outdated to Outstanding',
     description:"We recently completed a redesign of our existing website. The cost was reasonable and we now have a clean and sleek website that we anticipate will drive business to our company.",
   },
   {
     id:'4',
-    head:'"Engage, Boost, Succeed"',
+    head:'Engage, Boost, Succeed',
     description:"From the first telephone conversation, we were convinced that they knew what we were looking for. We are extremely pleased with the work done by KIT in turning our ideas into a much better version of themselves. With a few simple questions, some content, and an understanding of what we were trying to develop, they pulled together a website in a very short time at a very reasonable cost!",
   },
   {
     id:'5',
-    head: '"Co-ordination at the best"',
+    head: 'Co-ordination at the best',
     description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances, overseeing the work of other executives and the management of the company’s employees, and focusing on the company’s growth and development."
   }
 ];
@@ -50,17 +50,17 @@ function HomePage(props) {
   }
 
   return (
-    <div className="sections-container">
+    <div className="d-flex flex-column sections-container">
       {/*#############--------------  section 1 --------------#################*/}
-        <section className="landing-animation-section mb-4">
+        <section className="d-flex mb-4 mt-5 pt-5">
           <div className="designers-developers-animation-container">
             <div className="animation-svg-container">
               <div className="homediv-13">
-                      <div className="homediv-14">We Are</div>
+                      <div className="fs-3 fw-bold homediv-14">We Are</div>
                       <div className="container">
-                          <div className="homediv-15" style={{color:"#0A161C"}}>Creator's </div>
-                          <div className="homediv-15">Designer's </div>
-                          <div className="homediv-15" style={{color:"#042636"}}>Developer's </div>     
+                          <div className="fs-3 fw-bold homediv-15" style={{color:"#0A161C"}}>Creator's </div>
+                          <div className="fs-3 fw-bold homediv-15">Designer's </div>
+                          <div className="fs-3 fw-bold homediv-15" style={{color:"#042636"}}>Developer's </div>     
                       </div>
               </div>
               <div className="homediv-16 mt-4">
@@ -76,7 +76,8 @@ function HomePage(props) {
               </div>
             </div>
           </div>
-          <div className="landing-page-img-container">
+          
+          <div className="landing-page-img-container mt-5">
             <img className="landingimg" src={landingimg} alt="" />
           </div>
         </section>
@@ -95,7 +96,7 @@ function HomePage(props) {
             </span>
           </div>
           <div className="why-choose-us-text-container d-flex flex-column my-4 mx-3 w-50">
-            <h3 className="mt-4">Why Choose Us?</h3>
+            <h3 className="d-flex fs-3 justify-content-center mt-4">Why Choose Us?</h3>
             <ul className="fs-5 my-2">
               <li>We Design product requirements from clients considering time and budget Constraints, Design modularity and product robustness.</li>
               <li>We stick to the coding guidelines, adopting the programming language as the client needs.</li>
@@ -106,21 +107,21 @@ function HomePage(props) {
           </div>
         </section>
         {/*#############-------------- section 3 --------------#################*/}
-        <section className="what-client-says-section my-5">
+        <section className="what-client-says-section my-3">
           <div className="what-client-says-animation">
-              <h2 className="d-flex fw-bold fs-4 justify-content-center my-5">What Client Says</h2>
+              <h2 className="d-flex fw-bold fs-3 justify-content-center mb-5">What Client Says</h2>
               <div className="d-flex mx-3">
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div className="d-flex">
-                      <div className='testimonial-card-container'>
-                      <div className='d-flex flex-column fw-bold mt-4 mx-3'>
-                        {item.head}
+                      <div className='testimonial-card-container fs-5'>
+                      <div className='flex-column fw-bold mt-4 mx-4'>
+                        <q>{item.head}</q>
                       <br />
                       </div>
-                      <span className="m-3">
+                      <div className="mt-4 mx-4">
                         {item.description}
-                      </span>
+                      </div>
                       </div>
                     </div>
                   ))}
@@ -134,8 +135,8 @@ function HomePage(props) {
                 <div className="ceo-founder-animation mx-2"></div>
           </div>
           <div className="ceo-founder-text">
-                <p class="js-nametag mx-4 px-2">Sandeep Banvasi, CEO</p>
-                <div className="ceo-founder-testimonial pb-3">
+                <p class="d-flex fst-italic js-nametag mx-4 px-2">Sandeep Banvasi, CEO</p>
+                <div className="ceo-founder-testimonial fs-5 pb-3">
                     <ul>
                     My team aim to build a strong and profitable made service by delivering to our 
                     customers a professional services that are always fair, efficient, helpful and responsive.
