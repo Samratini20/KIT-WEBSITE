@@ -64,8 +64,6 @@ function Aboutus(props) {
           <div className='card-container'>
               <div className='cards card1'></div>
               <div className='cards card2'></div>
-              <div className='cards card3'></div>
-              <div className='cards card4 '></div>
           </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
