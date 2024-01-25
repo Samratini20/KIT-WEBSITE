@@ -118,12 +118,7 @@ function Aboutus(props) {
                   </div>
           </div>
         </div>
-        <div className="adiv-25 mb-5">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
-            className="aimg-10"
-          />
+        <div className="adiv-25 mb-5 my-5">
           <div className="adiv-26 mt-5">
             <div className="adiv-27">
               <div className="adiv-28" data-aos="fade-up">100</div>
