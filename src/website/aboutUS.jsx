@@ -20,7 +20,7 @@ function Aboutus(props) {
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   if(document.getElementsByClassName('rec-arrow')[0]){
@@ -61,9 +61,9 @@ function Aboutus(props) {
         </div>
         <div className="adiv-9">
           <div className="adiv-10">
-          <div className='card-container'>
-              <div className='cards card1'></div>
-              <div className='cards card2'></div>
+          <div className='card-container w-50 d-flex gap-4'>
+              <div className='cards card1 w-100'></div>
+              <div className='cards card2 w-100'></div>
           </div>
                   <div className="acolumn-5">
                     <div className="adiv-14">
