@@ -85,8 +85,7 @@ function Careers(props) {
                                         <div class="icon">
                                           <i class="fa-solid fa-cloud-arrow-up"></i>
                                         </div>
-                                        <span className="header-drag">Drag or Drop to Upload</span>
-                                        <span className="header text-decoration-underline">or <span class="resumeAttachment" onClick={attachFiles}>browse</span></span>
+                                        <span className="header text-decoration-underline"><span class="resumeAttachment" onClick={attachFiles}>Upload</span></span>
                                         <span className="header mt-2">PDF files only</span>
                                         <input type="file" name="attachments" id="file-input" accept=".pdf,application/pdf" hidden onChange={handleFileSelection}/>
                                       </div>

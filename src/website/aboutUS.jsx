@@ -148,7 +148,7 @@ function Aboutus(props) {
           </div>
         </div>
         <div className="vision d-flex my-2">
-          <div className="diva-3 mt-3 px-2 w-100">
+          <div className="diva-3 fs-5 mx-3 px-3">
             <div className="aspan-1 mb-2 fw-bold">
               <b>Our Vision</b>
             </div>
@@ -161,16 +161,9 @@ function Aboutus(props) {
               positive transformations in the global digital ecosystem.
             </div>           
           </div>
-          <div className="d-flex float-end">
-            <img
-            loading="lazy"
-            src={aboutusImg_2}
-            className="w-100 our-mission-img"
-          />
-            </div> 
         </div>
         <div className="mission d-flex">
-          <div className="diva-3 my-3 px-2 w-100 flex-column">
+          <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 fw-bold mb-2">
               Our Mission
             </div>
@@ -252,10 +245,10 @@ function Aboutus(props) {
           </div>
           <div className="diva-11">
             <div className="diva-12">
-             <b className='mb-1 d-flex fw-bold fs-4'>Discover What's New: Our Recent <br />News and Updates</b>
-              <span className='fs-4'>Dive into the latest buzz surrounding KIT global technologies as we share <br />
-              noteworthy news and updates that showcase our ongoing<br />
-              commitment to innovation and excellence.<br />
+             <b className='mb-3 d-flex fw-bold fs-5'>Discover What's New: Our Recent News and Updates</b>
+              <span className='fs-5'>Dive into the latest buzz surrounding KIT global technologies as we share 
+              noteworthy news and updates that showcase our ongoing
+              commitment to innovation and excellence.
               </span>
               <button className='aboutdiv-button d-none'color="inherit" onClick={()=> navigate('/blog')}>Learn More</button>  
             </div>
