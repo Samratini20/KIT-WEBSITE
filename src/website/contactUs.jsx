@@ -15,9 +15,8 @@ function ContactUs(props) {
   return (
     <div className="d-flex col-12">
           <div className="getIntouch d-flex flex-column col-4">
-            <span className="fw-bold">Get in touch</span>
+            <span className="fw-bold fs-4">Get in touch</span>
             <hr/>
-            <span className="fw-bold fs-2">Contact</span>
             <form action="https://formsubmit.co/info@kitservices.in" method="POST">
               <div class="form-row">
                 <div class="form-group col-12 my-4">
@@ -68,7 +67,7 @@ function ContactUs(props) {
                 />
                 <div className="contactDetails">
                   <span>Contact Details</span>
-                  <div className="fs-6 mx-4">
+                  <div className="fs-5 mx-4">
                     <div className="mt-3">
                     <i class="fa-solid fa-location-dot contactUsicons"></i>
                       Company Address</div>
@@ -80,7 +79,7 @@ function ContactUs(props) {
                       <a href=" https://maps.app.goo.gl/UXbpqWW2f7iKGuqC8" target="_blank">View Map</a>
                     </div>
                   </div>
-                  <div className="fs-6 mx-4">
+                  <div className="fs-5 mx-4">
                     <div className="fw-bold mt-4">
                     <i class="fa-solid fa-phone contactUsicons"></i>
                       Call Us</div>
@@ -90,7 +89,7 @@ function ContactUs(props) {
                     </a>
                     </div>
                   </div>
-                  <div className="fs-6 mx-4">
+                  <div className="fs-5 mx-4">
                     <div className="fw-bold mt-4">
                     <i class="fa-regular fa-envelope contactUsicons"></i>
                       Email Us</div>

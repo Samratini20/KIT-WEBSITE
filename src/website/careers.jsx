@@ -36,37 +36,37 @@ function Careers(props) {
 
     return (
     <div className="d-flex">
-        <div className="col-12 d-flex" style={{marginTop:'7.5rem'}}>
+        <div className="col-12 d-flex" style={{marginTop:'6rem'}}>
             <div className="d-flex career-side-container flex-column">
                     <div className="align-items-center d-flex flex-column justify-content-center">
                       <span className="text-white fw-bold fa-2x" style={{marginTop:'8rem'}}>Apply For Position</span>
-                      <span className="align-items-center d-flex mt-3 mx-5 p-5 text-white">
+                      <span className="align-items-center d-flex mt-5 text-white col-8">
                       “Join our dynamic team and be part of a workplace
                       where innovation thrives,diversity is celebrated
                       and every voice contributes to our collective success !”
                       </span>
+                      <img
+                      loading="lazy"
+                      src={careerImg}
+                      className="mx-auto z-1" style={{marginTop:'16%'}}
+                      />
                     </div>
-                    <img
-                    loading="lazy"
-                    src={careerImg}
-                    className="w-100 my-5"
-                    />
             </div>
-                <div className="d-flex career-container-form col-8">
-                    <div class="card justify-content-center my-5 w-75 m-auto">
+                <div className="align-content-center align-items-center career-container-form d-flex justify-content-center">
+                    <div class="card justify-content-center my-5 w-75" style={{marginLeft:'8%'}}>
                       <div class="card-body px-5">
                             <form action="https://formsubmit.co/careers@kitservices.in" method="POST" encType="multipart/form-data">
                                   <div class="form-row">
                                     <div class="form-group col-12 my-4">
-                                      <span for="Name" className="fs-6 fw-bold">Name <span class="text-danger ml-2">*</span></span>
+                                      <span for="Name" className="fs-5 fw-bold">Name <span class="text-danger ml-2">*</span></span>
                                       <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="name" placeholder="Your Name" required/>
                                     </div>
                                     <div class="form-group col-12 my-4">
-                                      <span for="emailID" className="fs-6 fw-bold">Email <span class="text-danger ml-2">*</span></span>
+                                      <span for="emailID" className="fs-5 fw-bold">Email <span class="text-danger ml-2">*</span></span>
                                       <input type="email" class="form-control p-0 pt-4 py-2 underlined-input" name="emailId" placeholder="Your Email" required/>
                                     </div>
                                     <div class="col-12 d-flex flex-column form-group my-4">
-                                      <span for="Designation" className="fs-6 fw-bold mb-2">Designation <span class="text-danger ml-2">*</span></span>
+                                      <span for="Designation" className="fs-5 fw-bold mb-2">Designation <span class="text-danger ml-2">*</span></span>
                                       <select class="p-0 pt-4 py-2 underlined-input" name="Designation" required>
                                         <option hidden selected>Your Designation</option>
                                         <option>Developer</option>
@@ -80,7 +80,7 @@ function Careers(props) {
                                       </select>
                                     </div>
                                     <div class="form-group col-12 my-4">
-                                      <span for="CV" className="fs-6 fw-bold">CV / Resume <span class="text-danger ml-2">*</span></span>
+                                      <span for="CV" className="fs-5 fw-bold">CV / Resume <span class="text-danger ml-2">*</span></span>
                                       <div class="drag-area p-3" onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave}>
                                         <div class="icon">
                                           <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -91,7 +91,7 @@ function Careers(props) {
                                       </div>
                                     </div>
                                     <div class="form-group col-12 my-4">
-                                      <span for="textArea" className="fs-6 fw-bold">Message (Optional) <span class="text-danger ml-2">*</span></span>
+                                      <span for="textArea" className="fs-5 fw-bold">Message (Optional) <span class="text-danger ml-2">*</span></span>
                                       <textarea rows={5} cols={10} class="form-control mt-4 bg-transparent" name="contact-message" placeholder="Type here .......!" required/>
                                     </div>
                                   </div>
