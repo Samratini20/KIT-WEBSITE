@@ -387,12 +387,9 @@
       fill: #eff1f4;
       overflow: hidden !important;
       align-self: stretch;
-      position: relative;
       display: flex;
-      min-height: 35rem;
       justify-content: center;
       align-items: center;
-      margin-top: -8rem;;
     }
     .aimg-10 {
       position: absolute;
@@ -406,10 +403,8 @@
     .adiv-26 {
       position: relative;
       display: flex;
-      max-width: 1122px;
       justify-content: space-between;
       gap: 7rem;
-      margin-top: 8rem;
     }
     @media (max-width: 991px) {
       .adiv-26 {

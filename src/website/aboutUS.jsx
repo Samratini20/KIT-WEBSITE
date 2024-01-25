@@ -20,7 +20,7 @@ function Aboutus(props) {
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   if(document.getElementsByClassName('rec-arrow')[0]){
@@ -31,7 +31,7 @@ function Aboutus(props) {
   return (
     <>
       <div className="about-us-container bg-white">
-        <div className="d-flex diva-1 flex-column" style={{marginTop:"6.8rem"}}>
+        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"6.8rem"}}>
           <div className="diva-2 mx-auto">
           <img
             loading="lazy"
@@ -54,7 +54,7 @@ function Aboutus(props) {
             With a relentless commitment to quality, we specialise in creating bespoke software solutions tailored 
             to your unique needs. Whether you're aiming to streamline operations, enhance productivity, or stay 
             ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
-             innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-4'><em>"Your vision, our technology – let's build the future together".</em></b>
+             innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5'><em>"Your vision, our technology – let's build the future together".</em></b>
               <br />
             </div>
           </div>
@@ -118,13 +118,13 @@ function Aboutus(props) {
                   </div>
           </div>
         </div>
-        <div className="adiv-25">
+        <div className="adiv-25 mb-5">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3ee81f025b53e38d435e7cb01a9e8dd80961c85e92d3bfa5cc0de709a658395?apiKey=9d6521b3bd494d48816871a061465c45&"
             className="aimg-10"
           />
-          <div className="adiv-26">
+          <div className="adiv-26 mt-5">
             <div className="adiv-27">
               <div className="adiv-28" data-aos="fade-up">100</div>
               <div className="adiv-29">Websites Designed</div>
