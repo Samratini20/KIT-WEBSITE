@@ -1,22 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './footer.css'
-import logo from '../assets/logo-dark.PNG';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faXTwitter,
-  faInstagram,
-  faYoutube,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import logo from '../assets/logo-dark.png';
   
 function Footer() {
     return (
       <div className='footer-container'>
-      <footer className='footer d-flex justify-content-around w-100 ' >
+      <footer className='footer d-flex w-100 ' >
         <a className='footer-logo-container' href='/'>
-          <img className='logo-img' loading='lazy' src={logo} alt="logo" />
+          <img className='logo-img mt-5' loading='lazy' src={logo} alt="logo" />
         </a>
         <div className='footer-quicklinks-container d-flex flex-column'>
           <h4 className='mt-3'>Quick links</h4>
@@ -42,7 +34,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <h5>KIT Global Technologies &copy; all rights Reserved</h5>
+      <span className='d-flex justify-content-center mt-4 pb-3'>KIT Global Technologies &copy; all rights Reserved</span>
       </div>
     );
 }

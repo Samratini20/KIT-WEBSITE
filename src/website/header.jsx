@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
-import logo from "../assets/logo.PNG";
+import logo from "../assets/logo.png";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -15,9 +15,9 @@ function Header() {
   return (
     <div className="div-2">
       <nav className="navbar navbar-expand-lg bg-white">
-        <div className="container-fluid">
+        <div className="d-flex">
           <a className="navbar-brand" href="/">
-            <img className="img" src={logo} alt="logo" />
+            <img className="w-25" src={logo} alt="logo" style={{scale:'1.5'}} />
           </a>
           <button
             className="navbar-toggler"
@@ -33,7 +33,7 @@ function Header() {
           </button>
         </div>
         <div
-          className={`mainNav collapse navbar-collapse ${expanded ? "show" : ""}`}
+          className={`fs-5 mainNav collapse navbar-collapse ${expanded ? "show" : ""}`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
