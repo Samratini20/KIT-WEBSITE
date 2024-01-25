@@ -27,12 +27,12 @@ const data= [
   {
     id:'4',
     head:'Engage, Boost, Succeed',
-    description:"From the first telephone conversation, we were convinced that they knew what we were looking for. We are extremely pleased with the work done by KIT in turning our ideas into a much better version of themselves. With a few simple questions, some content, and an understanding of what we were trying to develop, they pulled together a website in a very short time at a very reasonable cost!",
+    description:"From the first telephone conversation, we were convinced that they knew what we were looking for. We are extremely pleased with the work done by KIT in turning our ideas into a much better version of individuals."
   },
   {
     id:'5',
     head: 'Co-ordination at the best',
-    description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances, overseeing the work of other executives and the management of the company’s employees, and focusing on the company’s growth and development."
+    description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances."
   }
 ];
 function HomePage(props) {
@@ -41,13 +41,13 @@ function HomePage(props) {
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
+    if(document.getElementsByClassName('rec-arrow')[0]){
+      document.getElementsByClassName('rec-arrow')[0].innerText = '';
+      document.getElementsByClassName('rec-arrow-right')[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
+      document.getElementsByClassName('rec-arrow-left')[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
+    }
   }, []);
 
-  if(document.getElementsByClassName('rec-arrow')[0]){
-    document.getElementsByClassName('rec-arrow')[0].innerText = '';
-    document.getElementsByClassName('rec-arrow-right')[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
-    document.getElementsByClassName('rec-arrow-left')[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
-  }
 
   return (
     <div className="d-flex flex-column sections-container">
