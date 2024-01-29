@@ -130,7 +130,7 @@ function ServicePage(props) {
           </div>
         </div>
         <div className="d-flex justify-content-center mx-auto sdiv-68">
-          <div className="sdiv-69">
+          <div className="mb-5 sdiv-69">
             <div className="scolumn">
               <div className="sdiv-70">
                 <div className="sdiv-71">Search Engine Optimization</div>

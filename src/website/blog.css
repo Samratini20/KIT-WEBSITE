@@ -20,14 +20,14 @@
         padding: 0 20px;
       }
     }
-    .img {
+    /* .img {
       aspect-ratio: 0.76;
       object-fit: contain;
       object-position: center;
       width: 58px;
       overflow: hidden;
       max-width: 100%;
-    }
+    } */
     .bdiv-3 {
       align-self: center;
       display: flex;

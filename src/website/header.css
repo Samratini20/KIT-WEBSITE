@@ -17,14 +17,14 @@
   height: auto;
 }
 
-.img{
+/* .img{
   transform: scale(2);
-}
+} */
 
 @media (max-width: 991px) {
-  .img{
+  /* .img{
     transform: scale(2);
-  }
+  } */
 }
 .contactus-link{
   margin-right: 5rem;
