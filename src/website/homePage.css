@@ -7,7 +7,9 @@
 .sections-container{
   background-color: white;
 }
-
+.rec-arrow-right:disabled,.rec-arrow-left:disabled{
+      color: #a4a0a0 !important;
+}
 .landing-animation-section{
   max-width: 100vw;
   height: 100vh;

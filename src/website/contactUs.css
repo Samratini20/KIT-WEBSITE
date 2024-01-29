@@ -12,6 +12,10 @@
   color: white;
   font-size: 14px;
 }
+.send-message:disabled{
+   color: #a4a0a0 !important;
+   background-color: #005e8d;
+}
 .underlined-input {
   border: none;
   border-radius: 0;

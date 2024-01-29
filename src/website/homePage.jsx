@@ -3,7 +3,7 @@ import './homePage.css';
 import Carousel from "@itseasy21/react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import whychooseus from '../assets/whyChoseUs.png';
+import whychooseus from '../assets/whyChoseUs.jpg';
 import landingimg from '../assets/what-client-says.png'
 import landingimg2 from '../assets/Vector.png'
 
@@ -56,7 +56,7 @@ function HomePage(props) {
           <div className="designers-developers-animation-container">
             <div className="animation-svg-container">
               <div className="homediv-13">
-                      <div className="fs-3 fw-bold homediv-14">We Are</div>
+                      <div className="fs-5 fw-bold homediv-14">We Are</div>
                       <div className="container">
                           <div className="fs-3 fw-bold homediv-15" style={{color:"#0A161C"}}>Creator's </div>
                           <div className="fs-3 fw-bold homediv-15">Designer's </div>
@@ -72,13 +72,13 @@ function HomePage(props) {
                   <button className='get-started-button mt-5' onClick={()=> navigate('/services')}>Get Started</button>
               </div>
               <div>
-                  <img className="landing-page-img2" src={landingimg2} alt="" />
+                  <img  loading="lazy" className="landing-page-img2" src={landingimg2} alt="" />
               </div>
             </div>
           </div>
           
           <div className="landing-page-img-container mt-5">
-            <img className="landingimg" src={landingimg} alt="" />
+            <img  loading="lazy" className="landingimg" src={landingimg} alt="" />
           </div>
         </section>
 
@@ -86,14 +86,6 @@ function HomePage(props) {
         <section className="why-choose-us-section d-flex justify-content-between">
           <div className="why-choose-img-container w-50">
             <img loading="lazy" className="why-choose-us-img" src={whychooseus} alt="image"/>
-            <span>
-            <svg className="why-choose-us-svg" xmlns="http://www.w3.org/2000/svg" width="63" height="43" viewBox="0 0 63 43" fill="none">
-                <path d="M2.44725 11.179C5.92067 4.32181 12.9545 0 20.6412 0H53.7356C61.6034 0 65.5559 9.50145 60.0094 15.0817L59.1802 15.9159C56.8164 18.2941 56.3669 21.9727 58.0886 24.8501C60.6366 29.1085 58.3072 34.6153 53.4768 35.7526L27.4992 41.869C17.2932 44.2719 6.80816 39.1473 2.43405 29.6183L2.10579 28.9032C-0.488284 23.252 -0.362558 16.7261 2.44725 11.179Z" fill="#3765B3"/>
-            </svg>
-            <div className="why-choose-us-dot1"></div>
-            <div className="why-choose-us-dot2"></div>
-            <div className="why-choose-us-dot3"></div>
-            </span>
           </div>
           <div className="why-choose-us-text-container d-flex flex-column my-4 mx-3 w-50">
             <h3 className="d-flex fs-3 justify-content-center mt-4">Why Choose Us?</h3>
@@ -116,7 +108,7 @@ function HomePage(props) {
                     <div className="d-flex">
                       <div className='testimonial-card-container fs-5'>
                       <div className='flex-column fw-bold mt-4 mx-4'>
-                        <q>{item.head}</q>
+                        <span>'{item.head}'</span>
                       <br />
                       </div>
                       <div className="mt-4 mx-4">
@@ -135,7 +127,7 @@ function HomePage(props) {
                 <div className="ceo-founder-animation mx-2"></div>
           </div>
           <div className="ceo-founder-text">
-                <p class="d-flex fst-italic js-nametag mx-4 px-2">Sandeep Banvasi, CEO</p>
+                <p class="d-flex fst-italic js-nametag mx-4 px-2">Sandeep Banavasi, CEO</p>
                 <div className="ceo-founder-testimonial fs-5 pb-3">
                     <ul>
                     My team aim to build a strong and profitable made service by delivering to our 

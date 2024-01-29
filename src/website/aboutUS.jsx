@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './aboutUs.css';
 import aboutusImg_1 from '../assets/aboutusImg_1.jpg';
-import aboutusImg_2 from '../assets/aboutusImg_2.png';
-import aboutusImg_3 from '../assets/aboutusImg_3.jpg'
+import aboutusImg_3 from '../assets/aboutusImg_3.png'
 import { useNavigate } from "react-router-dom";
 
 function Aboutus(props) {  
@@ -39,23 +38,23 @@ function Aboutus(props) {
             className="aboutusImg-1 "
           />
           </div>
-          <div className="diva-3 mx-3 my-3 px-3 fs-5">
+          <div className="diva-3 mx-3 my-2 px-3 fs-5">
             <div className="my-2 py-2 px-4">
             Welcome to K.I.T Global Technologies Pvt Ltd, where innovation meets efficiency. 
             We're a dynamic software company dedicated to crafting cutting-edge solutions that empower businesses to thrive in the digital era.
               <br />
             </div>
-            <div className="my-2 py-2 px-4">
+            <div className="mt-2 py-2 px-4">
             Our dedicated team of experts passionately merges creativity and expertise to craft software solutions that not only meet but consistently exceed your expectations. Embark on a journey into the future of technology with K.I.T Global Technologies Pvt Ltd.<br />
             </div>
-            <div className="my-2 py-2 about-us-text">
+            <div className="mt-2 py-2 about-us-text">
             At K.I.T Global Technologies Pvt Ltd, we simplify complexity and elevate user experiences. 
             With a relentless commitment to quality, we specialise in creating bespoke software solutions tailored 
             to your unique needs.
-            <div className="my-2 py-2">
+            <div className="mt-2 py-2">
                   Whether you're aiming to streamline operations, enhance productivity, or stay 
                   ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
-                  innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5'><em>"Your vision, our technology – let's build the future together".</em></b>
+                  innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5 fs-2'><em>"Your vision, our technology – let's build the future together".</em></b>
                     <br />
               </div>
             </div>
@@ -120,7 +119,7 @@ function Aboutus(props) {
                   </div>
           </div>
         </div>
-        <div className="adiv-25 mb-5 my-5">
+        <div className="adiv-25 mb-5 my-5 d-none">
           <div className="adiv-26 mt-5">
             <div className="adiv-27">
               <div className="adiv-28" data-aos="fade-up">100</div>
@@ -142,6 +141,35 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
+        <div className="mt-5 p-4 sdiv-80">
+          <div className="d-flex gap-2 my-4 text-align">
+            <div className="d-flex flex-column">
+                <i class="d-flex fa-2x fa-business-time fa-solid justify-content-center" style={{color :"#006394"}}></i>
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                We meticulously chart the course for your IT success, ensuring 
+                strategic precision and seamless execution every step of the way.
+                </div>
+            </div>
+            <div className="d-flex flex-column"> 
+                <i class="fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Efficient Streamlining</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                Optimization for effectively managing spend on software 
+                and ensuring compliance is essential for organizational 
+                success.
+                </div>
+             </div>
+            <div className="d-flex flex-column">
+                <i class="fa-2x fa-solid fa-square-check justify-content-center" style={{color :"#006394"}}></i>
+                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Decisive Outcome</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                With dedication and commitment to our aspirations, we have a clear sense of 
+                direction which realigns us to our long-term goals.
+                </div>
+            </div>
+          </div>
+        </div>
         <div className="vision d-flex my-3 px-4">
           <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 mb-2 fw-bold">
@@ -157,8 +185,8 @@ function Aboutus(props) {
             </div>           
           </div>
         </div>
-        <div className="mission d-flex my-3 px-4 py-4">
-          <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
+        <div className="mission d-flex px-4 py-4">
+          <div className="diva-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 fw-bold mb-2">
               Our Mission
             </div>
@@ -230,7 +258,7 @@ function Aboutus(props) {
 </div>
           </div>
         </div>
-        <div className="diva-9 my-4">
+        <div className="diva-9 my-4 d-none">
           <div className="diva-10">
           <img
             loading="lazy"

@@ -31,17 +31,14 @@ function ServicePage(props) {
               </div>
               <div className="sdiv-20">
                 <div className="sdiv-21 fs-6 ">Quality Services</div>
-                <div className="sdiv-22">80%</div>
               </div>
               <div className="sdiv-23" />
               <div className="sdiv-24">
                 <div className="sdiv-21 fs-6 ">Experienced technicians</div>
-                <div className="sdiv-26">95%</div>
               </div>
               <div className="sdiv-27" />
               <div className="sdiv-28">
                 <div className="sdiv-21 fs-6 ">Long term warranty</div>
-                <div className="sdiv-30">75%</div>
               </div>
               <div className="sdiv-31" />
             </div>
@@ -49,7 +46,7 @@ function ServicePage(props) {
           <img
             loading="lazy"
             src={serviceImg}
-            style={{marginLeft:'2.5rem'}}
+            style={{marginLeft:'2.5rem',width:'38%'}}
           />
           <img
               loading="lazy"
@@ -112,7 +109,7 @@ function ServicePage(props) {
           <div className="sdiv-57">
             <div className="scolumn">
               <div className="sdiv-58">
-                <div className="sdiv-59">Web design and development</div>
+                <div className="sdiv-59">Web Design and Development</div>
                 <div className="fa-1x mb-5 sdiv-48">
                   Build and optimize user-friendly websites that drive
                   conversions and enhance user experience.
@@ -156,35 +153,6 @@ function ServicePage(props) {
             </div>
           </div>
         </div>
-        </div>
-        <div className="mt-5 p-4 sdiv-80">
-          <div className="d-flex gap-2 my-4 text-align">
-            <div className="d-flex flex-column">
-                <i class="d-flex fa-2x fa-business-time fa-solid justify-content-center" style={{color :"#006394"}}></i>
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
-                We meticulously chart the course for your IT success, ensuring 
-                strategic precision and seamless execution every step of the way.
-                </div>
-            </div>
-            <div className="d-flex flex-column"> 
-                <i class="fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Efficient Streamlining</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
-                Optimization for effectively managing spend on software 
-                and ensuring compliance is essential for organizational 
-                success.
-                </div>
-             </div>
-            <div className="d-flex flex-column">
-                <i class="fa-2x fa-solid fa-square-check justify-content-center" style={{color :"#006394"}}></i>
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Decisive Outcome</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
-                With dedication and commitment to our aspirations, we have a clear sense of 
-                direction which realigns us to our long-term goals.
-                </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
