@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
-import logo from "../assets/logo.png";
-
+import logo from '../assets/logo.png';
 function Header() {
   const [expanded, setExpanded] = useState(false);
   const location = useLocation();
