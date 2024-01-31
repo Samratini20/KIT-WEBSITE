@@ -32,7 +32,13 @@ function SubmitButton(){
   }
 }
 
-    
+const handleNameChange = (e) => {
+  const inputValue = e.target.value;
+  const alphabeticRegex = /^[A-Za-z\s]*$/;
+  if (alphabeticRegex.test(inputValue)) {
+    setName(inputValue);
+  } 
+};
     
     return (
     <div className="d-flex">
@@ -59,7 +65,7 @@ function SubmitButton(){
                                   <div class="form-row">
                                     <div class="form-group col-12 my-4">
                                       <span for="Name" className="fs-5 fw-bold">Name <span class="text-danger ml-2">*</span></span>
-                                      <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="name" placeholder="Your Name" onChange={e => setName(e.target.value)} required/>
+                                      <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="name" placeholder="Your Name" value={name} onChange={handleNameChange} required/>
                                     </div>
                                     <div class="form-group col-12 my-4">
                                       <span for="emailID" className="fs-5 fw-bold">Email <span class="text-danger ml-2">*</span></span>
@@ -86,7 +92,7 @@ function SubmitButton(){
                                           <i class="fa-solid fa-cloud-arrow-up"></i>
                                         </div>
                                         <span className="header text-decoration-underline"><span class="resumeAttachment" onClick={attachFiles}>Upload</span></span>
-                                        <span className="fs-6 fw-bold my-1">{uploadedFileName}</span>
+                                        <span className="fs-6 fw-bold my-1">{uploadedFileName} {uploadedFileName ? <i onClick={()=>{setuploadedFileName("")}} class="fa-regular fa-circle-xmark mx-2 pdf-upload-icon"></i> : ""}</span> 
                                         <span className="header mt-2">PDF files only</span>
                                         <input type="file" name="attachments" id="file-input" accept=".pdf,application/pdf" hidden onChange={handleFileSelection} required/>
                                       </div>
