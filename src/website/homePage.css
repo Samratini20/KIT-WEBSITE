@@ -55,7 +55,7 @@ font: 700 26px/10px Calibri, -apple-system, Roboto, Helvetica,
 position: relative;
 white-space: nowrap;
 display: inline-block;
-width: 11rem;
+width: 10rem;
 overflow: hidden;
 margin-left: 1rem;
 
@@ -80,12 +80,12 @@ padding-left: 5px;
   
 }
 16%{
-  margin-left: -160px;
+  margin-left: -150px;
   
 }
 
 50%{
-  margin-left: -330px;
+  margin-left: -300px;
   
 }
 82%{

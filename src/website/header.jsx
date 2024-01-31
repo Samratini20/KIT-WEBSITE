@@ -32,10 +32,10 @@ function Header() {
           </button>
         </div>
         <div
-          className={`fs-5 mainNav collapse navbar-collapse ${expanded ? "show" : ""}`}
+          className={`fs-5 justify-content-end mainNav collapse navbar-collapse ${expanded ? "show" : ""}`}
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
                 to="/"

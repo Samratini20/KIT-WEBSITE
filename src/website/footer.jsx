@@ -4,6 +4,10 @@ import './footer.css'
 import logo from '../assets/logo-dark.png';
   
 function Footer() {
+
+    const scrollToTop = ()=>{
+      window.scrollTo(0,0)
+    }
     return (
       <div className='footer-container'>
       <footer className='footer d-flex w-100 ' >
@@ -12,12 +16,12 @@ function Footer() {
         </a>
         <div className='footer-quicklinks-container d-flex flex-column'>
           <h4 className='mt-3'>Quick links</h4>
-          <Link className='mt-4 footer-link' to="/">Home</Link> 
-          <Link className='mt-2 footer-link' to="/about">About Us</Link>
-          <Link className='mt-2 footer-link' to="/services">Services</Link>
+          <Link className='mt-4 footer-link' to="/" onClick={scrollToTop}>Home</Link> 
+          <Link className='mt-2 footer-link' to="/about" onClick={scrollToTop}>About Us</Link>
+          <Link className='mt-2 footer-link' to="/services" onClick={scrollToTop}>Services</Link>
           {/* <Link className='mt-2 footer-link' to="/blog">Blog</Link> */}
-          <Link className='mt-2 footer-link' to="/careers">Careers</Link>
-          <Link className='mt-2 footer-link' to="/contact">Contact Us</Link>
+          <Link className='mt-2 footer-link' to="/careers" onClick={scrollToTop}>Careers</Link>
+          <Link className='mt-2 footer-link' to="/contact" onClick={scrollToTop}>Contact Us</Link>
         </div>
         <div className='footer-terms&policy-container d-flex flex-column'>
           <h4 className='mt-3'>Company</h4>

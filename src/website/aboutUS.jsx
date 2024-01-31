@@ -38,7 +38,7 @@ function Aboutus(props) {
             className="aboutusImg-1 "
           />
           </div>
-          <div className="diva-3 mx-3 my-2 px-3 fs-5">
+          <div className="diva-3 my-2 px-3 fs-5 w-100">
             <div className="my-2 py-2 px-4">
             Welcome to K.I.T Global Technologies Pvt Ltd, where innovation meets efficiency. 
             We're a dynamic software company dedicated to crafting cutting-edge solutions that empower businesses to thrive in the digital era.
