@@ -38,7 +38,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <span className='d-flex justify-content-center mt-4 pb-3'>KIT Global Technologies &copy; all rights Reserved</span>
+      <span className='d-flex justify-content-center mt-4 pb-3'>KIT Global Technologies &copy; 2023 all rights Reserved</span>
       </div>
     );
 }
