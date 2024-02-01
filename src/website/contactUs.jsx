@@ -38,7 +38,13 @@ function ContactUs(props) {
   const handleEmailChange = (e) => {
     const inputValue = e.target.value;
     const emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    {(inputValue && emailregex.test(inputValue)) ? setEmail(inputValue) : setEmail("") }
+    if(inputValue && emailregex.test(inputValue)) {
+      setEmail(inputValue);
+      document.getElementById("errorMessage").innerText = '';
+    }else{
+      setEmail("");
+      document.getElementById("errorMessage").innerText = 'Please Enter a valid Email';
+    }  
   };
 
 
@@ -71,7 +77,7 @@ function ContactUs(props) {
                     onChange={handleEmailChange}
                     required
                   />
-                  {!email ? <span className="mt-5 text-danger fw-bold">Please Enter a valid Email</span> : ''}
+                  <span id="errorMessage" className="mt-2 text-danger fw-bold"></span>
                 </div>
                 <div class="form-group col-12 my-4">
                   <span for="subject" className="fs-5">Subject <span class="text-danger ml-2">*</span></span>

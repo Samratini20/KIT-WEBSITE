@@ -44,7 +44,13 @@ const handleNameChange = (e) => {
 const handleEmailChange = (e) => {
   const inputValue = e.target.value;
   const emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  {(inputValue && emailregex.test(inputValue)) ? setEmail(inputValue) : setEmail("") }
+  if(inputValue && emailregex.test(inputValue)) {
+    setEmail(inputValue);
+    document.getElementById("errorMessage").innerText = '';
+  }else{
+    setEmail("");
+    document.getElementById("errorMessage").innerText = 'Please Enter a valid Email';
+  }
 };
     
     return (
@@ -92,7 +98,7 @@ const handleEmailChange = (e) => {
                                         onChange={handleEmailChange} 
                                         required
                                       />
-                                      {!email ? <span className="mt-2 text-danger">Please Enter a valid Email</span> : ''}
+                                      <span id="errorMessage" className="mt-2 text-danger fw-bold"></span>
                                     </div>
                                     <div class="col-12 d-flex flex-column form-group my-4">
                                       <span for="Designation" className="fs-5 fw-bold mb-2">Designation <span class="text-danger ml-2">*</span></span>
