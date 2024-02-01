@@ -2,9 +2,10 @@ import React from "react";
 import './careers.css';
 import careerImg from '../assets/careers.png';
 import { useEffect,useState } from "react";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 
-function Careers(props) {
+function Careers() {
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
@@ -39,6 +40,14 @@ const handleNameChange = (e) => {
     setName(inputValue);
   } 
 };
+
+const handleEmailChange = (e) => {
+  const inputValue = e.target.value;
+  const emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if(emailregex.test(inputValue)){
+    setEmail(inputValue);
+  }
+};
     
     return (
     <div className="d-flex">
@@ -65,11 +74,26 @@ const handleNameChange = (e) => {
                                   <div class="form-row">
                                     <div class="form-group col-12 my-4">
                                       <span for="Name" className="fs-5 fw-bold">Name <span class="text-danger ml-2">*</span></span>
-                                      <input type="text" class="form-control p-0 pt-4 py-2 underlined-input" name="name" placeholder="Your Name" value={name} onChange={handleNameChange} required/>
+                                      <input 
+                                        type="text" 
+                                        class="form-control p-0 pt-4 py-2 underlined-input" 
+                                        name="name" 
+                                        placeholder="Your Name" 
+                                        value={name} 
+                                        onChange={handleNameChange} 
+                                        required
+                                      />
                                     </div>
                                     <div class="form-group col-12 my-4">
                                       <span for="emailID" className="fs-5 fw-bold">Email <span class="text-danger ml-2">*</span></span>
-                                      <input type="email" class="form-control p-0 pt-4 py-2 underlined-input" name="emailId" placeholder="Your Email" onChange={e => setEmail(e.target.value)}required/>
+                                      <input 
+                                        type="email" 
+                                        class="form-control p-0 pt-4 py-2 underlined-input" 
+                                        name="emailId" 
+                                        placeholder="Your Email" 
+                                        onChange={handleEmailChange} 
+                                        required
+                                      />
                                     </div>
                                     <div class="col-12 d-flex flex-column form-group my-4">
                                       <span for="Designation" className="fs-5 fw-bold mb-2">Designation <span class="text-danger ml-2">*</span></span>
@@ -92,8 +116,8 @@ const handleNameChange = (e) => {
                                           <i class="fa-solid fa-cloud-arrow-up"></i>
                                         </div>
                                         <span className="header text-decoration-underline"><span class="resumeAttachment" onClick={attachFiles}>Upload</span></span>
-                                        <span className="fs-6 fw-bold my-1">{uploadedFileName} {uploadedFileName ? <i onClick={()=>{setuploadedFileName("")}} class="fa-regular fa-circle-xmark mx-2 pdf-upload-icon"></i> : ""}</span> 
-                                        <span className="header mt-2">PDF files only</span>
+                                        <span className="fs-6 fw-bold my-1">{uploadedFileName} {uploadedFileName ? <i onClick={()=>{setuploadedFileName("")}} style={{ cursor: 'pointer'}} class="fa-regular fa-circle-xmark mx-2 pdf-upload-icon"></i> : ""}</span> 
+                                        <span className="header mt-2">One PDF file only</span>
                                         <input type="file" name="attachments" id="file-input" accept=".pdf,application/pdf" hidden onChange={handleFileSelection} required/>
                                       </div>
                                     </div>
