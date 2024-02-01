@@ -74,9 +74,9 @@ function Aboutus(props) {
                             <br />
                           </span>
                           <span className='fs-5 mb-2'>
-                            Over the Years of Expertise: Our seasoned team brings
-                            unparalleled experience to every project, ensuring
-                            excellence and reliability
+                          Organized and enthusiastic Web Designer, creating and maintaining functional, eye-catching websites. 
+                          Proven record of collaborating with team members and clients effectively.
+                          concept to launch used design software to create eye-catching and informative graphics and logo designs for web pages.
                             <br />
                           </span>
                         <div className="adiv-17 align-items-center d-flex mt-3">
