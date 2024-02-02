@@ -6,31 +6,41 @@ import { useEffect } from "react";
 import whychooseus from '../assets/whyChoseUs.jpg';
 import landingimg from '../assets/what-client-says.png'
 import landingimg2 from '../assets/Vector.png'
+import client1 from '../assets/client1.jpg';
+import client2 from '../assets/client2.png';
+import client3 from '../assets/client3.png';
+import client4 from '../assets/client4.png';
+import client5 from '../assets/client5.jpeg';
 
 
 const data= [
   {
     id:'1',
+    logo:client1,
     head:'Design Rank Impress',
     description:"KIT exemplifies an exceptional blend of professionalism and down-to-earth qualities, leaving us thoroughly delighted with the outstanding work. Our collaboration with KIT was truly enjoyable and  highly satisfying.",
   },
   {
     id:'2',
+    logo:client2,
     head:'Soar with SEO',
     description:"We are genuinely pleased to have the opportunity to work with KIT. Their exceptional skills, professionalism, and remarkable responsiveness have truly stood out, especially in the process of redesigning our website.",
   },
   {
     id:'3',
+    logo:client3,
     head:'Outdated to Outstanding',
     description:"We recently completed a redesign of our existing website. The cost was reasonable and we now have a clean and sleek website that we anticipate will drive business to our company.",
   },
   {
     id:'4',
+    logo:client4,
     head:'Engage, Boost, Succeed',
     description:"From the first telephone conversation, we were convinced that they knew what we were looking for. We are extremely pleased with the work done by KIT in turning our ideas into a much better version of individuals."
   },
   {
     id:'5',
+    logo:client5,
     head: 'Co-ordination at the best',
     description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances."
   }
@@ -91,8 +101,12 @@ function HomePage(props) {
             <h3 className="d-flex fs-3 justify-content-center mt-4">Why Choose Us?</h3>
             <ul className="fs-5 my-2">
               <li>We Design product requirements from clients considering time and budget Constraints, Design modularity and product robustness.</li>
-              <li>We stick to the coding guidelines, adopting the programming language as the client needs.</li>
-              <li>We track defects and are debugged and retested with quality standards.</li>
+              <li>We have a proven methodology, We’ve developed and refined our
+                  methods over many years, so you can expect our services and projects to be delivered consistently.
+                  Our numerous years of experience have always made us aware and considerate in putting our best
+                  foot forward during the work process so our clients can get the best.</li>
+              <li>We listen, suggest, and update. We understand that although there are common themes,
+                  each business is different and has its own special needs.</li>
               <li>We are providing reliable and user friendly services, maintenance, updating, repairs and fix issues in software.</li>
               <li>We prioritise your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.</li>
             </ul>
@@ -115,6 +129,7 @@ function HomePage(props) {
                       <i class="fa fa-quote-left mx-2" aria-hidden="true"></i>
                           {item.description}
                       <i class="fa fa-quote-right mx-2" aria-hidden="true"></i>
+                      <img src={item.logo} loading="lazy" className="w-25 float-end mt-2"/>
                       </div>
                       </div>
                     </div>

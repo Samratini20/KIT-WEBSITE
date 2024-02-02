@@ -193,7 +193,7 @@ function Aboutus(props) {
              through innovative information and technology solutions. We are committed to delivering cutting-edge products
               and services that enhance efficiency, foster growth, and drive positive change in the digital landscape. 
               With a focus on integrity, collaboration, and continuous improvement, we strive to be a trusted partner in
-               our clients' success.
+               our client's success.
             </div>
           </div>
         </div>        

@@ -83,19 +83,15 @@
       font: 700 30px/25px Calibri, -apple-system, Roboto, Helvetica,
         sans-serif;
     }
+    .service-circle{
+      color: #7cd3ff;
+      opacity: 50%;
+    }
     @media (max-width: 991px) {
       .sdiv-17 {
         max-width: 100%;
         white-space: initial;
       }
-    }
-    .sdiv-18 {
-      align-self: end;
-      display: flex;
-      margin-top: 25px;
-      width: 488px;
-      max-width: 100%;
-      flex-direction: column;
     }
     .sdiv-19 {
       color: var(--Text, #292929);

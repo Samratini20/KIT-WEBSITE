@@ -5,6 +5,7 @@ import Img2 from '../assets/servicesImg_2.jpg';
 import service_section_2 from '../assets/service_section_2.png'
 import './servicePage.css';
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function ServicePage(props) {
   useEffect(() => {
@@ -24,23 +25,10 @@ function ServicePage(props) {
             <div className="sdiv-13">
               <div className="sdiv-17">Powerful Solution For Your Business</div>
             </div>
-            <div className="sdiv-18">
-              <div className="fs-5 sdiv-19">
-                Unlock Success with Our Powerful Business Solutions – Elevate
-                Your Performance Today!
-              </div>
-              <div className="sdiv-20">
-                <div className="sdiv-21 fs-6 ">Quality Services</div>
-              </div>
-              <div className="sdiv-23" />
-              <div className="sdiv-24">
-                <div className="sdiv-21 fs-6 ">Experienced technicians</div>
-              </div>
-              <div className="sdiv-27" />
-              <div className="sdiv-28">
-                <div className="sdiv-21 fs-6 ">Long term warranty</div>
-              </div>
-              <div className="sdiv-31" />
+                <div className="align-content-center fs-5 mt-5" style={{lineHeight:2}}>
+                <span className="fs-5 my-3">We’re your research and go to organisations.</span><br/>
+                <span className="fs-5 my-4">We do our best to provide service in a timely manner so that you’re on track to meeting your
+                business goals.</span>
             </div>
           </div>
           <img
@@ -72,8 +60,7 @@ function ServicePage(props) {
                     Success, Our Priority!</q>
                   </div>
                   <div className="mt-5 sdiv-42">
-                    <a href="https://wa.me/919686112338" style={{backgroundColor:'#005e8d'}}
-                        className="chatwithusbutton" target='_blank'>Chat With Us</a>
+                  <Link style={{backgroundColor:'#005e8d'}} className='chatwithusbutton' to="/contact" onClick={()=>{window.scrollTo(0,0)}}>Chat With Us</Link>
                   </div>
                 </div>
               </div>
