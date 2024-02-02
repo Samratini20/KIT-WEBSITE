@@ -123,7 +123,6 @@
     .adiv-10 {
       display: flex;
       align-items: flex-start;
-      height: 40rem;
     }
     @media (max-width: 991px) {
       .adiv-10 {
@@ -273,11 +272,9 @@
       display: flex;
       flex-grow: 1;
       flex-direction: column;
-      justify-content: center;
-      align-items: end;
+      align-items: center;
       width: 100%;
       line-height: 1.8;
-      height: 40rem;
     }
     @media (max-width: 991px) {
       .adiv-14 {
@@ -749,7 +746,6 @@
 
     /*################################## Cards animation code here##########################################*/
     .card-container {
-      height: 40rem;
       margin-left: 1rem;
   }
     

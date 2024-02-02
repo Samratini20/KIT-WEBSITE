@@ -12,12 +12,12 @@ const data= [
   {
     id:'1',
     head:'Design Rank Impress',
-    description:"KIT exhibits a great combination of professionalism and down-to-earth qualities. We are so thrilled with the work, and enjoyed working with KIT so much.",
+    description:"KIT exemplifies an exceptional blend of professionalism and down-to-earth qualities, leaving us thoroughly delighted with the outstanding work. Our collaboration with KIT was truly enjoyable and  highly satisfying.",
   },
   {
     id:'2',
     head:'Soar with SEO',
-    description:"We are so pleased to be working with KIT. For our redesigned website their skills, professionalism, and responsiveness are truly outstanding.",
+    description:"We are genuinely pleased to have the opportunity to work with KIT. Their exceptional skills, professionalism, and remarkable responsiveness have truly stood out, especially in the process of redesigning our website.",
   },
   {
     id:'3',
@@ -106,13 +106,15 @@ function HomePage(props) {
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div className="d-flex">
-                      <div className='testimonial-card-container fs-5'>
-                      <div className='flex-column fw-bold mt-4 mx-4'>
+                      <div className='testimonial-card-container fs-5 overflow-auto'>
+                      {/* <div className='flex-column fw-bold mt-4 mx-4'>
                         <span>'{item.head}'</span>
                       <br />
-                      </div>
-                      <div className="mt-4 mx-4">
-                        {item.description}
+                      </div> */}
+                      <div className="mt-4 mx-4 py-3">
+                      <i class="fa fa-quote-left mx-2" aria-hidden="true"></i>
+                          {item.description}
+                      <i class="fa fa-quote-right mx-2" aria-hidden="true"></i>
                       </div>
                       </div>
                     </div>

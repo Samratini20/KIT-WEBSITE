@@ -61,7 +61,7 @@ function Aboutus(props) {
           </div>
         </div>
         <div className="adiv-9">
-          <div className="adiv-10">
+          <div className="d-flex">
           <div className='card-container w-50 d-flex gap-4'>
               <div className='cards card1 w-100'></div>
               <div className='cards card2 w-100'></div>
@@ -69,14 +69,12 @@ function Aboutus(props) {
                   <div className="acolumn-5">
                     <div className="adiv-14">
                       <div className="d-flex flex-column m-5 w-75">
-                          <span className='fs-3 fw-bold mb-3'>
+                          {/* <span className='fs-3 fw-bold mb-3'>
                             We have teams with years of Experience.
                             <br />
-                          </span>
-                          <span className='fs-5 mb-2'>
-                          Organized and enthusiastic Web Designer, creating and maintaining functional, eye-catching websites. 
-                          Proven record of collaborating with team members and clients effectively.
-                          concept to launch used design software to create eye-catching and informative graphics and logo designs for web pages.
+                          </span> */}
+                          <span className='fs-5'>
+                          What sets us apart is our commitment to excellence and our unwavering focus on delivering results that exceed expectations. Our extensive industry knowledge combined with innovative approaches allows us to tailor solutions that address your unique needs and challenges.
                             <br />
                           </span>
                         <div className="adiv-17 align-items-center d-flex mt-3">
