@@ -42,7 +42,7 @@ const data= [
     id:'5',
     logo:client5,
     head: 'Co-ordination at the best',
-    description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company, making major corporate decisions, serving as the public face of the company, managing the company’s finances."
+    description:"Mr. Sandeep Banavasi is responsible for providing overall direction and leadership for a company,making major corporate decisions,serving as public face of the company."
   }
 ];
 function HomePage(props) {
@@ -120,10 +120,9 @@ function HomePage(props) {
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div className="d-flex">
-                      <div className='testimonial-card-container fs-5 overflow-auto'>
+                      <div className='fs-5 justify-content-center overflow-auto testimonial-card-container'>
                       <div className='d-flex fw-bold justify-content-center mt-4 mx-4'>
-                      <img src={item.logo} loading="lazy" className="w-25"/>
-                      <br />
+                          <img src={item.logo} loading="lazy"/>
                       </div>
                       <div className="mt-4 mx-4 py-3">
                       <i class="fa fa-quote-left mx-2" aria-hidden="true"></i>
