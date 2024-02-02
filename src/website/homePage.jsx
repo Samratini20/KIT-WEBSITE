@@ -6,11 +6,11 @@ import { useEffect } from "react";
 import whychooseus from '../assets/whyChoseUs.jpg';
 import landingimg from '../assets/what-client-says.png'
 import landingimg2 from '../assets/Vector.png'
-import client1 from '../assets/client1.jpg';
+import client1 from '../assets/client1.png';
 import client2 from '../assets/client2.png';
 import client3 from '../assets/client3.png';
 import client4 from '../assets/client4.png';
-import client5 from '../assets/client5.jpeg';
+import client5 from '../assets/client5.png';
 
 
 const data= [
@@ -121,15 +121,14 @@ function HomePage(props) {
                   {data.map((item, i) => (
                     <div className="d-flex">
                       <div className='testimonial-card-container fs-5 overflow-auto'>
-                      {/* <div className='flex-column fw-bold mt-4 mx-4'>
-                        <span>'{item.head}'</span>
+                      <div className='d-flex fw-bold justify-content-center mt-4 mx-4'>
+                      <img src={item.logo} loading="lazy" className="w-25"/>
                       <br />
-                      </div> */}
+                      </div>
                       <div className="mt-4 mx-4 py-3">
                       <i class="fa fa-quote-left mx-2" aria-hidden="true"></i>
                           {item.description}
                       <i class="fa fa-quote-right mx-2" aria-hidden="true"></i>
-                      <img src={item.logo} loading="lazy" className="w-25 float-end mt-2"/>
                       </div>
                       </div>
                     </div>
