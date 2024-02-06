@@ -58,21 +58,23 @@ const handleEmailChange = (e) => {
         <div className="row w-100 mx-0" style={{marginTop:'6rem'}}>
             <div className="career-side-container col">
                     <div className="align-items-center d-flex flex-column justify-content-center">
-                      <span className="text-white fw-bold fa-2x" style={{marginTop:'8rem'}}>Apply For Position</span>
-                      <span className="align-items-center d-flex mt-5 text-white col-8">
+                      <div className="text-white fw-bold fa-2x" style={{marginTop:'8rem'}}>Apply For Position</div>
+                      <div className="align-items-center d-flex mt-5 text-white col-8">
                       “Join our dynamic team and be part of a workplace
                       where innovation thrives,diversity is celebrated
                       and every voice contributes to our collective success !”
-                      </span>
-                      <img
-                      loading="lazy"
-                      src={careerImg}
-                      className="mx-auto z-1" style={{marginTop:'16%'}}
-                      />
+                      </div>
+                      <div>
+                        <img
+                        loading="lazy"
+                        src={careerImg}
+                        className="mx-auto z-1 w-100" style={{marginTop:'16%'}}
+                        />
+                      </div>
                     </div>
             </div>
                 <div className="align-content-center align-items-center career-container-form col justify-content-center">
-                    <div class="card justify-content-center my-5 w-75" style={{marginLeft:'8%'}}>
+                    <div class="card justify-content-center mx-auto my-5 w-75">
                       <div class="card-body px-5">
                             <form action="https://formsubmit.co/careers@kitservices.in" method="POST" encType="multipart/form-data">
                                   <div class="form-row">
