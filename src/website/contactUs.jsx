@@ -49,12 +49,12 @@ function ContactUs(props) {
 
 
   return (
-    <div className="d-flex col-12">
-          <div className="getIntouch d-flex flex-column col-4">
-            <span className="fw-bold fs-4">Get in touch</span>
-            <hr/>
+    <div className="d-flex container-fluid">
+        <div className="row">
+          <div className="getIntouch col">
             <form action="https://formsubmit.co/info@kitservices.in" method="POST">
               <div class="form-row">
+                <span className="fw-bold fs-4 mb-3">Get in touch</span>
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
                   <input
@@ -107,7 +107,7 @@ function ContactUs(props) {
               <SubmitButton/>
             </form>
           </div>
-          <div className="contact-img mx-5">
+          <div className="contact-img mx-5 col">
               <img 
                 loading="lazy"
                 src={ContactUS_img_1} 
@@ -164,6 +164,7 @@ function ContactUs(props) {
                   </div>
                 </div>
           </div>
+        </div>
       </div>
       );
       }
