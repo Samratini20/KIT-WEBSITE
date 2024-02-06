@@ -1,5 +1,8 @@
-.career-side-container{
-    background-color: #337EA4;
+.career-container{
+  background-image: url(../assets/careercontainer.png); 
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  background-position:top;
 }
 .career-container-form{
     background-color: #E7F7FF;
