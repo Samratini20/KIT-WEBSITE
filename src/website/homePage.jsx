@@ -60,10 +60,16 @@ function HomePage(props) {
 
 
   return (
-    <div className="d-flex flex-column sections-container">
+    
+
+  <>
+ <div className=" container-fluid sections-container">
+    
+    {/* <div className="d-flex flex-column "> */}
       {/*#############--------------  section 1 --------------#################*/}
-        <section className="d-flex mb-4 mt-5 pt-5">
-          <div className="designers-developers-animation-container">
+      <div className="row">
+        <section className=" mb-4 mt-5 pt-5 row">
+          <div className="designers-developers-animation-container row text-start">
             <div className="animation-svg-container">
               <div className="homediv-13">
                       <div className="fs-5 fw-bold homediv-14">We Are</div>
@@ -72,7 +78,7 @@ function HomePage(props) {
                           <div className="fs-3 fw-bold homediv-15">Designer's </div>
                           <div className="fs-3 fw-bold homediv-15" style={{color:"#042636"}}>Developer's </div>     
                       </div>
-              </div>
+              </div> 
               <div className="homediv-16 mt-4">
                       Your trusted partner in IT services and solutions. With a
                       passion for technology and a commitment to excellence, we
@@ -81,18 +87,20 @@ function HomePage(props) {
               <div>
                   <button className='get-started-button mt-5' onClick={()=> navigate('/services')}>Get Started</button>
               </div>
-              <div>
+              <div >
                   <img  loading="lazy" className="landing-page-img2" src={landingimg2} alt="" />
               </div>
             </div>
           </div>
           
-          <div className="landing-page-img-container mt-5">
+          <div className="landing-page-img-container mt-5 ">
             <img  loading="lazy" className="landingimg" src={landingimg} alt="" />
           </div>
         </section>
+        </div>
 
-        {/*#############--------------  section 2 --------------#################*/}
+        {/* /*#############--------------  section 2 --------------################# */}
+        <div className="row">
         <section className="why-choose-us-section d-flex justify-content-between">
           <div className="why-choose-img-container w-50">
             <img loading="lazy" className="why-choose-us-img" src={whychooseus} alt="image"/>
@@ -112,7 +120,9 @@ function HomePage(props) {
             </ul>
           </div>
         </section>
+        </div>
         {/*#############-------------- section 3 --------------#################*/}
+        <div className="row">
         <section className="what-client-says-section my-3">
           <div className="what-client-says-animation">
               <h2 className="d-flex fw-bold fs-3 justify-content-center mb-5">What Client Says</h2>
@@ -136,7 +146,9 @@ function HomePage(props) {
               </div>
           </div>
         </section>
+        </div>
         {/*#############--------------  section 4 --------------#################*/}
+        <div className="row">
         <section className="ceo-founder-animation-section my-4">
           <div className="ceo-founder-animation-container px-5">
                 <div className="ceo-founder-animation mx-2"></div>
@@ -160,7 +172,11 @@ function HomePage(props) {
                  </div>
           </div>
         </section>
+        </div>
+    {/* </div> */}
+    
     </div>
+    </>
   );
 }
 
