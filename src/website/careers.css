@@ -8,7 +8,6 @@
 form{
     color: #337EA4;
 }
-
 .drag-area {
   height: 25%;
   border: 3px dashed #e0eafc;
@@ -18,31 +17,26 @@ form{
   flex-direction: column;
   margin: 1rem auto;
 }
-
 h3 {
   margin-bottom: 20px;
   font-weight: 500;
 }
-
 .drag-area .icon {
   font-size: 1.5rem;
   color: #337EA4;
 }
-
 .drag-area .header,.header-drag {
   font-size: 1rem;
   font-weight: 500;
   color: #337EA4;
   opacity: 50%;
 }
-
 .drag-area .resumeAttachment {
   font-size: 1rem;
   font-weight: 500;
   color: #337EA4;
   cursor: pointer;
 }
-
 .drag-area.active {
   border: 2px solid #337EA4;
 }
