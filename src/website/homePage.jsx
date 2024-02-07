@@ -63,14 +63,15 @@ function HomePage(props) {
     
 
   <>
- <div className=" container-fluid sections-container">
+ <div className=" container-fluid sections-container w-100">
     
     {/* <div className="d-flex flex-column "> */}
       {/*#############--------------  section 1 --------------#################*/}
       <div className="row">
         <section className=" mb-4 mt-5 pt-5 row">
-          <div className="designers-developers-animation-container row text-start">
-            <div className="animation-svg-container">
+          <div className=" col text-start"> 
+          {/* designers-developers-animation-container */}
+            <div >
               <div className="homediv-13">
                       <div className="fs-5 fw-bold homediv-14">We Are</div>
                       <div className="container">
@@ -93,20 +94,23 @@ function HomePage(props) {
             </div>
           </div>
           
-          <div className="landing-page-img-container mt-5 ">
-            <img  loading="lazy" className="landingimg" src={landingimg} alt="" />
+          <div className="landing-page-img-container mt-5 col ">
+            <img  loading="lazy" className="landingimg " src={landingimg} alt="" />
           </div>
         </section>
         </div>
 
         {/* /*#############--------------  section 2 --------------################# */}
         <div className="row">
-        <section className="why-choose-us-section d-flex justify-content-between">
-          <div className="why-choose-img-container w-50">
-            <img loading="lazy" className="why-choose-us-img" src={whychooseus} alt="image"/>
+        <section className="why-choose-us-section d-flex justify-content-between row align-items-center">
+          <div className="col-sm h-auto why-choose-img-container ">
+            <img loading="lazy" className="mx-5 why-choose-us-img " src={whychooseus} alt="image"/>
           </div>
-          <div className="why-choose-us-text-container d-flex flex-column my-4 mx-3 w-50">
-            <h3 className="d-flex fs-3 justify-content-center mt-4">Why Choose Us?</h3>
+
+          <div className="col">
+          <div className="my-4 why-choose-us-text-container">
+            <h3 className="text-center">Why Choose Us?</h3>
+            {/* d-flex fs-3 justify-content-center mt-4 */}
             <ul className="fs-5 my-2">
               <li>We Design product requirements from clients considering time and budget Constraints, Design modularity and product robustness.</li>
               <li>We have a proven methodology, We’ve developed and refined our
@@ -119,14 +123,15 @@ function HomePage(props) {
               <li>We prioritise your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.</li>
             </ul>
           </div>
+          </div>
         </section>
         </div>
         {/*#############-------------- section 3 --------------#################*/}
         <div className="row">
-        <section className="what-client-says-section my-3">
-          <div className="what-client-says-animation">
-              <h2 className="d-flex fw-bold fs-3 justify-content-center mb-5">What Client Says</h2>
-              <div className="d-flex mx-3">
+        <section className="col my-3 what-client-says-section">
+          <div className="col what-client-says-animation">
+              <h2 className="fw-bold fs-3 text-center mb-5">What Client Says</h2>
+              <div className="mx-3">
                 <Carousel  itemsToShow={2} showArrows={true} pagination={false} >
                   {data.map((item, i) => (
                     <div className="d-flex">
@@ -153,9 +158,9 @@ function HomePage(props) {
           <div className="ceo-founder-animation-container px-5">
                 <div className="ceo-founder-animation mx-2"></div>
           </div>
-          <div className="ceo-founder-text">
-                <p class="d-flex fst-italic js-nametag mx-4 px-2">Sandeep Banavasi, CEO</p>
-                <div className="ceo-founder-testimonial fs-5 pb-3">
+          <div className="ceo-founder-text col mx-auto">
+                <p class="fst-italic js-nametag mx-4 px-2">Sandeep Banavasi, CEO</p>
+                <div className="ceo-founder-testimonial fs-5 mt-auto mx-auto pb-3 w-auto">
                     <ul>
                     My team aim to build a strong and profitable made service by delivering to our 
                     customers a professional services that are always fair, efficient, helpful and responsive.
