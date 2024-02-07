@@ -130,7 +130,7 @@ const CareersSecond = () => {
   };
 
   return (
-    <div className='d'>
+    <div className=''>
       <h1>Job Search</h1>
       <input
         type="text"
@@ -144,7 +144,7 @@ const CareersSecond = () => {
         {filteredJobs.length === 0 ? (
           <p>No matching jobs found.</p>
         ) : (
-          <ul>
+          <div>
             {filteredJobs.map((job) => (
               <li key={job.role}>
                 <div>
@@ -154,7 +154,7 @@ const CareersSecond = () => {
                 </div>
               </li>
             ))}
-          </ul>
+          </div>
         )}
       </div>
 
