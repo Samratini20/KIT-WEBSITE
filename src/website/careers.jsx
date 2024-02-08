@@ -16,110 +16,65 @@ function Careers() {
   const [uploadedFileName, setuploadedFileName] = useState("");
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredJobs, setFilteredJobs] = useState([]);
-  const [selectedJob, setSelectedJob] = useState(null);
 
   const allJobs = [
     {
       role: "DevOps Engineer",
-      responsibilities: [
-        "Minimize production and engineering disruption",
-        "Oversee and maintain Database and Web tiered infrastructure",
-        "Manage and oversee AWS infrastructure",
-        "Provide production support including bug triage, diagnosis, and resolution",
-        "Define, analyze, improve, and implement technical standards",
-        "Automate tasks with build scripts",
-        "Collaborate with engineering and product squads",
-      ],
       requiredSkills: [
-        "Strong programming skills in Python, Perl, or JavaScript",
-        "Experience with Vagrant, Packer, VirtualBox",
-        "Distributed source control skills with Git",
-        "Continuous learning and innovation mindset",
+        "integration and deployment (CI/CD) pipelines using Jenkins, GitLab CI/CD",
+        "Cloud computing platforms such as AWS, Azure, or GCP.",
+        "Containerization and orchestration technologies such as Docker, Kubernetes, or Docker Swarm.",
+        "Configuration management and infrastructure as code (IaC) tools such as Terraform, Ansible, or Puppet.",
       ],
     },
     {
       role: "UI/UX Designer",
-      responsibilities: [
-        "Define UX/UI metrics and apply for future designs",
-        "Evolve a user-centric design model",
-        "Design and develop front-end and back-end modules",
-        "Collaborate with stakeholders and development teams",
-        "Establish front-end/UI layer coding standards",
-      ],
       requiredSkills: [
-        "Proficiency in visual design and prototyping tools",
-        "Ability to write clean, simple, testable code",
-        "Understanding of user-centered design principles",
-        "Front-end and back-end development skills",
-        "Strong collaboration and communication skills",
+        "Experience in UI/UX design for web and mobile applications",
+        "Proficiency in design tools such as Adobe XD, Sketch, Figma, or similar.l",
+        "Strong understanding of user-centered design principles and methodologies.",
+        "Portfolio showcasing a range of design projects and the ability to articulate design decisions.",
       ],
     },
     {
       role: "Sales and Marketing",
-      responsibilities: [
-        "Print, verify, and prepare tickets",
-        "Operate office machines",
-        "Maintain company phone roster",
-        "Assist with tasks and office errands",
-        "Research opportunities to improve workflow",
-        "Attend events outside normal business hours",
-      ],
       requiredSkills: [
-        "Excellent communication and interpersonal skills",
-        "Knowledge of event planning and coordination",
-        "Marketing and advertising skills",
-        "Ability to work outside normal business hours",
-        "Understanding of NASCAR racing",
+        "Strong understanding of sales and marketing principles, strategies, and tactics.",
+        "Excellent communication, negotiation, and presentation skills.",
+        "Proven track record of achieving sales targets and driving revenue growth.",
+        "Experience with CRM software (e.g., Salesforce) and marketing automation tools (e.g., HubSpot) preferred."
       ],
     },
     {
       role: "Scrum Master",
-      responsibilities: [
-        "Ensure team understanding of project goals and scope",
-        "Help maintain the product backlog",
-        "Facilitate Scrum events and coach the development team",
-        "Encourage the organization to adopt Scrum methodology",
-      ],
       requiredSkills: [
-        "Strong facilitation and coaching skills",
-        "Knowledge of Scrum framework and Agile principles",
-        "Effective communication and collaboration skills",
-        "Ability to influence and drive organizational change",
+        "Experience with Agile tools such as Jira, Trello, or Asana.",
+        "Excellent facilitation, communication and conflict resolution skills.",
+        "Strong understanding of Agile principles, values, and methodologies.",
+        "Ability to work effectively in a fast-paced, dynamic startup environment.",
       ],
     },
     {
       role: "Human Resources Manager",
-      responsibilities: [
-        "Develop HR policies and coordinate HR activities",
-        "Update job requirements and descriptions",
-        "Conduct recruitment, testing, and interviewing programs",
-        "Establish and conduct orientation and training programs",
-        "Maintain pay structure and conduct pay surveys",
-      ],
-      requiredSkills: [
-        "Strong understanding of employment law and HR regulations",
-        "Experience in staff management and training programs",
-        "Ability to resolve employee grievances and counsel supervisors",
+        requiredSkills: [
+        "Knowledge of HR principles, practices and employment laws.",
+        "Excellent interpersonal and leadership skills.",
+        "Handling confidential information with discretion and integrity.",
+        "Experience in HR management roles and HR certification"
       ],
     },
     {
       role: "Project Manager",
-      responsibilities: [
-        "Streamline processes for efficiency",
-        "Manage contracting and travel arrangements",
-        "Coordinate medical/legal submissions and reviews",
-        "Prepare and attend project review meetings",
-        "Maintain client communication and P&L on each project",
-      ],
       requiredSkills: [
-        "Strong project management and organizational skills",
-        "Knowledge of the Banking or Asset Management industry",
-        "Experience in global team collaboration",
-        "Effective metrics reporting and analysis skills",
+        "Project management methodologies and tools (e.g.Microsoft Project, Jira).",
+        "Excellent leadership, communication, and interpersonal skills.",
+        "Manage multiple projects and deliver results on time.",
+        "Working with cross-functional teams in a fast-paced, dynamic environment."
       ],
     },
   ];
+
+  const [filteredJobs, setFilteredJobs] = useState(allJobs);
 
   const attachFiles = (e) => {
     let fileElement = document.getElementById("file-input");
@@ -175,26 +130,31 @@ function Careers() {
   };
 
   const handleSearch = () => {
-    const filtered = allJobs.filter((job) => {
-      const skillsMatch = job.requiredSkills.some((skill) =>
-        skill.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      const filtered = allJobs.filter((job) => {
+        const skillsMatch = job.requiredSkills.some((skill) =>
+          skill.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
-      return (
-        job.role.toLowerCase().includes(searchTerm.toLowerCase()) || skillsMatch
-      );
-    });
+        return (
+          job.role.toLowerCase().includes(searchTerm.toLowerCase()) || skillsMatch
+        );
+      });
 
-    setFilteredJobs(filtered);
+    if(!filtered.length){
+      document.getElementById('nosearchresults').innerText = 'No matches found.';
+    }
+    setFilteredJobs(filtered);    
   };
 
-  const openModal = (job) => {
-    setSelectedJob(job);
-  };
-
-  const closeModal = () => {
-    setSelectedJob(null);
-  };
+  const searchInput = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setSearchTerm(e.target.value);
+    if(!e.target.value){
+    setFilteredJobs(allJobs);
+    document.getElementById('nosearchresults').innerText = '';
+    }
+}
 
   return (
     <div className="d-flex container-fluid p-0 line-height-2">
@@ -204,148 +164,166 @@ function Careers() {
         </div>
         <div className="col m-3 p-3">
           <span className="fs-4 fw-bold text-align my-2">Work with Us</span>
-          <p className="my-3 fs-5">
-            At KIT, we combine creativity, expertise, and strategic thinking to
-            deliver exceptional web design solutions tailored to your business
-            goals. Get in touch with us today to elevate your online presence
-            and take your business to new heights. Provides the services you
-            need to develop personalized software and ensure the program&#39;s
-            viability through continuous testing, development and maintenance.
-            Our team of skilled designers creates bespoke websites that reflect
-            your brand identity and resonate with your target audience. We
-            provide on-going support and maintenance to keep your site running
-            smoothly and up-to-date with the latest industry standards. At KIT,
-            we combine creativity, expertise, and strategic thinking to deliver.
+          <p className="my-1 fs-5">
+          As we continue to expand, we are on the lookout for talented individuals who share our 
+          vision and are eager to contribute their skills and expertise to our dynamic team.
+          Whether you're a seasoned professional seeking new challenges or embarking on the 
+          beginning of your career journey, we offer opportunities for growth and advancement. 
+          Join us and be part of a collaborative environment where your talents are valued and nurtured.
           </p>
+          <p className="my-3 fs-5">
+          Our comprehensive range of services includes the development of personalized software solutions, 
+          meticulously crafted through continuous testing, development, and maintenance. Our team of skilled 
+          designers specializes in creating bespoke websites that not only reflect your brand identity but 
+          also resonate with your target audience. With our ongoing support and maintenance, your website 
+          remains seamlessly functional and aligned with the latest industry standards.
+          Are you ready to take your career to new heights? Work with us and unleash your potential!
+          </p>
+
         </div>
-        <div className="search-box">
-          <div className="">
-            <h1>Job Search</h1>
-            <input
-              type="text"
-              placeholder="Search by role or skill"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <button onClick={handleSearch}>Search</button>
-            <div>
-              {filteredJobs.length === 0 ? (
-                <p>No matching jobs found.</p>
-              ) : (
-                <div className="d-flex gap-4 mx-4 px-3">
+        <div className="col job-search-container">
+            <div className="col">
+              <span className="fw-bold d-flex justify-content-center fs-4 my-4"> Why Work With Us</span>
+                <div className="row">
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-lightbulb fa-regular fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Join a Culture of Innovation and Collaboration</span><br/>
+                                <span>
+                                we foster a culture where every team member is empowered to contribute their ideas and drive impactful solutions.
+                                </span>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-solid fa-arrow-up-right-dots fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Opportunities for Growth and Development</span><br/>
+                                <span>
+                                 we invest in your professional development to help you reach your full potential by  providing ample opportunities for learning and advancement.
+                                </span>
+                              </p>
+                           </div>
+                        </div>
+                      </div>
+                            
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-solid fa-scale-balanced fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Work-Life Balance</span><br/>
+                                <span>
+                                we offer flexible working arrangements, remote work options, and generous vacation policies to ensure the need to thrive both professionally and personally.                                </span>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                    
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-solid fa-hands-holding-circle fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Diversity and Inclusion</span><br/>
+                                <span>
+                                 we are committed for creating an inclusive work environment where everyone feels valued, respected, and empowered to bring their authentic selves to work.
+                                </span>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-solid fa-trophy fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Competitive Compensation and Benefits</span><br/>
+                                <span>
+                                We value our employees and believe in rewarding them for their hard work and dedication. In addition to competitive salaries, we offer a comprehensive benefits package, including health insurance.                                </span>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 mb-3 mb-sm-0 text-align">
+                        <div class="bg-transparent border-0 card">
+                          <div class="align-items-center card-body d-flex flex-column">
+                              <h5 class="card-title">
+                                <i class="fa-solid fa-people-group fs-3 text-info-emphasis"></i>
+                              </h5>
+                              <p class="card-text">
+                                <span className="fw-bolder text-info-emphasis">Join Our Team</span><br/>
+                                <span>
+                                Ready to take your career to the next level? Join us at KIT and be part of a dynamic team that is shaping the future of technology. Explore our current job openings and start your journey with us today!
+                                </span>
+                              </p>
+                            </div>
+                        </div>
+                      </div>                 
+                </div>
+            </div>
+         </div>
+         <div className="col job-profile-container m-5">
+              <div className="align-items-baseline d-flex justify-content-center text-align">
+                  <div class="align-items-baseline d-flex input-group-text mx-4 search-box py-0 px-4 rounded-5">
+                      <input
+                      type="text"
+                      placeholder="Search for jobs by skill or keyword"
+                      value={searchTerm}
+                      className="bg-transparent border-0 form-control"
+                      onChange={searchInput}
+                    />   
+                    <i class="fa-magnifying-glass fa-solid text-info-emphasis"></i>   
+                  </div>
+                  {searchTerm ? ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4">Search</button>): ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4" disabled>Search</button>)}
+              </div>
+              <p className="d-flex justify-content-center fw-bold fs-5" id="nosearchresults"></p>
+                <div id="jobs" className="d-flex row mx-4 px-3">
                   {filteredJobs.map((job) => (
-                    // <div key={job.role} className="card">
-                    //   <div>
-                    //     <h2>{job.role}</h2>
-                    //     <p>Required Skills: {job.requiredSkills.slice(0, 3).join(', ')}</p>
-                    //     <button onClick={() => openModal(job)}>View Details</button>
-                    //   </div>
-                    // </div>
-                    <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="col-sm-4 my-4 mb-sm-0">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">{job.role}</h5>
+                          <h5 class="card-title mb-3">{job.role}</h5>
                           <p class="card-text">
-                              Required Skills: {job.requiredSkills.slice(0, 3).join(', ')}
+                            <div className="d-flex justify-content-around mb-3">
+                              <span><i class="fa-solid fa-suitcase px-1"></i>0-10 Yrs</span>
+                              <div class="vr text-info"></div>
+                              <span><i class="fa-solid fa-indian-rupee-sign px-1"></i>Not disclosed</span>
+                              <div class="vr text-info"></div>
+                              <span><i class="fa-solid fa-location-dot px-1"></i>Banglore</span>
+                            </div>
+                            <div>
+                              <span className="d-flex"><i class="fa-solid fa-head-side-virus"></i>
+                              <ul>
+                                {job.requiredSkills.map((item, index) => (
+                                  <li key={index}>{item}</li>
+                                ))}
+                              </ul>
+                              </span>
+                            </div>
                           </p>
-                          <button onClick={() => openModal(job)}>View Details</button>
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
-              )}
             </div>
-
-            {selectedJob && (
-              <div className="modal">
-                <div className="modal-content">
-                  <span className="close" onClick={closeModal}>
-                    &times;
-                  </span>
-                  <h2>{selectedJob.role}</h2>
-                  <p>
-                    Responsibilities: {selectedJob.responsibilities.join(", ")}
-                  </p>
-                  <p>
-                    Required Skills: {selectedJob.requiredSkills.join(", ")}
-                  </p>
-                  <button>Apply</button>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="col job-profile-container m-5">
-          <div class="row">
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[0].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[1].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[2].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 my-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[3].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 my-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[4].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 my-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{allJobs[5].role}</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         
         <div className="career-container align-items-center justify-content-center">
           <div className="justify-content-center mx-auto mt-5 text-white row text-align">
             <span className="fw-bold fa-2x">Apply For Position</span>
@@ -475,8 +453,9 @@ function Careers() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 
 export default Careers;
+
