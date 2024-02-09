@@ -11,7 +11,7 @@
       color: #a4a0a0 !important;
 }
 .landing-animation-section{
-  max-width: 100vw;
+  max-width: 100%;
   height: 100vh;
   padding-top: 4rem;
   background-color: white;
@@ -27,7 +27,7 @@
 }
 
 .animation-svg-container{
-  width: 50vw;
+  width: 50%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -130,7 +130,6 @@ padding-left: 5px;
   width: 10rem;
   box-shadow: 0px 5px 10px 2px rgb(205, 204, 204);
   transition: all 0.2s;
-  margin-left: 29%; 
 }
 
 .get-started-button:hover{
@@ -140,19 +139,19 @@ padding-left: 5px;
 
 /*#############################WHY CHOOSE US SECTION HERE#############################-*/
 .why-choose-us-section{
-    max-width: 100vw;
+    max-width: 100%;
     background-color: white;
     display: flex;
 }
 
 .why-choose-img-container{
-  width: 50vw;
+  width: 50%;
   position: relative;
 }
 
 .why-choose-us-img{
   max-width: 100%;
-  height: 20vw;
+  height: 20%;
   /* position: absolute;
   top: 50%;
   left: 48%;
@@ -214,12 +213,12 @@ padding-left: 5px;
     padding-bottom: 5rem;
   }
   .why-choose-img-container{
-    width: 98vw;
+    width: 98%;
     height: 40%;
     position: relative;
   }
   .why-choose-us-text-container{
-    width: 98vw;
+    width: 98%;
     height: 45%;
   }
   .why-choose-us-text-container p{
@@ -280,7 +279,7 @@ padding-left: 5px;
 
 /*#############################-------WHAT CLIENT SAYS SECTION HERE-------#############################*/
 .what-client-says-section{
-  max-width: 100vw;
+  max-width: 100%;
   background-color: white;
   display: flex;
 }
@@ -358,7 +357,7 @@ margin: 2%;
 
 /*#############################------CEO FOUNDER SECTION HERE------#############################*/
 .ceo-founder-animation-section{
-  max-width: 100vw;
+  max-width: 100%;
   background-color: white;
   display: flex;
 }
@@ -379,7 +378,7 @@ margin: 2%;
 
 .ceo-founder-animation {
   height: 28rem;
-  width: 30rem;
+  width: 75%;
   box-shadow: 0px 0px 25px 15px rgba(42, 92, 110, 0.327);
   animation: logo 4s infinite ease-in-out alternate;
   background-image: url(../assets/sandeep.jpg);
@@ -388,7 +387,7 @@ margin: 2%;
   background-position: top;
   background-size: cover;
   background-color: transparent;
-  margin: 6%;
+  margin: 8%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -442,7 +441,7 @@ margin: 2%;
 
 @media (max-width:900px) {
   .ceo-founder-animation-section{
-    max-width: 100vw;
+    max-width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -450,7 +449,7 @@ margin: 2%;
   }
 
   .ceo-founder-animation-container{
-    width: 90vw;
+    width: 90%;
     height: 50%;
     background-color: white;
     position: relative;
@@ -467,7 +466,7 @@ margin: 2%;
   }
 
   .ceo-founder-text{
-    width: 100vw;
+    width: 100%;
     background-color: white;
     /* display: flex; */
     /* flex-direction: column; */

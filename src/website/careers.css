@@ -26,7 +26,6 @@ form{
 }
 .search-box{
   border-color: #337EA4;
-  width: 40%;
 }
 .search-box input::placeholder{
   color: #337EA4;
@@ -57,4 +56,11 @@ form{
 #jobs .card{
   border-color: #2E6397;
   border-left: 0.2rem solid #2E6397;
+}
+
+@media screen and (max-width: 399px) {
+  .search{
+    display: flex;
+    flex-direction: column;
+  }
 }

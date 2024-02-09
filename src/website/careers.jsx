@@ -279,8 +279,8 @@ function Careers() {
             </div>
          </div>
          <div className="col job-profile-container m-5">
-              <div className="align-items-baseline d-flex justify-content-center text-align">
-                  <div class="align-items-baseline d-flex input-group-text mx-4 search-box py-0 px-4 rounded-5">
+              <div className="search align-items-baseline d-flex justify-content-center text-align">
+                  <div class="align-items-baseline d-flex input-group-text mx-2 search-box w-50 py-0 px-2 rounded-5">
                       <input
                       type="text"
                       placeholder="Search for jobs by skill or keyword"
@@ -290,10 +290,10 @@ function Careers() {
                     />   
                     <i class="fa-magnifying-glass fa-solid text-info-emphasis"></i>   
                   </div>
-                  {searchTerm ? ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4">Search</button>): ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4" disabled>Search</button>)}
+                  {searchTerm ? ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 my-4">Search</button>): ( <button onClick={handleSearch} className="btn rounded-5 py-2 send-message fw-bold px-4 my-4" disabled>Search</button>)}
               </div>
               <p className="d-flex justify-content-center fw-bold fs-5" id="nosearchresults"></p>
-                <div id="jobs" className="d-flex row mx-4 px-3">
+                <div id="jobs" className="d-flex row">
                   {filteredJobs.map((job) => (
                     <div class="col-sm-4 my-4 mb-sm-0">
                       <div class="card">
