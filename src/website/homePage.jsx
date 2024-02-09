@@ -80,7 +80,7 @@ function HomePage(props) {
                           <div className="fs-3 fw-bold homediv-15" style={{color:"#042636"}}>Developer's </div>     
                       </div>
               </div> 
-              <div className="homediv-16 mt-4">
+              <div className="d-flex flex-column homediv-16 mt-4">
                       Your trusted partner in IT services and solutions. With a
                       passion for technology and a commitment to excellence, we
                       have been providing cutting-edge IT services to business.
