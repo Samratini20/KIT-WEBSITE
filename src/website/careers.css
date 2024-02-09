@@ -20,7 +20,7 @@ form{
   flex-direction: column;
   margin: 1rem auto;
 }
-.job-search-container{
+.why-work-container{
  background-image: url('../assets/whyworkwithus.png');
  background-repeat: no-repeat;
 }
@@ -57,10 +57,28 @@ form{
   border-color: #2E6397;
   border-left: 0.2rem solid #2E6397;
 }
-
+#jobs{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.career-container .card{
+  margin-left: 16%;
+  margin-right: 16%; 
+}
+.career-container .card-body{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 @media screen and (max-width: 399px) {
-  .search{
+  .job-search-container{
     display: flex;
     flex-direction: column;
+  }
+  #jobs{
+    width : 100% ;
+    margin: 0%;
+  }
+  .career-container .card{
+    margin: 2%;
   }
 }

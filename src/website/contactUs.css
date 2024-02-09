@@ -1,6 +1,6 @@
 .getIntouch{
-  margin-top: 9rem;
-  margin-left: 6rem;
+  margin-top: 10%;
+  margin-left: 3%;
   font-size: 15px;
   color: #005e8d;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -67,4 +67,10 @@
   scale: 1.2;
 }
 
-/**/
+@media screen and (max-width: 399px) {
+
+.contactDetails{
+  margin-top: -50rem;
+}
+}
+

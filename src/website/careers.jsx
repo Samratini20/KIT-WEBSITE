@@ -33,7 +33,7 @@ function Careers() {
         "Experience in UI/UX design for web and mobile applications",
         "Proficiency in design tools such as Adobe XD, Sketch, Figma, or similar.l",
         "Strong understanding of user-centered design principles and methodologies.",
-        "Portfolio showcasing a range of design projects and the ability to articulate design decisions.",
+        "Portfolio showcasing a range of design projects and the ability to articulate design decisions by creating wireframes, mockups and prototypes.",
       ],
     },
     {
@@ -181,7 +181,7 @@ function Careers() {
           </p>
 
         </div>
-        <div className="col job-search-container">
+        <div className="col why-work-container">
             <div className="col">
               <span className="fw-bold d-flex justify-content-center fs-4 my-4"> Why Work With Us</span>
                 <div className="row">
@@ -278,8 +278,8 @@ function Careers() {
                 </div>
             </div>
          </div>
-         <div className="col job-profile-container m-5">
-              <div className="search align-items-baseline d-flex justify-content-center text-align">
+         <div className="col job-profile-container">
+              <div className="job-search-container align-items-baseline d-flex justify-content-center text-align">
                   <div class="align-items-baseline d-flex input-group-text mx-2 search-box w-50 py-0 px-2 rounded-5">
                       <input
                       type="text"
@@ -333,8 +333,8 @@ function Careers() {
               collective success !”
             </span>
           </div>
-          <div class="card justify-content-center mx-auto my-5 w-50">
-            <div class="card-body px-5">
+          <div class="card justify-content-center my-5">
+            <div class="card-body">
               <form
                 action="https://formsubmit.co/careers@kitservices.in"
                 method="POST"
