@@ -61,7 +61,7 @@ function Aboutus(props) {
           </div>
         </div>
         <div className="adiv-9">
-          <div className="d-flex">
+          <div className="d-flex al">
           <div className='card-container w-50 d-flex gap-4'>
               <div className='cards card1 w-100'></div>
               <div className='cards card2 w-100'></div>
