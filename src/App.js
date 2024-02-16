@@ -9,7 +9,6 @@ import Blog from './website/blog';
 import ContactUs from './website/contactUs';
 import TermsConditions from './website/termsconditions';
 import PrivacyPolicy from './website/privacypolicy';
-import Careers from './website/careers';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,7 +35,7 @@ function App(){
                         <Route path='/contact' element={<ContactUs/>} />
                         <Route path='/termsconditions' element={<TermsConditions/>} />
                         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
-                        <Route path='/careers' element={<Careers/>} />
+                        <Route path='/careers' element={<CareersSecond/>} />
                       </Routes> 
                 <Footer/> 
             </BrowserRouter>        
