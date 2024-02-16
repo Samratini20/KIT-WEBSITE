@@ -39,6 +39,7 @@
         /* margin: 1rem 0 0 3rem; */
         line-height: 2;
     }
+  
     .diva-4{
     position: absolute;
     margin-left: 63rem;
@@ -150,6 +151,14 @@
     .adiv-10 {
       display: flex;
       align-items: flex-start;
+    }
+    @media (max-width: 991px){
+      .al{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     @media (max-width: 991px) {
       .adiv-10 {

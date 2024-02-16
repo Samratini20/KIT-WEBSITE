@@ -65,16 +65,11 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        </div>
-        
-
-
-    
-      <div className=" adjal adiv-9 row align-self-lg-end">
-          <div className=" row  ">
-          <div className=' adjal card-col row w-50'>
-              <div className='cards card1 col w-100'></div>
-              <div className='cards card2 col w-100'></div>
+        <div className="adiv-9 al">
+          <div className="d-flex al">
+          <div className='card-container w-50 d-flex gap-4 al'>
+              <div className='cards card1 w-100'></div>
+              <div className='cards card2 w-100'></div>
           </div>
                   <div className="acolumn-5 col">
                     <div className="adiv-14">
