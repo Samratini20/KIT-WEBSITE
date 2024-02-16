@@ -8,8 +8,8 @@ function PrivacyPolicy(props) {
   }, []);
   return (
     <div className="d-flex flex-column">
-        <div className="d-grid fa-2x fw-bold justify-content-center" style={{marginTop:'7.5rem'}}>Privacy Policy</div>
-        <div className="align-content-center d-flex flex-column mx-1 px-5 py-3" style={{lineHeight: 2}}>
+        <div className="d-grid fa-2x fw-bold justify-content-center fs-4" style={{marginTop:'7.5rem'}}>Privacy Policy</div>
+        <div className="align-content-center d-flex flex-column mx-1 px-5 py-3 fs-5" style={{lineHeight: 2}}>
             <span>K.I.T Global Technologies Pvt Ltd adheres to and implements a very strict privacy policy. Accordingly, we have developed this Policy in order for you to understand how we obtain, collect, use, communicate, disclose and make use of personal information on 
             our website [KIT Website] and all its regional extensions and landing pages.
             </span>

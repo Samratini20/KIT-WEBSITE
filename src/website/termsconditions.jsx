@@ -8,10 +8,10 @@ function TermsConditions(props) {
   }, []);
   return (
     <div className="d-flex flex-column">
-        <div className="d-grid fa-2x fw-bold justify-content-center" style={{marginTop:'7.5rem'}}>Terms & Conditions</div>
-        <div className="align-content-center d-flex flex-column mx-1 px-5 py-3" style={{lineHeight: 2}}>
+        <div className="d-grid fa-2x fw-bold justify-content-center fs-4" style={{marginTop:'7.5rem'}}>Terms & Conditions</div>
+        <div className="align-content-center d-flex flex-column mx-1 px-5 py-3 fs-5" style={{lineHeight: 2}}>
           <span className="mb-2">
-          The usage and access of any product, service or feature (the “Material/s”) available through the internet websites accessible at <b className="bg-danger">KIT Website(the “Website”)</b> by any user of the Website (“you” or “your”) shall be governed by the following Terms of Use:
+          The usage and access of any product, service or feature (the “Material/s”) available through the internet websites accessible at <b>KIT Website(the “Website”)</b> by any user of the Website (“you” or “your”) shall be governed by the following Terms of Use:
           </span>
           <ul>
             <li>
@@ -38,11 +38,11 @@ function TermsConditions(props) {
              non-commercial, non-distributive, transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence you may not:
             </li>
              <ol>
-              <li>modify or copy the materials.</li>
-              <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial, including social media)</li>
-              <li>attempt to decompile or reverse engineer any software contained on K.I.T Global Technologies Pvt Ltd's website</li>
-              <li>remove any copyright or other proprietary notations from the materials or transfer the materials to another person or "mirror" the materials on any other server.</li>
-              <li className="mb-3">use it in any way that can defame, may go against the values of K.I.T Global Technologies Pvt Ltd or can be used against K.I.T Global Technologies Pvt Ltd in any way.</li>
+              <li>Modify or copy the materials.</li>
+              <li>Use the materials for any commercial purpose, or for any public display (commercial or non-commercial, including social media)</li>
+              <li>Attempt to decompile or reverse engineer any software contained on K.I.T Global Technologies Pvt Ltd's website</li>
+              <li>Remove any copyright or other proprietary notations from the materials or transfer the materials to another person or "mirror" the materials on any other server.</li>
+              <li className="mb-3">Use it in any way that can defame, may go against the values of K.I.T Global Technologies Pvt Ltd or can be used against K.I.T Global Technologies Pvt Ltd in any way.</li>
              </ol>
           </ul>
           <span className="mb-2">
@@ -62,7 +62,7 @@ function TermsConditions(props) {
           </span>
           <span className="mb-3">
           The Website provides information of third parties available, including articles, analyst reports, news reports, tools to facilitate calculation, company information
-           and other data (the “Third Party Content”). You acknowledge and agree that <b className="bg-danger">the Third-Party Content</b> is not created or endorsed by K.I.T Global Technologies Pvt Ltd
+           and other data (the “Third Party Content”). You acknowledge and agree that <b>the Third-Party Content</b> is not created or endorsed by K.I.T Global Technologies Pvt Ltd
             nor are any products or services offered through it. The provision of Third-Party Content is for general informational purposes only and does not constitute a
              recommendation or solicitation to make any type of investment decision. In addition, the Third-Party Content is not intended to provide tax, legal or investment advice. 
              You acknowledge that the Third-Party Content provided to you is obtained from sources believed to be reliable, but no guarantees are made by the Website or the providers of 

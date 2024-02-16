@@ -20,9 +20,9 @@ function ContactUs(props) {
 
   function SubmitButton(){
     if (contactMessage && subject && email && name){
-      return  <button type="submit" className="btn rounded-5 py-2 w-50 send-message fw-bold px-4 mb-4">Send Message</button>
+      return  <button type="submit" className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4">Send Message</button>
     } else {
-      return  <button type="submit" className="btn rounded-5 py-2 w-50 send-message fw-bold px-4 mb-4" disabled>Send Message</button>
+      return  <button type="submit" className="btn rounded-5 py-2 send-message fw-bold px-4 mb-4" disabled>Send Message</button>
     }
   }
 
@@ -49,12 +49,12 @@ function ContactUs(props) {
 
 
   return (
-    <div className="d-flex col-12">
-          <div className="getIntouch d-flex flex-column col-4">
-            <span className="fw-bold fs-4">Get in touch</span>
-            <hr/>
+    <div className="d-flex container-fluid">
+        <div className="row w-100">
+          <div className="getIntouch col">
             <form action="https://formsubmit.co/info@kitservices.in" method="POST">
               <div class="form-row">
+                <span className="fw-bold fs-4 mb-3">Get in touch</span>
                 <div class="form-group col-12 my-4">
                   <span for="Name" className="fs-5">Name <span class="text-danger ml-2">*</span></span>
                   <input
@@ -107,7 +107,7 @@ function ContactUs(props) {
               <SubmitButton/>
             </form>
           </div>
-          <div className="contact-img mx-5">
+          <div className="contact-img col">
               <img 
                 loading="lazy"
                 src={ContactUS_img_1} 
@@ -164,6 +164,7 @@ function ContactUs(props) {
                   </div>
                 </div>
           </div>
+        </div>
       </div>
       );
       }

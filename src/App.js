@@ -13,6 +13,7 @@ import Careers from './website/careers';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CareersSecond from "./website/CareersSecond";
 
 function App(){
     useEffect(() => {
@@ -37,7 +38,7 @@ function App(){
                         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
                         <Route path='/careers' element={<Careers/>} />
                       </Routes> 
-                <Footer/>  
+                <Footer/> 
             </BrowserRouter>        
         </div>
     );
