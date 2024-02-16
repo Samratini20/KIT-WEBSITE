@@ -36,7 +36,7 @@ function App(){
                         <Route path='/contact' element={<ContactUs/>} />
                         <Route path='/termsconditions' element={<TermsConditions/>} />
                         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
-                        <Route path='/careers' element={<Careers/>} />
+                        <Route path='/careers' element={<CareersSecond/>} />
                       </Routes> 
                 <Footer/> 
             </BrowserRouter>        
