@@ -211,7 +211,7 @@ function Careers() {
                           <p class="card-text">
                               Required Skills: {job.requiredSkills.slice(0, 3).join(', ')}
                           </p>
-                          <button onClick={() => openModal(job)}>View Details</button>
+                          <button >View Details</button>
                         </div>
                       </div>
                     </div>
@@ -223,7 +223,7 @@ function Careers() {
             {selectedJob && (
               <div className="modal">
                 <div className="modal-content">
-                  <span className="close" onClick={closeModal}>
+                  <span className="close" >
                     &times;
                   </span>
                   <h2>{selectedJob.role}</h2>
