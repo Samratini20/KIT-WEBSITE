@@ -18,106 +18,60 @@ function Careers() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredJobs, setFilteredJobs] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
-  const [foundJobs, setFoundJobs] = useState(false);
 
   const allJobs = [
     {
       role: "DevOps Engineer",
-      responsibilities: [
-        "Minimize production and engineering disruption",
-        "Oversee and maintain Database and Web tiered infrastructure",
-        "Manage and oversee AWS infrastructure",
-        "Provide production support including bug triage, diagnosis, and resolution",
-        "Define, analyze, improve, and implement technical standards",
-        "Automate tasks with build scripts",
-        "Collaborate with engineering and product squads",
-      ],
       requiredSkills: [
-        "Strong programming skills in Python, Perl, or JavaScript",
-        "Experience with Vagrant, Packer, VirtualBox",
-        "Distributed source control skills with Git",
-        "Continuous learning and innovation mindset",
+        "integration and deployment (CI/CD) pipelines using Jenkins, GitLab CI/CD",
+        "Cloud computing platforms such as AWS, Azure, or GCP.",
+        "Containerization and orchestration technologies such as Docker, Kubernetes, or Docker Swarm.",
+        "Configuration management and infrastructure as code (IaC) tools such as Terraform, Ansible, or Puppet.",
       ],
     },
     {
       role: "UI/UX Designer",
-      responsibilities: [
-        "Define UX/UI metrics and apply for future designs",
-        "Evolve a user-centric design model",
-        "Design and develop front-end and back-end modules",
-        "Collaborate with stakeholders and development teams",
-        "Establish front-end/UI layer coding standards",
-      ],
       requiredSkills: [
-        "Proficiency in visual design and prototyping tools",
-        "Ability to write clean, simple, testable code",
-        "Understanding of user-centered design principles",
-        "Front-end and back-end development skills",
-        "Strong collaboration and communication skills",
+        "Experience in UI/UX design for web and mobile applications",
+        "Proficiency in design tools such as Adobe XD, Sketch, Figma, or similar.l",
+        "Strong understanding of user-centered design principles and methodologies.",
+        "Portfolio showcasing a range of design projects and the ability to articulate design decisions by creating wireframes, mockups and prototypes.",
       ],
     },
     {
       role: "Sales and Marketing",
-      responsibilities: [
-        "Print, verify, and prepare tickets",
-        "Operate office machines",
-        "Maintain company phone roster",
-        "Assist with tasks and office errands",
-        "Research opportunities to improve workflow",
-        "Attend events outside normal business hours",
-      ],
       requiredSkills: [
-        "Excellent communication and interpersonal skills",
-        "Knowledge of event planning and coordination",
-        "Marketing and advertising skills",
-        "Ability to work outside normal business hours",
-        "Understanding of NASCAR racing",
+        "Strong understanding of sales and marketing principles, strategies, and tactics.",
+        "Excellent communication, negotiation, and presentation skills.",
+        "Proven track record of achieving sales targets and driving revenue growth.",
+        "Experience with CRM software (e.g., Salesforce) and marketing automation tools (e.g., HubSpot) preferred."
       ],
     },
     {
       role: "Scrum Master",
-      responsibilities: [
-        "Ensure team understanding of project goals and scope",
-        "Help maintain the product backlog",
-        "Facilitate Scrum events and coach the development team",
-        "Encourage the organization to adopt Scrum methodology",
-      ],
       requiredSkills: [
-        "Strong facilitation and coaching skills",
-        "Knowledge of Scrum framework and Agile principles",
-        "Effective communication and collaboration skills",
-        "Ability to influence and drive organizational change",
+        "Experience with Agile tools such as Jira, Trello, or Asana.",
+        "Excellent facilitation, communication and conflict resolution skills.",
+        "Strong understanding of Agile principles, values, and methodologies.",
+        "Ability to work effectively in a fast-paced, dynamic startup environment.",
       ],
     },
     {
       role: "Human Resources Manager",
-      responsibilities: [
-        "Develop HR policies and coordinate HR activities",
-        "Update job requirements and descriptions",
-        "Conduct recruitment, testing, and interviewing programs",
-        "Establish and conduct orientation and training programs",
-        "Maintain pay structure and conduct pay surveys",
-      ],
-      requiredSkills: [
-        "Strong understanding of employment law and HR regulations",
-        "Experience in staff management and training programs",
-        "Ability to resolve employee grievances and counsel supervisors",
+        requiredSkills: [
+        "Knowledge of HR principles, practices and employment laws.",
+        "Excellent interpersonal and leadership skills.",
+        "Handling confidential information with discretion and integrity.",
+        "Experience in HR management roles and HR certification"
       ],
     },
     {
       role: "Project Manager",
-      responsibilities: [
-        "Streamline processes for efficiency",
-        "Manage contracting and travel arrangements",
-        "Coordinate medical/legal submissions and reviews",
-        "Prepare and attend project review meetings",
-        "Maintain client communication and P&L on each project",
-      ],
       requiredSkills: [
-        "Strong project management and organizational skills",
-        "Knowledge of the Banking or Asset Management industry",
-        "Experience in global team collaboration",
-        "Effective metrics reporting and analysis skills",
+        "Project management methodologies and tools (e.g.Microsoft Project, Jira).",
+        "Excellent leadership, communication, and interpersonal skills.",
+        "Manage multiple projects and deliver results on time.",
+        "Working with cross-functional teams in a fast-paced, dynamic environment."
       ],
     },
   ];
@@ -176,26 +130,31 @@ function Careers() {
   };
 
   const handleSearch = () => {
-    const filtered = allJobs.filter((job) => {
-      const skillsMatch = job.requiredSkills.some((skill) =>
-        skill.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      const filtered = allJobs.filter((job) => {
+        const skillsMatch = job.requiredSkills.some((skill) =>
+          skill.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
-      return (
-        job.role.toLowerCase().includes(searchTerm.toLowerCase()) || skillsMatch
-      );
-    });
+        return (
+          job.role.toLowerCase().includes(searchTerm.toLowerCase()) || skillsMatch
+        );
+      });
 
-    setFilteredJobs(filtered);
+    if(!filtered.length){
+      document.getElementById('nosearchresults').innerText = 'No matches found.';
+    }
+    setFilteredJobs(filtered);    
   };
 
-  const openModal = (job) => {
-    setSelectedJob(job);
-  };
-
-  const closeModal = () => {
-    setSelectedJob(null);
-  };
+  const searchInput = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setSearchTerm(e.target.value);
+    if(!e.target.value){
+    setFilteredJobs(allJobs);
+    document.getElementById('nosearchresults').innerText = '';
+    }
+}
 
   return (
     <div className="d-flex container-fluid p-0 line-height-2">
@@ -205,19 +164,22 @@ function Careers() {
         </div>
         <div className="col m-3 p-3">
           <span className="fs-4 fw-bold text-align my-2">Work with Us</span>
-          <p className="my-3 fs-5">
-            At KIT, we combine creativity, expertise, and strategic thinking to
-            deliver exceptional web design solutions tailored to your business
-            goals. Get in touch with us today to elevate your online presence
-            and take your business to new heights. Provides the services you
-            need to develop personalized software and ensure the program&#39;s
-            viability through continuous testing, development and maintenance.
-            Our team of skilled designers creates bespoke websites that reflect
-            your brand identity and resonate with your target audience. We
-            provide on-going support and maintenance to keep your site running
-            smoothly and up-to-date with the latest industry standards. At KIT,
-            we combine creativity, expertise, and strategic thinking to deliver.
+          <p className="my-1 fs-5">
+          As we continue to expand, we are on the lookout for talented individuals who share our 
+          vision and are eager to contribute their skills and expertise to our dynamic team.
+          Whether you're a seasoned professional seeking new challenges or embarking on the 
+          beginning of your career journey, we offer opportunities for growth and advancement. 
+          Join us and be part of a collaborative environment where your talents are valued and nurtured.
           </p>
+          <p className="my-3 fs-5">
+          Our comprehensive range of services includes the development of personalized software solutions, 
+          meticulously crafted through continuous testing, development, and maintenance. Our team of skilled 
+          designers specializes in creating bespoke websites that not only reflect your brand identity but 
+          also resonate with your target audience. With our ongoing support and maintenance, your website 
+          remains seamlessly functional and aligned with the latest industry standards.
+          Are you ready to take your career to new heights? Work with us and unleash your potential!
+          </p>
+
         </div>
         <div className="search-box">
           <div className="">
@@ -233,9 +195,7 @@ function Careers() {
               {filteredJobs.length === 0 ? (
                 <p>No matching jobs found.</p>
               ) : (
-                
                 <div className="d-flex gap-4 mx-4 px-3">
-                  {setFoundJobs(true)}
                   {filteredJobs.map((job) => (
                     // <div key={job.role} className="card">
                     //   <div>
@@ -244,7 +204,6 @@ function Careers() {
                     //     <button onClick={() => openModal(job)}>View Details</button>
                     //   </div>
                     // </div>
-                    
                     <div class="col-sm-4 mb-3 mb-sm-0">
                       <div class="card">
                         <div class="card-body">
@@ -257,7 +216,6 @@ function Careers() {
                       </div>
                     </div>
                   ))}
-                  
                 </div>
               )}
             </div>
@@ -279,10 +237,9 @@ function Careers() {
                 </div>
               </div>
             )}
-
           </div>
         </div>
-        {foundJobs? "" : <div className="col job-profile-container m-5">
+        <div className="col job-profile-container m-5">
           <div class="row">
             <div class="col-sm-4 mb-3 mb-sm-0">
               <div class="card">
@@ -351,7 +308,7 @@ function Careers() {
               </div>
             </div>
           </div>
-        </div>}
+        </div>
         <div className="career-container align-items-center justify-content-center">
           <div className="justify-content-center mx-auto mt-5 text-white row text-align">
             <span className="fw-bold fa-2x">Apply For Position</span>
@@ -361,8 +318,8 @@ function Careers() {
               collective success !”
             </span>
           </div>
-          <div class="card justify-content-center mx-auto my-5 w-50">
-            <div class="card-body px-5">
+          <div class="card justify-content-center my-5">
+            <div class="card-body">
               <form
                 action="https://formsubmit.co/careers@kitservices.in"
                 method="POST"
@@ -481,8 +438,9 @@ function Careers() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 
 export default Careers;
+
