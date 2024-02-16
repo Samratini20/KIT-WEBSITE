@@ -18,6 +18,7 @@ function Careers() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredJobs, setFilteredJobs] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [foundJobs, setFoundJobs] = useState(false);
 
   const allJobs = [
     {
@@ -198,7 +199,7 @@ function Careers() {
 
   return (
     <div className="d-flex container-fluid p-0 line-height-2">
-      <div className="col w-100 px-2" style={{ marginTop: "5rem" }}>
+      <div className="col w-100 px-2" style={{ marginTop: "8rem" }}>
         <div className="col">
           <img src={heroImg} alt="" className="w-100" />
         </div>
@@ -232,7 +233,9 @@ function Careers() {
               {filteredJobs.length === 0 ? (
                 <p>No matching jobs found.</p>
               ) : (
+                
                 <div className="d-flex gap-4 mx-4 px-3">
+                  {setFoundJobs(true)}
                   {filteredJobs.map((job) => (
                     // <div key={job.role} className="card">
                     //   <div>
@@ -241,6 +244,7 @@ function Careers() {
                     //     <button onClick={() => openModal(job)}>View Details</button>
                     //   </div>
                     // </div>
+                    
                     <div class="col-sm-4 mb-3 mb-sm-0">
                       <div class="card">
                         <div class="card-body">
@@ -253,6 +257,7 @@ function Careers() {
                       </div>
                     </div>
                   ))}
+                  
                 </div>
               )}
             </div>
@@ -274,9 +279,10 @@ function Careers() {
                 </div>
               </div>
             )}
+
           </div>
         </div>
-        <div className="col job-profile-container m-5">
+        {foundJobs? "" : <div className="col job-profile-container m-5">
           <div class="row">
             <div class="col-sm-4 mb-3 mb-sm-0">
               <div class="card">
@@ -345,7 +351,7 @@ function Careers() {
               </div>
             </div>
           </div>
-        </div>
+        </div>}
         <div className="career-container align-items-center justify-content-center">
           <div className="justify-content-center mx-auto mt-5 text-white row text-align">
             <span className="fw-bold fa-2x">Apply For Position</span>
