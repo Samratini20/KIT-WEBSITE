@@ -5,3 +5,19 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
+
+.line-height-2{
+    line-height: 2;
+}
+
+.send-message,.send-message:hover{
+    box-shadow: 0px 5px 10px 2px rgb(205, 204, 204);
+    background-color: #005e8d;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.send-message:disabled{
+    color: #a4a0a0 !important;
+    background-color: #005e8d;
+}
