@@ -34,7 +34,7 @@ function Aboutus(props) {
         
         <div className='col '>
        
-        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"1.5rem"}}>
+        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"1.55rem"}}>
           <div className="diva-2  "> 
           <img
             loading="lazy"
