@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 function Aboutus(props) {  
   const navigate = useNavigate();
 
-  const [swap, setSwap] = useState(false);
+  const [swap, setSwap] = useState(false);                   
 
-  useEffect(() => {
+  useEffect(() => {           
     const intervalId = setInterval(() => {
       setSwap(prevSwap => !prevSwap);
     }, 2000);
@@ -18,7 +18,7 @@ function Aboutus(props) {
   }, []);
 
   useEffect(() => {
-    // Scroll to the top of the page when the component mounts
+    // Scroll to the top of the page when the co   mponent mounts
     window.scrollTo(0, 0);
   }, []);
 
@@ -28,17 +28,21 @@ function Aboutus(props) {
     document.getElementsByClassName('rec-arrow-left')[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
   }
   return (
-    <>
-      <div className="about-us-container bg-white">
-        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"6.8rem"}}>
-          <div className="diva-2 mx-auto">
+    <>     
+      <div className="about-us-container  container-fluid overflow-hidden w-100 bg-white">
+
+        
+        <div className='col '>
+       
+        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"1.55rem"}}>
+          <div className="diva-2  "> 
           <img
             loading="lazy"
             src={aboutusImg_1}
-            className="aboutusImg-1 "
+            className="aboutusImg-1 w-100 "
           />
           </div>
-          <div className="diva-3 my-2 px-3 fs-5 w-100">
+          <div className="diva-3 my-2 px-3 fs-5 text-sm-start w-100">
             <div className="my-2 py-2 px-4">
             Welcome to K.I.T Global Technologies Pvt Ltd, where innovation meets efficiency. 
             We're a dynamic software company dedicated to crafting cutting-edge solutions that empower businesses to thrive in the digital era.
@@ -54,21 +58,27 @@ function Aboutus(props) {
             <div className="mt-2 py-2">
                   Whether you're aiming to streamline operations, enhance productivity, or stay 
                   ahead of industry trends, we're your strategic partner in achieving success. Join us on a journey where
-                  innovation, reliability, and customer satisfaction converge.<br/><b className='d-flex justify-content-center mt-5 fs-2'><em>"Your vision, our technology – let's build the future together".</em></b>
+                  innovation, reliability, and customer satisfaction converge.
+                  <br/><b className='d-flex justify-content-center mt-5 fs-2'><em>"Your vision, our technology – let's build the future together".</em></b>
                     <br />
               </div>
             </div>
           </div>
         </div>
-        <div className="adiv-9">
-          <div className="d-flex">
-          <div className='card-container w-50 d-flex gap-4'>
-              <div className='cards card1 w-100'></div>
-              <div className='cards card2 w-100'></div>
+        </div>
+        
+
+
+    
+      <div className=" adjal adiv-9 row align-self-lg-end">
+          <div className=" row  ">
+          <div className=' adjal card-col row w-50'>
+              <div className='cards card1 col w-100'></div>
+              <div className='cards card2 col w-100'></div>
           </div>
-                  <div className="acolumn-5">
+                  <div className="acolumn-5 col">
                     <div className="adiv-14">
-                      <div className="d-flex flex-column m-5 w-75">
+                      <div className=" mb-4 mt-5 w-75">
                           {/* <span className='fs-3 fw-bold mb-3'>
                             We have teams with years of Experience.
                             <br />
@@ -116,7 +126,17 @@ function Aboutus(props) {
                     </div>
                   </div>
           </div>
+        
         </div>
+      
+      
+
+
+
+
+
+
+
         <div className="adiv-25 mb-5 my-5 d-none">
           <div className="adiv-26 mt-5">
             <div className="adiv-27">
@@ -139,29 +159,36 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-        <div className="mt-5 p-4 sdiv-80">
-          <div className="d-flex gap-2 my-4 text-align">
-            <div className="d-flex flex-column">
-                <i class="d-flex fa-2x fa-business-time fa-solid justify-content-center" style={{color :"#006394"}}></i>
-                <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+
+        
+
+
+        <div className=" row mt-5 mx-0 p-4 sdiv-80">
+          <div className="change row row-gap-5  my-4 text-align">
+
+            <div className=" col">
+                <i class=" fa-2x fa-business-time fa-solid justify-content-center mb-2" style={{color :"#006394"}}></i>
+                <div className=" fs-3 fw-bold mt-4 justify-content-center">1. Planning & Research</div>
+                <div className="fs-5 justify-content-center mt-3 px-2 ">
                 We meticulously chart the course for your IT success, ensuring 
                 strategic precision and seamless execution every step of the way.
                 </div>
             </div>
-            <div className="d-flex flex-column"> 
+
+            <div className="col"> 
                 <i class="fa-2x fa-solid fa-file-code justify-content-center" style={{color :"#006394"}}></i>               
                 <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">2. Efficient Streamlining</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                <div className="fs-5 justify-content-center mt-3 px-2 ">
                 Optimization for effectively managing spend on software 
                 and ensuring compliance is essential for organizational 
                 success.
                 </div>
              </div>
-            <div className="d-flex flex-column">
+
+            <div className="col">
                 <i class="fa-2x fa-solid fa-square-check justify-content-center" style={{color :"#006394"}}></i>
                 <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">3. Decisive Outcome</div>
-                <div className="fs-5 justify-content-center mt-3 px-2 why-choose-us-text-container">
+                <div className="fs-5 justify-content-center mt-3 px-2 ">
                 With dedication and commitment to our aspirations, we have a clear sense of 
                 direction which realigns us to our long-term goals.
                 </div>
