@@ -29,13 +29,10 @@ function Aboutus(props) {
   }
   return (
     <>     
-      <div className="about-us-container  container-fluid overflow-hidden w-100 bg-white">
-
-        
-        <div className='col '>
-       
-        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"1.55rem"}}>
-          <div className="diva-2  "> 
+      <div className="about-us-container  container-fluid w-100 bg-white">
+        <div className='col'>
+        <div className="d-flex diva-1 flex-column w-100" style={{marginTop:"9%"}}>
+          <div className="px-2"> 
           <img
             loading="lazy"
             src={aboutusImg_1}
@@ -66,23 +63,13 @@ function Aboutus(props) {
           </div>
         </div>
         </div>
-        
-
-
-    
-      <div className=" adjal adiv-9 row align-self-lg-end">
-          <div className=" row  ">
-          <div className=' adjal card-col row w-50'>
-              <div className='cards card1 col w-100'></div>
-              <div className='cards card2 col w-100'></div>
-          </div>
+      <div className="row w-100 m-0 p-0">
+                <div className="d-flex about-img-container2 p-0">
+                    <div className='cards card1 col'></div>
+                    <div className='cards card2 col'></div>
                   <div className="acolumn-5 col">
                     <div className="adiv-14">
                       <div className=" mb-4 mt-5 w-75">
-                          {/* <span className='fs-3 fw-bold mb-3'>
-                            We have teams with years of Experience.
-                            <br />
-                          </span> */}
                           <span className='fs-5'>
                           What sets us apart is our commitment to excellence and our unwavering focus on delivering results that exceed expectations. Our extensive industry knowledge combined with innovative approaches allows us to tailor solutions that address your unique needs and challenges.
                             <br />
@@ -125,18 +112,8 @@ function Aboutus(props) {
                       </div>
                     </div>
                   </div>
+                </div>     
           </div>
-        
-        </div>
-      
-      
-
-
-
-
-
-
-
         <div className="adiv-25 mb-5 my-5 d-none">
           <div className="adiv-26 mt-5">
             <div className="adiv-27">
@@ -164,7 +141,7 @@ function Aboutus(props) {
 
 
         <div className=" row mt-5 mx-0 p-4 sdiv-80">
-          <div className="change row row-gap-5  my-4 text-align">
+          <div className="row row-gap-5  my-4 text-align">
 
             <div className=" col">
                 <i class=" fa-2x fa-business-time fa-solid justify-content-center mb-2" style={{color :"#006394"}}></i>
@@ -308,4 +285,3 @@ function Aboutus(props) {
 }
 
 export default Aboutus;
-

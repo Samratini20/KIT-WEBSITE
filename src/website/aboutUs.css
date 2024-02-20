@@ -1,31 +1,9 @@
     .about-us-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
       padding:0;
       margin: 0;
-    
-      @media(max-width:440px) {
-        .change{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-        }
-
-        
-      }
-
-    }
-    @media (max-width: 768px) {
-      .diva-1 .diva-2 {
-        margin-top: 3rem; /* Adjust margin for smaller screens */
-        margin-bottom: 3rem; /* Adjust margin for smaller screens */
-      }
-    }
-    
-  
+    }  
     .aboutusImg-1{
         max-width: 100%;
     }
@@ -148,6 +126,24 @@
       }
 
     }
+    @media (max-width: 299px) {
+      .diva-1{
+        margin-top: 25% !important;
+      }
+    }
+    @media only screen and (max-width:699px){
+        .about-img-container2{
+          flex-direction: column;
+          display: block !important;
+          margin: 0%;
+        }
+        .cards{
+          height: 25%;
+        }
+        .card1,.card2{
+          margin: 0% !important;
+        }
+    }
     .adiv-10 {
       display: flex;
       align-items: flex-start;
@@ -159,12 +155,43 @@
         justify-content: center;
         align-items: center;
       }
-    }
-    @media (max-width: 991px) {
+      .acolumn-5 {
+        width: 100%;
+      }
+      .aimg-5 {
+        margin-top: 40px;
+      }
+      .acolumn-4 {
+        width: 100%;
+      }
+      .aimg-4 {
+        margin-top: 40px;
+      }
+      .acolumn-2 {
+        width: 100%;
+      }
       .adiv-10 {
         flex-direction: column;
         align-items: stretch;
         gap: 0px;
+      }
+      .acolumn {
+        width: 100%;
+      }
+      .adiv-11 {
+        margin-top: 40px;
+      }
+      .adiv-13 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+      .adiv-12 {
+        max-width: 100%;
+        margin-top: 18px;
+      }
+      .acolumn-3 {
+        width: 100%;
       }
     }
     .acolumn {
@@ -174,21 +201,11 @@
       width: 18%;
       margin-left: 0px;
     }
-    @media (max-width: 991px) {
-      .acolumn {
-        width: 100%;
-      }
-    }
     .adiv-11 {
       display: flex;
       margin-top: 268px;
       flex-grow: 1;
       flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .adiv-11 {
-        margin-top: 40px;
-      }
     }
     .aimg-2 {
       aspect-ratio: 1.71;
@@ -212,31 +229,13 @@
       width: 82%;
       margin-left: 20px;
     }
-    @media (max-width: 991px) {
-      .acolumn-2 {
-        width: 100%;
-      }
-    }
     .adiv-12 {
       flex-grow: 1;
       padding: 0 20px;
     }
-    @media (max-width: 991px) {
-      .adiv-12 {
-        max-width: 100%;
-        margin-top: 18px;
-      }
-    }
     .adiv-13 {
       gap: 20px;
       display: flex;
-    }
-    @media (max-width: 991px) {
-      .adiv-13 {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
-      }
     }
     .acolumn-3 {
       display: flex;
@@ -245,11 +244,7 @@
       width: 17%;
       margin-left: 0px;
     }
-    @media (max-width: 991px) {
-      .acolumn-3 {
-        width: 100%;
-      }
-    }
+
     .aimg-4 {
       aspect-ratio: 0.39;
       object-fit: contain;
@@ -260,22 +255,12 @@
       max-width: 100%;
       flex-grow: 1;
     }
-    @media (max-width: 991px) {
-      .aimg-4 {
-        margin-top: 40px;
-      }
-    }
     .acolumn-4 {
       display: flex;
       flex-direction: column;
       line-height: normal;
       width: 26%;
       margin-left: 20px;
-    }
-    @media (max-width: 991px) {
-      .acolumn-4 {
-        width: 100%;
-      }
     }
     .aimg-5 {
       aspect-ratio: 0.57;
@@ -286,32 +271,17 @@
       margin-top: 82px;
       flex-grow: 1;
     }
-    @media (max-width: 991px) {
-      .aimg-5 {
-        margin-top: 40px;
-      }
-    }
     .acolumn-5 {
       display: flex;
       flex-direction: column;
       line-height: normal;
-      width: 57%;
-      /* margin-left: 20px; */
     }
-    @media (max-width: 991px) {
-      .acolumn-5 {
-        width: 100%;
-      }
-    }
-
    @media(max-width:991px){
     .adjal{
       display:flex;
       flex-direction: row;
       overflow: hidden;
       width: 100%;
-      /* justify-content: center;
-      align-items: center; */
     }
    }
 
@@ -805,10 +775,13 @@
   }
   .card1 {
       background-image: url(../assets/office-view.PNG);
+      margin-left: 1%;
+      margin-right: 1%;
   }
   
   .card2 {
       background-image: url(../assets/board-room.PNG);
+      margin-right: 1%;
   }
   
   

@@ -206,6 +206,7 @@ padding-left: 5px;
   word-spacing: 3px;
 }
 
+
 @media (max-width:900px) {
   .why-choose-us-section{
     display: flex;
@@ -227,10 +228,6 @@ padding-left: 5px;
   .why-choose-us-img{
     max-width: 90%;
     height: 90%;
-    /* position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
   }
 
   .why-choose-us-svg{
@@ -239,7 +236,6 @@ padding-left: 5px;
     position: absolute;
     top: 60%;
     right: 15%;
-
   }
 
   .why-choose-us-dot1{
