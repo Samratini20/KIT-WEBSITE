@@ -12,7 +12,7 @@ import PrivacyPolicy from './website/privacypolicy';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CareersSecond from "./website/CareersSecond";
+import Careers from "./website/careers";
 
 function App(){
     useEffect(() => {
@@ -35,7 +35,7 @@ function App(){
                         <Route path='/contact' element={<ContactUs/>} />
                         <Route path='/termsconditions' element={<TermsConditions/>} />
                         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
-                        <Route path='/careers' element={<CareersSecond/>} />
+                        <Route path='/careers' element={<Careers/>} />
                       </Routes> 
                 <Footer/> 
             </BrowserRouter>        

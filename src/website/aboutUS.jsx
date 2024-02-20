@@ -128,15 +128,6 @@ function Aboutus(props) {
           </div>
         
         </div>
-      
-      
-
-
-
-
-
-
-
         <div className="adiv-25 mb-5 my-5 d-none">
           <div className="adiv-26 mt-5">
             <div className="adiv-27">
@@ -159,10 +150,6 @@ function Aboutus(props) {
             </div>
           </div>
         </div>
-
-        
-
-
         <div className=" row mt-5 mx-0 p-4 sdiv-80">
           <div className="change row row-gap-5  my-4 text-align">
 
