@@ -135,7 +135,7 @@ function ContactUs(props) {
                     <i class="fa-solid fa-location-dot contactUsicons"></i>
                       Company Address</div>
                     <div className="mt-1 fw-normal w-75">
-                          2nd Floor, NO 23/1, SONNENAHALLI, HOODY ,F6,  Channama layout ,Bangalore North,
+                          2nd Floor, NO 23/1, SONNENAHALLI, HOODY, F6, Channama layout, Bangalore North,
                           Bangalore- 560048, Karnataka.
                     </div>
                     <div className="fw-normal mt-1 map-link text-decoration-underline">
