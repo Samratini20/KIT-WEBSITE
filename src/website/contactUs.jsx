@@ -6,7 +6,7 @@ import ContactUS_img_2 from "../assets/contact-circle-2.png";
 import ContactUS_img_3 from "../assets/contact-circle-3.png";
 import { useEffect, useState } from "react";
 
-function ContactUs() {
+function ContactUs( ) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -88,7 +88,7 @@ function ContactUs() {
                 />
               </div>
               <div class="col-12 col-sm">
-                <label for="emailid" class="form-label mx-1 text-black">
+                <label for="emailid" class="form-label mx-1 text-black mt-2 mt-sm-0">
                   Email-ID: <span className="text-danger">*</span>{" "}
                 </label>
                 <input
@@ -116,7 +116,7 @@ function ContactUs() {
                 />
               </div>
               <div class="col-12 col-sm">
-                <label for="website" class="form-label mx-1 text-black">
+                <label for="website" class="form-label mx-1 text-black mt-2 mt-sm-0">
                   Website: <span className="text-danger">*</span>{" "}
                 </label>
                 <input
