@@ -55,7 +55,7 @@ function HomePage(props) {
 
   useEffect(() => {
     //Scroll to the top of the page when the component mounts
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     if (document.getElementsByClassName("rec-arrow")[0]) {
       document.getElementsByClassName("rec-arrow")[0].innerText = "";
       document.getElementsByClassName("rec-arrow-right")[0].innerHTML =

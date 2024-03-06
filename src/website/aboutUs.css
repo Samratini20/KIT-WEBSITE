@@ -324,7 +324,6 @@
     }
     @media (max-width: 991px) {
       .adiv-14 {
-        max-width: 100%;
         padding: 0 20px;
       }
     }
@@ -801,11 +800,11 @@
       background-position: center;
   }
   .card1 {
-      background-image: url(../assets/office-view.PNG);
+      /* background-image: url(../assets/office-view.PNG); */
   }
   
   .card2 {
-      background-image: url(../assets/board-room.PNG);
+      /* background-image: url(../assets/board-room.PNG); */
   }
   
   
