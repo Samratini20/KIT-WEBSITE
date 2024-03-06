@@ -21,7 +21,7 @@ function Aboutus(props) {
 
   useEffect(() => {
     // Scroll to the top of the page when the co   mponent mounts
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   if (document.getElementsByClassName("rec-arrow")[0]) {
@@ -104,7 +104,7 @@ function Aboutus(props) {
               </div>
               <div className="p-4">
                 <ul className="list-unstyled">
-                  <li className="fs-5 fw-lighter mt-2">
+                  <li className="fs-5 fw-light mt-2">
                     <span>
                       <img
                         loading="lazy"
@@ -114,7 +114,7 @@ function Aboutus(props) {
                     </span>
                     Proven Expertise
                   </li>
-                  <li className="fs-5 fw-lighter mt-3">
+                  <li className="fs-5 fw-light mt-3">
                     <span>
                       <img
                         loading="lazy"
@@ -124,7 +124,7 @@ function Aboutus(props) {
                     </span>
                     Industry Insights
                   </li>
-                  <li className="fs-5 fw-lighter mt-3">
+                  <li className="fs-5 fw-light mt-3">
                     <span>
                       <img
                         loading="lazy"
@@ -134,7 +134,7 @@ function Aboutus(props) {
                     </span>
                     Time-Tested Solutions
                   </li>
-                  <li className="fs-5 fw-lighter mt-3">
+                  <li className="fs-5 fw-light mt-3">
                     <span>
                       <img
                         loading="lazy"
