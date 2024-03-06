@@ -118,12 +118,14 @@ function HomePage(props) {
                 className="align-self-start top-dots homepage-dots"
                 src={herimgdots}
                 alt=""
+                loading="lazy"
               />
-              <img className="hero-img" src={heroimg} alt="" />
+              <img className="hero-img" src={heroimg} alt="" loading="lazy"/>
               <img
                 className="align-self-end bottom-dots homepage-dots"
                 src={herimgdots}
-                alt=""
+                alt="HeroImg"
+                loading="lazy"
               />
             </div>
           </div>
@@ -137,6 +139,7 @@ function HomePage(props) {
               className="w-75 mx-5"
               src={whychooseus}
               alt="image"
+              
             />
           </div>
           <div className="col-12 col-sm-6 mt-2 mt-sm-4 pt-2 pt-sm-5">
@@ -211,7 +214,7 @@ function HomePage(props) {
       <section className="container-fluid bg-white">
         <div className="row">
           <div className="col-12 col-sm-6 d-flex justify-content-center align-items-center my-3 my-sm-5">
-            <img className="w-50 mt-3 mt-sm-4" src={ceoimg} alt="CEO image" />
+            <img className="w-50 mt-3 mt-sm-4" src={ceoimg} alt="CEO image" loading="lazy"/>
           </div>
           <div
             className="col-12 col-sm-6 my-3 my-sm-5 d-flex flex-column align-items-center align-items-sm-start
