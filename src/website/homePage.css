@@ -67,7 +67,7 @@
   }
   
   50%{
-    margin-left: -300px;
+    margin-left: -315px;
     
   }
   82%{
@@ -86,53 +86,6 @@
     line-height: 1.8;
     padding-right: 1.5rem;
   }
-
-@media (max-width:669px) {
-  .hero-img{
-    width: 90%;
-  }
-  .homepage-section1{
-    margin-top: 2.5rem;
-  }
-
-  .homepage-dots{
-    height: 2rem;
-    width: auto;
-  }
-
-  .homediv-16{
-    margin-left: 2%;
-  }
-
-  .homediv-13 {
-    align-items: center;
-    margin-left: 2%;
-    margin-top: 5%;
-  }
-
-  @keyframes anim {
-  0%{
-    margin-left: 0;
-    
-  }
-  16%{
-    margin-left: -150px;
-    
-  }
-  
-  50%{
-    margin-left: -300px;
-    
-  }
-  82%{
-    margin-left: -150px;
-  
-  }
-  100%{
-    margin-left: 0;
-  }
-}
-}
 
 .sections-container{
   background-color: white;
@@ -165,10 +118,9 @@
 position: relative;
 white-space: nowrap;
 display: inline-block;
-width: 10rem;
+width: 9rem;
 overflow: hidden;
 margin-left: 1rem;
-
 }
 
 .get-started-button {
@@ -187,47 +139,69 @@ margin-left: 1rem;
   transform: translateY(-2px);
 }
 
+@media (max-width:700px) {
+  ul{
+    li{
+      font-size: medium;
+    }
+  }
+  .hero-img{
+    width: 90%;
+  }
+  .homepage-section1{
+    margin-top: 2.5rem;
+  }
+
+  .homepage-dots{
+    height: 2rem;
+    width: auto;
+  }
+
+  .homediv-16{
+    margin-left: 2%;
+  }
+
+  .homediv-13 {
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+
+  .container{
+    width: 7.5rem;
+    }
+
+  @keyframes anim {
+  0%{
+    margin-left: 0;
+    
+  }
+  16%{
+    margin-left: -140px;
+    
+  }
+  
+  50%{
+    margin-left: -280px;
+    
+  }
+  82%{
+    margin-left: -130px;
+  
+  }
+  100%{
+    margin-left: 0;
+  }
+}
+
+}
+
 
 /*#############################WHY CHOOSE US SECTION HERE#############################-*/
 
 /*#############################-------WHAT CLIENT SAYS SECTION HERE-------#############################*/
-.what-client-says-section{
-  max-width: 100%;
-  background-color: white;
-  display: flex;
-}
 
-.what-client-says-animation{
-  width: 100%;
-  height: 100%;
-}
 
-.what-client-says-carousal{
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  display: flex;
-  justify-content: center;
-  }
-
-.what-client-says-carousal-text{
-  padding: 2rem;
-  width: 70%;
-  background-color: #f2f2f2;
-  box-shadow: 0px 2px 15px 5px rgba(217, 216, 216, 0.592);
-  border-radius: 5px;
-}
-
-.what-client-says-name-des-text{
-  margin-left: 11rem;
-  margin-top: -2rem;
-}
-
-.what-client-says-text-para{
-line-height: 2;
-margin-top: 5rem;
-}
 .testimonial-card-container{
 border: 0.5px solid rgba(41, 41, 41, 0.04);
 box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.10);
@@ -266,63 +240,21 @@ margin: 2%;
     object-fit: contain;
     border-radius: 15px;
   }
+  .what-client-says-font{
+    font-size: medium;
+  }
 }
 
 /*#############################------CEO FOUNDER SECTION HERE------#############################*/
-.ceo-founder-animation-section{
-  max-width: 100%;
-  background-color: white;
-  display: flex;
-}
 
-.ceo-founder-animation-container{
-  width: 50%;
-  background-color: white;
-  position: relative;
-}
-
-.ceo-founder-text{
-  width: 50%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.ceo-founder-animation {
-  height: 28rem;
-  width: 75%;
-  box-shadow: 0px 0px 25px 15px rgba(42, 92, 110, 0.327);
-  animation: logo 4s infinite ease-in-out alternate;
-  background-image: url(../assets/sandeep.jpg);
-  object-position: center;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-color: transparent;
-  margin: 8%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 2%;
-}
-
-.ceo-founder-names{
-  margin-top: 2rem;
-}
-
-.ceo-founder-testimonial{
-  line-height: 2;
-  padding-right: 5rem;
-}
 
 .js-nametag{
   font-size: 2.5rem;
-  text-shadow: 2px 5px 5px rgba(164, 163, 163, 0.716);
+  text-shadow: 2px 5px 5px rgba(225, 223, 223, 0.716);
   font-weight: 700;
+  border-bottom: 10px solid #005E8D;
+  width: fit-content;
 }
-
-
 
 @media (max-width:900px) {
   .ceo-founder-animation-section{
@@ -347,16 +279,15 @@ margin: 2%;
   }
 
   .js-nametag{
-    font-size: x-large;
+    font-size: large;
+    border-bottom: 10px solid #005E8D;
+    width: fit-content;
   }
 
   .ceo-founder-text{
     width: 100%;
     background-color: white;
-    /* display: flex; */
-    /* flex-direction: column; */
     gap: 0.2rem;
-    /* justify-content: center; */
     height: auto;
   }
 
