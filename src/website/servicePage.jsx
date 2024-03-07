@@ -56,7 +56,7 @@ function ServicePage(props) {
               meeting your business goals
             </p>
           </div>
-          <div className="col-12 col-sm-6 service-page-section-1-part-2 px-1 px-sm-5">
+          <div className="col-12 col-sm-6 service-page-section-1-part-2 px-3 px-sm-5">
             <img className="w-100" src={serviceimg1} alt="serviceimg1" />
           </div>
         </div>
@@ -64,7 +64,7 @@ function ServicePage(props) {
 
       <section className="container-fluid mt-2 mt-sm-5 bg-primary-subtle">
         <div className="row d-flex">
-          <div className="col-12 col-sm-6 my-3 my-sm-5 d-flex justify-content-center px-1 px-sm-5">
+          <div className="col-12 col-sm-6 my-3 my-sm-5 d-flex justify-content-center px-3 px-sm-5">
             <img className="w-100" src={serviceimg2} alt="serviceimg2" />
           </div>
           <div className="col-12 col-sm-6 d-flex flex-column justify-content-center px-3 px-sm-5 gap-3 my-3 my-sm-0">
@@ -100,7 +100,6 @@ function ServicePage(props) {
     ))}
   </div>
 </section>
-
     </>
   );
 }

@@ -47,26 +47,26 @@ function Aboutus(props) {
               />
             </div>
             <div className="diva-3 my-2 px-3 fs-5 text-sm-start w-100">
-              <div className="my-2 py-2 px-4">
+              <div className="my-2 py-2 px-2 px-sm-4">
                 Welcome to K.I.T Global Technologies Pvt Ltd, where innovation
                 meets efficiency. We're a dynamic software company dedicated to
                 crafting cutting-edge solutions that empower businesses to
                 thrive in the digital era.
                 <br />
               </div>
-              <div className="mt-2 py-2 px-4">
+              <div className="mt-2 py-2 px-2 px-sm-4">
                 Our dedicated team of experts passionately merges creativity and
                 expertise to craft software solutions that not only meet but
                 consistently exceed your expectations. Embark on a journey into
                 the future of technology with K.I.T Global Technologies Pvt Ltd.
                 <br />
               </div>
-              <div className="mt-2 py-2 about-us-text">
+              <div className="mt-2 py-2 about-us-text px-2 px-sm-4">
                 At K.I.T Global Technologies Pvt Ltd, we simplify complexity and
                 elevate user experiences. With a relentless commitment to
                 quality, we specialise in creating bespoke software solutions
                 tailored to your unique needs.
-                <div className="mt-2 py-2">
+                <div className="mt-2 py-2 px-1 px-sm-4">
                   Whether you're aiming to streamline operations, enhance
                   productivity, or stay ahead of industry trends, we're your
                   strategic partner in achieving success. Join us on a journey
@@ -88,9 +88,9 @@ function Aboutus(props) {
         
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 col-sm-8 d-flex gap-2">
+            <div className="col-12 col-sm-8 d-flex">
               <img className="w-50" src={officeview} alt="" />
-              <img className="w-50 " src={boardroom} alt="" />
+              <img className="w-50" src={boardroom} alt="" />
             </div>
             <div className="col-12 col-sm-4 bg-info-subtle">
               <div className="p-4" >
@@ -181,13 +181,13 @@ function Aboutus(props) {
           </div>
         </div>
         <div className=" row mt-5 mx-0 p-4 sdiv-80">
-          <div className="change row row-gap-5  my-4 text-align">
-            <div className="col-12 col-sm">
+          <div className="change row row-gap-5  my-4 text-align ">
+            <div className="col-12 col-sm text-center">
               <i
                 class="fa-2x fa-business-time fa-solid justify-content-center mb-2"
                 style={{ color: "#006394" }}
               ></i>
-              <div className=" fs-3 fw-bold mt-4 justify-content-center">
+              <div className="d-flex fs-3 fw-bold mt-4 justify-content-center">
                 1. Planning & Research
               </div>
               <div className="fs-5 justify-content-center mt-3 px-2 ">
@@ -197,7 +197,7 @@ function Aboutus(props) {
               </div>
             </div>
 
-            <div className="col-12 col-sm">
+            <div className="col-12 col-sm text-center">
               <i
                 class="fa-2x fa-solid fa-file-code justify-content-center"
                 style={{ color: "#006394" }}
@@ -211,7 +211,7 @@ function Aboutus(props) {
               </div>
             </div>
 
-            <div className="col-12 col-sm">
+            <div className="col-12 col-sm text-center">
               <i
                 class="fa-2x fa-solid fa-square-check justify-content-center"
                 style={{ color: "#006394" }}
@@ -230,7 +230,7 @@ function Aboutus(props) {
         <div className="vision d-flex my-3 px-4">
           <div className="diva-3 my-3 px-2 w-100 flex-column fs-5">
             <div className="aspan-1 mb-2 fw-bold">
-              <b>Our Vision</b>
+              <b className="fs-3">Our Vision</b>
             </div>
             <div className="aspan-1 mb-2">
               To be the leading force in shaping the future of information and
@@ -248,7 +248,7 @@ function Aboutus(props) {
         </div>
         <div className="mission d-flex px-4 py-4">
           <div className="diva-3 px-2 w-100 flex-column fs-5">
-            <div className="aspan-1 fw-bold mb-2">Our Mission</div>
+            <div className="aspan-1 fw-bold mb-2 fs-3">Our Mission</div>
             <div className="aspan-1 mb-2">
               At K.I.T Global Technologies Pvt Ltd, our mission is to empower
               individuals and organisations through innovative information and
