@@ -43,7 +43,7 @@ function Aboutus(props) {
               <img
                 loading="lazy"
                 src={aboutusImg_1}
-                className="aboutusImg-1 w-100 "
+                className="aboutusImg-1 w-100"
               />
             </div>
             <div className="diva-3 my-2 px-3 fs-5 text-sm-start w-100">
@@ -182,9 +182,9 @@ function Aboutus(props) {
         </div>
         <div className=" row mt-5 mx-0 p-4 sdiv-80">
           <div className="change row row-gap-5  my-4 text-align">
-            <div className=" col">
+            <div className="col-12 col-sm">
               <i
-                class=" fa-2x fa-business-time fa-solid justify-content-center mb-2"
+                class="fa-2x fa-business-time fa-solid justify-content-center mb-2"
                 style={{ color: "#006394" }}
               ></i>
               <div className=" fs-3 fw-bold mt-4 justify-content-center">
@@ -197,7 +197,7 @@ function Aboutus(props) {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col-12 col-sm">
               <i
                 class="fa-2x fa-solid fa-file-code justify-content-center"
                 style={{ color: "#006394" }}
@@ -211,7 +211,7 @@ function Aboutus(props) {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col-12 col-sm">
               <i
                 class="fa-2x fa-solid fa-square-check justify-content-center"
                 style={{ color: "#006394" }}
