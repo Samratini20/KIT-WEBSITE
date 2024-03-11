@@ -57,7 +57,7 @@ function ServicePage(props) {
             </p>
           </div>
           <div className="col-12 col-sm-6 service-page-section-1-part-2 px-3 px-sm-5">
-            <img className="w-100" src={serviceimg1} alt="serviceimg1" />
+            <img className="w-100 serviceimg1" src={serviceimg1} alt="serviceimg1" />
           </div>
         </div>
       </section>

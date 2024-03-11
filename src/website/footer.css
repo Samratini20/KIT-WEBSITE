@@ -39,7 +39,7 @@
   }
 
   .icons{
-    gap: 1rem;
+    gap: .5rem;
 
     & i{
       scale: 1;

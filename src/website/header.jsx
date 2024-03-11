@@ -14,10 +14,10 @@ function Header() {
   return (
     <div className="div-2">
       <nav className="navbar navbar-expand-lg bg-white">
-        <div className="d-flex">
-          <a className="navbar-brand" href="/">
-            <img className="w-25" src={logo} alt="logo" style={{scale:'1.5'}} />
-          </a>
+        <div className="d-flex justify-content-between w-100">
+          <NavLink className="navbar-brand w-50" to="/">
+            <img className="w-25" src={logo} alt="logo" style={{scale:"1.8"}}/>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
